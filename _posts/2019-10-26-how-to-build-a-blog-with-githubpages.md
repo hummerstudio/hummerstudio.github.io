@@ -61,7 +61,7 @@ GitHub Pages 只支持静态网页，是不支持 JSP 和 PHP 的。
 >如果你有一个自己的域名，希望使用这个域名来访问博客，可继续往下看。如果你不需要，本节可以跳过。
 
 
-我有一个和微信公众号ID同名的com域名[shanyshanb.com](shanyshanb.com)，希望能够使用它来访问博客，而不是使用 GitHub 提供的二级域名。
+我有一个和微信公众号ID同名的com域名[shanyshanb.com](http://shanyshanb.com)，希望能够使用它来访问博客，而不是使用 GitHub 提供的二级域名。
 
 
 实现这个需求需要分别在域名注册商和 GitHub Pages 上进行操作。
@@ -87,7 +87,7 @@ www.shanyshanb.com
 
 提交更新至仓库。
 
-此时就可以使用 [www.shanyshanb.com](www.shanyshanb.com) 来访问博客。
+此时就可以使用 [www.shanyshanb.com](http://www.shanyshanb.com) 来访问博客。
 
 >另一种设置方式，是在仓库的设置页面通过图形界面设置自定义域名。设置后系统会自动提交CNAME文件至仓库，效果是一样的。
 >
@@ -117,4 +117,4 @@ title: 左手编程，右手文化
 description: 天道有缺，人力补之。  -- 唐明
 ```
 
-再次访问 [www.shanyshanb.com](www.shanyshanb.com) ，大功告成！
+再次访问 [www.shanyshanb.com](http://www.shanyshanb.com) ，大功告成！
