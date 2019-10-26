@@ -117,4 +117,49 @@ title: 左手编程，右手文化
 description: 天道有缺，人力补之。  -- 唐明
 ```
 
+## 七、按需自定义样式
+
+我对一些主题默认样式和布局不满意的地方，做了修改。
+
+在仓库根目录创建 `assets/css/style.scss` 文件，将修改的样式放入其中：
+```
+---
+---
+
+@import "{{ site.theme }}";
+
+/* 减小标题大小 */
+header h1 {
+    font-size: 2em
+}
+
+/* 增加副标题上间距，增大字体大小 */
+header h2 {
+    padding-top: 10px;
+    font: bold italic 1em/1.5 Georgia, Times, “Times New Roman”, serif;
+}
+
+/* 增加主体区宽度 */
+div.shell {
+    width: 1000px;
+}
+
+/* 不显示 span.banner-fix */
+span.banner-fix {
+    display: none;
+}
+
+/* 一级标题左对齐 */
+.header-level-1 {
+    text-align: left;
+}
+
+/* 增加页脚最大宽度 */
+footer {
+    max-width: 1000px;
+}
+```
+
 再次访问 [www.shanyshanb.com](http://www.shanyshanb.com) ，大功告成！
+
+
