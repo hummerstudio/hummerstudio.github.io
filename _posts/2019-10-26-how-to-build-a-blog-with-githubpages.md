@@ -1,6 +1,8 @@
 ---
 layout: default
 title: 第一篇博文——怎样使用GitHub Pages创建个人博客
+categories: [GitHub Pages]
+tages: [GitHub Pages, Jekyll]
 ---
 # {{ page.title }}
 
