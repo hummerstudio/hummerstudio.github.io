@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+
 /* 减小标题大小 */
 header h1 {
     font-size: 2em
@@ -12,6 +13,7 @@ header h2 {
     padding-top: 10px;
     font: bold italic 1em/1.5 Georgia, Times, “Times New Roman”, serif;
 }
+
 /* 增加主体区宽度 */
 div.shell {
     width: 1000px;
