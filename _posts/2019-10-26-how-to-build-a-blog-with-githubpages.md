@@ -1,8 +1,12 @@
 ---
 layout: default
 title: 第一篇博文——怎样使用GitHub Pages创建个人博客
+categories: [GitHub Pages, Jekyll]
+tags: [GitHub Pages, Jekyll, Blog]
 ---
-涉及知识点：
+# {{ page.title }}
+
+本文涉及知识点：
 
 
 1. HTML5。`HTML5` 是 `HTML`（超文本标记语言） 的最新标准。我们的示例网页是使用 `HTML5` 编写的。后续如果你想更好地理解使用的主题和进行主题自定义，也需要这方面的知识。
