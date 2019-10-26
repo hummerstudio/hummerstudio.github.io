@@ -3,9 +3,14 @@
 
 @import "{{ site.theme }}";
 
+/* 鼠标悬浮在头部标题链接上时不显示下划线 */
+header a:hover {
+    text-decoration: none;
+}
+
 /* 减小标题大小 */
 header h1 {
-    font-size: 2em
+    font-size: 2em;
 }
 
 /* 增加副标题上间距，增大字体大小 */
