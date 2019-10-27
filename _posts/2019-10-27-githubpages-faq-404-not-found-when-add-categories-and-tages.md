@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: post
 title: 【FAQ】(一）GitHub Pages添加categories和tages后访问报404 Not Found
+author: 唐明
 categories: [GitHub Pages]
 tages: [GitHub Pages, Jekyll, FAQ]
 ---
-# {{ page.title }}
-
 ## 问题现象
 
 原有文章只配置了 `layout` 和 `title`，发布后，可以按照 `year/month/day/title` 的链接格式访问，但增加配置 `categories` 和 `tages` 后，再次访问就提示 `404 Not Found`。
