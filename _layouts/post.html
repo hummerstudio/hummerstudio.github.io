@@ -4,3 +4,20 @@ layout: default
 <h2>{{ page.title }} - {{ page.author }}</h2>
 
 {{ content }}
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+const gitment = new Gitment({
+  owner: 'hummerstudio',
+  repo: 'gitments-of-shanyshanb',
+  oauth: {
+    client_id: 'd73e98e707bf5f9b582e',
+    client_secret: '803614808dfcf6f46d82d4c723a51fb18c6e3c2e',
+  },
+  // ...
+  // For more available options, check out the documentation below
+})
+
+gitment.render('comments')
+</script>
