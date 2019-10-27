@@ -2,8 +2,8 @@
 layout: post
 title: 心与物
 author: 唐明
-categories: [文化]
-tages: [心, 物]
+categories: [明哥讲道]
+tages: [道, 心, 物]
 ---
 >本文首发在我的微信公众号“左手编程右手文化”上，公众号ID：shanyshanb，欢迎关注。
 
