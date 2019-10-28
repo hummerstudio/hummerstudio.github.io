@@ -3,6 +3,11 @@
 
 @import "{{ site.theme }}";
 
+/* 不显示forkme链接 */
+a#forkme_banner {
+    display: none;
+}
+
 /* 鼠标悬浮在头部标题链接上时不显示下划线 */
 header a:hover {
     text-decoration: none;
@@ -18,6 +23,22 @@ header h2 {
     padding-top: 10px;
     font: bold italic 1em/1.5 Georgia, Times, “Times New Roman”, serif;
 }
+
+/* 导航栏 */
+section#nav {
+    position: relative;
+    display: block;
+    height: 171px;
+    width: 602px;
+    padding-bottom: 150px;
+    margin: 51px auto -250px;
+    z-index: 1;
+    background: transparent url(../images/shield.png) center 0 no-repeat;
+  }
+  
+  section#nav a {
+    display: none;
+  }
 
 /* 增加主体区宽度 */
 div.shell {
