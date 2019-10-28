@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 第一篇博文——怎样使用GitHub Pages创建个人博客
+title: 怎样使用GitHub Pages创建个人博客
 author: 唐明
 categories: [GitHub Pages]
 tages: [GitHub Pages, Jekyll]

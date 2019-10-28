@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【FAQ】(一）GitHub Pages添加categories和tages后访问报404 Not Found
+title: GitHub Pages 常见问题(一）- GitHub Pages添加categories和tages后访问报404 Not Found
 author: 唐明
 categories: [GitHub Pages]
 tages: [GitHub Pages, Jekyll, FAQ]
