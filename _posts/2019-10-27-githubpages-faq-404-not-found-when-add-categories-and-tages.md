@@ -23,6 +23,8 @@ permalink: /:categories/:year/:month/:day/:title:output_ext
 
 如果有人之前收藏了这篇文章，现在就无法访问了，这是一个更大的问题。
 
+<!--以上为摘要内容-->
+
 针对这种情况，我们可以修改 `permalink` 的默认设置，比如只按year/month/day/title来生成链接。
 
 可以在根目录的 `_config.yml` 文件中添加如下语句：

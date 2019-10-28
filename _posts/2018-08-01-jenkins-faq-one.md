@@ -17,6 +17,8 @@ tages: [Jenkins, Pipeline, Docker]
 
 #### 问题3：项目在Windows和Linux上各编译一部分，然后把Windows上的产物合并到Linux上，如何处理？
 
+<!--以上为摘要内容-->
+
 参考：可以考虑编译机器固定，或者产物都放到一个固定存放机器，再拿回来。
 
 #### 问题4：Pipeline和Jenkins传统类型的任务比有什么优点？

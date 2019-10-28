@@ -17,6 +17,8 @@ tages: [Jenkins, Pipeline]
 
 #### 问题13：不同分支要有不同的处理动作，用Pipeline怎么写？
 
+<!--以上为摘要内容-->
+
 参考：
 ```
 when {

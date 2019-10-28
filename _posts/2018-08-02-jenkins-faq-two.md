@@ -21,6 +21,8 @@ Blue Ocean是以插件的形式实现的，只要在Jenkins插件中心安装“
 
 #### 问题8：怎么看Jenkins上的Groovy版本？比如我登录服务器，可以执行groovy --version来看服务器安装的Groovy版本。
 
+<!--以上为摘要内容-->
+
 参考：可以在`${JENKINS_HOME}/war/WEB-INF/lib`目录下面找到groovy对应的jar包。jar包名称上可以看到版本号。
 
 #### 问题9：Jenkins pipeline在一个stage里面执行bat指令，里面set一个变量，有办法在下一个stage的bat指令里获取这个变量的吗？通过groovy插值可以在bat里面获取groovy定义的变量，但能保存bat里面的变量到groovy吗？

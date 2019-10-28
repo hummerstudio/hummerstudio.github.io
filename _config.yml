@@ -2,3 +2,4 @@ theme: jekyll-theme-merlot
 title: 明哥讲道
 description: 天道有缺，人力补之。  -- 唐明
 permalink: /:year/:month/:day/:title
+excerpt_separator: <!--以上为摘要内容-->
