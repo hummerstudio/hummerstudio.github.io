@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 人生本无意义
 author: 唐明
 categories: [文字]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: GitHub Pages 常见问题(一）- GitHub Pages添加categories和tages后访问报404 Not Found
 author: 唐明
 categories: [GitHub Pages]
@@ -10,6 +9,8 @@ tages: [GitHub Pages, Jekyll, FAQ]
 原有文章只配置了 `layout` 和 `title`，发布后，可以按照 `year/month/day/title` 的链接格式访问，但增加配置 `categories` 和 `tages` 后，再次访问就提示 `404 Not Found`。
 
 ## 原因解析
+
+<!--以上为摘要内容-->
 
 这是因为 `Jekyll` 有一个 `permalink`（永久链接）的生成策略，默认策略为：
 ```
@@ -22,8 +23,6 @@ permalink: /:categories/:year/:month/:day/:title:output_ext
 虽然我们找到了新页面的URL，但这种情况会导致原先的URL失效。
 
 如果有人之前收藏了这篇文章，现在就无法访问了，这是一个更大的问题。
-
-<!--以上为摘要内容-->
 
 针对这种情况，我们可以修改 `permalink` 的默认设置，比如只按year/month/day/title来生成链接。
 

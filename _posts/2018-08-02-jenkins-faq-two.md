@@ -1,17 +1,16 @@
 ---
-layout: post
 title: Jenkins常见问题集锦（二）
 author: 唐明
 categories: [Jenkins]
 tages: [Jenkins, Pipeline, Blue Ocean, PYthon, Groovy]
 ---
->本文首发在我的微信公众号“左手编程右手文化”上，公众号ID：shanyshanb，欢迎关注。
-
 #### 问题6：Blue Ocean和Jenkins是什么关系？
 
 参考：通俗理解，Blue Ocean可以看作是Jenkins推出的新的UI界面，有更现代的外观和更好的交互。
 
 当然最重要的还是对Jenkins 2.x推出的新的流水线任务类型的支持，可以清晰展示整个流水线（Pipeline）各个阶段（stage）的串并行关系和状态。
+
+<!--以上为摘要内容-->
 
 Blue Ocean是以插件的形式实现的，只要在Jenkins插件中心安装“Blue Ocean”插件即可。安装之后在经典UI界面，点击左侧的“打开 Blue Ocean”来访问新界面。
 
@@ -20,8 +19,6 @@ Blue Ocean是以插件的形式实现的，只要在Jenkins插件中心安装“
 参考：可以。
 
 #### 问题8：怎么看Jenkins上的Groovy版本？比如我登录服务器，可以执行groovy --version来看服务器安装的Groovy版本。
-
-<!--以上为摘要内容-->
 
 参考：可以在`${JENKINS_HOME}/war/WEB-INF/lib`目录下面找到groovy对应的jar包。jar包名称上可以看到版本号。
 
@@ -36,3 +33,5 @@ Blue Ocean是以插件的形式实现的，只要在Jenkins插件中心安装“
 <https://pypi.org/project/python-jenkins/>
 
 <https://pypi.org/project/jenkinsapi/>
+
+>本文首发在我的微信公众号“左手编程右手文化”上，公众号ID：shanyshanb，欢迎关注。
