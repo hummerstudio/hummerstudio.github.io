@@ -8,9 +8,19 @@ layout: default
     {% if author %}
       - <a href="{{ author.url }}">{{ author.name }}</a>
     {% endif %}
+    文章分类：{{ page.categories[0] }}
 </p>
 
 {{ content }}
+
+<p>
+<div id="related_posts">相关文章：</div>
+{% for post in site.related_posts %}
+  <li>
+    <a href="{{ post.url}}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</p>
 
 <div id="gitalk-container"></div>
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
