@@ -24,25 +24,30 @@ header h2 {
     font: bold italic 1em/1.5 Georgia, Times, “Times New Roman”, serif;
 }
 
-/* 导航栏 */
-section#nav {
-    position: relative;
-    display: block;
-    height: 171px;
-    width: 602px;
-    padding-bottom: 150px;
-    margin: 51px auto -250px;
-    z-index: 1;
-    background: transparent url(../images/shield.png) center 0 no-repeat;
-  }
-  
-  section#nav a {
-    display: none;
-  }
+body {
+    font-family: -apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
+}
+
+/* 摘要内容置灰色*/
+#post_excerpt{
+    color: gray;
+}
 
 /* 设置首页文章标题 */
 #post_title {
-    font-size: 2em;
+    font-size: 1.5em;
+    color: black;
+    border-bottom: 1px solid #d22222;
+}
+
+section#main_content a:hover {
+    text-decoration: none;
+    color: #d22222;
+}
+
+/* 强调内容样式 */
+strong {
+    font-size: 1.2em;
 }
 
 /* 增加主体区宽度 */
@@ -58,6 +63,13 @@ span.banner-fix {
 /* 一级标题左对齐 */
 .header-level-1 {
     text-align: left;
+}
+
+/* 文章页下推荐相关文章 */
+#related_posts {
+    border-bottom: 1px solid #d22222;
+    color: #d22222;
+    font-weight: 700;
 }
 
 /* 增加页脚最大宽度 */
