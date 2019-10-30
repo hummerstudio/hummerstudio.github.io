@@ -1,14 +1,16 @@
 ---
 layout: default
 ---
-{% for category in site.categories %}
-  <h3>{{ category[0] }}</h3>
+
   <ul>
-    {% for post in category[1] %}
+    {% for post in site.posts %}
       <li>
         <a href="{{ post.url }}" id="post_title">>{{ post.title }}</a>
-        {{ post.excerpt }}
+        
+        <section id="post_excerpt">
+            <p>{{ post.date | date: "%Y-%m-%d" }}</p>
+            {{ post.excerpt }}
+        </section>
       </li>
     {% endfor %}
   </ul>
-{% endfor %}
