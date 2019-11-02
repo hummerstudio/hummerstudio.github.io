@@ -1,6 +1,6 @@
 theme: jekyll-theme-merlot
 title: 明哥讲道
-description: 天道有缺，人道补之。  -- 唐明
+description: 天道有缺，人道补之。
 permalink: /:year/:month/:day/:title
 excerpt_separator: <!--以上为摘要内容-->
 collections:
@@ -23,4 +23,5 @@ defaults:
     values:
       layout: "default"
 
+plugins: [jekyll-paginate]
 paginate: 6

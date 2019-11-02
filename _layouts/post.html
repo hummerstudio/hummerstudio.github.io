@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }} - {{ page.author }}</h2>
+<h2>{{ page.title }}</h2>
 <p>
     {{ page.date | date: "%Y-%m-%d" }}
     {% assign author = site.authors | where: 'short_name', page.author | first %}
     {% if author %}
-      - <a href="{{ author.url }}">{{ author.name }}</a>
+      <span class="post_info">作者：<a href="{{ author.url }}">{{ author.name }}</a></span>
     {% endif %}
-    文章分类：{{ page.categories[0] }}
+    <span class="post_info">分类：{{ page.categories[0] }}</span>
 </p>
 
 {{ content }}
