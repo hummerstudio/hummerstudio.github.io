@@ -11,6 +11,8 @@ tages: [GitHub Pages, Jekyll]
 xcode-select --install
 ```
 
+<!--以上为摘要内容-->
+
 **安装Jekyll**
 
 本地安装(推荐)
