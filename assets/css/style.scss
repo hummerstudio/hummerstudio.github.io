@@ -45,6 +45,11 @@ section#main_content a:hover {
     color: #d22222;
 }
 
+/* 增大行间距 */
+p {
+    margin: 1em 0;
+}
+
 /* 强调内容样式 */
 strong {
     font-size: 1.2em;
