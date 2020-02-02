@@ -1,7 +1,11 @@
 ---
-layout: default
+layout: page
+title: 关于
+permalink: /about/
+icon: octicon-heart
 ---
-<h2>关于 - 我</h2
+
+<h2>关于 - 我</h2>
 <p>唐明，一名九零后，工作5年，目前人在珠海。</p>
 <p>正式工作先后做过J2EE开发、大数据开发工程师、CIE（持续集成工程师），带过团队。</p>
 <p>目前为一名DevOps开发工程师，主要做Jenkins的二次开发及运维工作，专注于DevOps&持续集成&持续交付领域相关技术栈。</p>

@@ -2,7 +2,7 @@
 title: Jenkins常见问题集锦（一）
 author: 唐明
 categories: [Jenkins]
-tages: [Jenkins, Pipeline, Docker]
+tags: [Jenkins, Pipeline, Docker]
 ---
 **问题1：Jenkins和Docker怎么结合？**
 

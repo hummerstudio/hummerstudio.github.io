@@ -2,7 +2,7 @@
 title: Jenkins常见问题集锦（三）
 author: 唐明
 categories: [Jenkins]
-tages: [Jenkins, Pipeline]
+tags: [Jenkins, Pipeline]
 ---
 #### 问题11：Pipeline脚本里怎么触发其他Jenkins任务？
 

@@ -2,7 +2,7 @@
 title: Jenkins——the thing which auto everything
 author: 唐明
 categories: [Jenkins]
-tages: [Jenkins]
+tags: [Jenkins]
 ---
 ### Jenkins， 一无所有，无所不能
 

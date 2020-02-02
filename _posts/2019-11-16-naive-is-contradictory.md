@@ -1,8 +1,8 @@
 ---
 title: 天真的矛与盾
 author: 唐明
-categories: [明哥讲道]
-tages: [天真, 矛盾, 平衡, 稳定]
+categories: 明哥讲道
+tags: [天真, 矛盾, 平衡, 稳定]
 ---
 天真的可爱；
 

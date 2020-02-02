@@ -1,27 +1,33 @@
-theme: jekyll-theme-merlot
-title: 明哥讲道
-description: 天道有缺，人道补之。
+plugins: [jekyll-paginate]
+title: "明哥讲道"
+email: hummerstudio@163.com
+description: "天道有缺，人道补之。"
 permalink: /:year/:month/:day/:title
 excerpt_separator: <!--以上为摘要内容-->
-collections:
-  authors:
-    output: true
+
+paginate: 10
+paginate_path: "page/:num"
+baseurl: ""
 
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
-      type: "authors"
+      type: posts
     values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+      layout: post
+      styles : [highlight.css,gitment.css,post.css]
+      scripts : [gitment.js, post.js]
 
-plugins: [jekyll-paginate]
-paginate: 6
+github:
+  username: hummerstudio
+swiftype:
+  searchId: 4SRM3Uwipr2ErCyKLAkj
+
+#url: "https://www.shanyshanb.com"
+#imgrepo: "https://www.shanyshanb.com/static/img"
+
+
+url: "http://127.0.0.1:4000"
+imgrepo: "http://127.0.0.1:4000/static/img"
+

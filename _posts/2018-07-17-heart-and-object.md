@@ -2,7 +2,7 @@
 title: 心与物
 author: 唐明
 categories: [明哥讲道]
-tages: [道, 心, 物]
+tags: [道, 心, 物]
 ---
 心一，信，喜乐；
 

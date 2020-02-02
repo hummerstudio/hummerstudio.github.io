@@ -2,7 +2,7 @@
 title: 使用Git和Markdown写博客，体验很好！
 author: 唐明
 categories: [代码如诗]
-tages: [Markdown, Git, 博客, Jekyll]
+tags: [Markdown, Git, 博客, Jekyll]
 ---
 这两天搭建、上线了这个博客，并开始把以前微信公众号写的一些文章以及平时写下的一些文字搬到上面来，感觉使用体验很好。
 
