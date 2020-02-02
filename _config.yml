@@ -24,10 +24,8 @@ github:
 swiftype:
   searchId: 4SRM3Uwipr2ErCyKLAkj
 
-#url: "https://www.shanyshanb.com"
-#imgrepo: "https://www.shanyshanb.com/static/img"
+url: "https://www.shanyshanb.com"
+imgrepo: "https://www.shanyshanb.com/static/img"
 
-
-url: "http://127.0.0.1:4000"
-imgrepo: "http://127.0.0.1:4000/static/img"
-
+#url: "http://127.0.0.1:4000"
+#imgrepo: "http://127.0.0.1:4000/static/img"
