@@ -2,7 +2,7 @@
 title: Jenkins常见问题集锦（二）
 author: 唐明
 categories: [Jenkins]
-tags: [Jenkins, Pipeline, Blue Ocean, PYthon, Groovy]
+tags: [Jenkins, Pipeline, Blue Ocean, Python, Groovy]
 ---
 # 问题6：Blue Ocean和Jenkins是什么关系？
 
