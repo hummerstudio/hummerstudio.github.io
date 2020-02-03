@@ -11,12 +11,14 @@ tags: [GitHub Pages, Jekyll]
 1. CSS3。`CSS3` 是 `CSS` 的最新标准。它用于控制网页样式和布局。后续如果你想更好地理解使用的主题和进行主题自定义，也需要这方面的知识。
 
 <!--以上为摘要内容-->
+* TOC
+{:toc}
 
 1. Markdown。`Markdown` 也是一种标记语言，它的语法比HTML更简单，书写量也更少，用处很广泛。在GitHub Pages中写博客，通常就是使用Markdown。比如你正在阅读的这篇博客就是用 Markdown 编写的。（原理上是 GitHub Pages 使用 `Jekyll` 将 Markdown 文件转换为HTML文件。`Jekyll` 还支持 Textile 文件，这里不做展开。）
 
 1. 阿里云。`阿里云`提供域名注册、解析等服务。同类产品有`腾讯云`等。本教程涉及到自定义域名，可绑定自己拥有的域名来访问搭建的个人博客。使用的域名是在阿里云注册，并使用阿里云的云解析服务。域名解析用来映射域名和IP之间的关系。域名就像一个门牌号，解析就像是把牌子挂在房间上，挂在哪里，域名就指向哪里。
 
-## 一、创建 GitHub Pages 仓库
+# 一、创建 GitHub Pages 仓库
 创建一个名为 `USERNAME.github.io` 的仓库，其中 `USERNAME` 为你的 GitHub 用户名。
     
 我这里创建的是
@@ -25,7 +27,7 @@ tags: [GitHub Pages, Jekyll]
 
 [hummerstudio.github.io](https://github.com/hummerstudio/hummerstudio.github.io "我的 GitHub Pages 仓库")
 
-## 二、上传网页文件
+# 二、上传网页文件
 
 GitHub Pages 只支持静态网页，是不支持 JSP 和 PHP 的。
 
@@ -47,7 +49,7 @@ GitHub Pages 只支持静态网页，是不支持 JSP 和 PHP 的。
 ```
 然后将文件推送至仓库即可。
 
-## 三、如何访问？
+# 三、如何访问？
 
 库名即为访问域名，在本教程中，即为 
 
@@ -57,7 +59,7 @@ GitHub Pages 只支持静态网页，是不支持 JSP 和 PHP 的。
 
 （原理上，是库名需要和域名一样，这点要注意，可不要因果颠倒。🙃️）
 
-## 四、自定义域名（可选）
+# 四、自定义域名（可选）
 
 >如果你有一个自己的域名，希望使用这个域名来访问博客，可继续往下看。如果你不需要，本节可以跳过。
 
@@ -67,7 +69,7 @@ GitHub Pages 只支持静态网页，是不支持 JSP 和 PHP 的。
 
 实现这个需求需要分别在域名注册商和 GitHub Pages 上进行操作。
 
-* ### 自己的域名添加 `CNAME解析记录`
+* ## 自己的域名添加 `CNAME解析记录`
 
 当需要将域名指向另一个域名，再由另一个域名提供IP地址，就需要添加 CNAME 记录。
 
@@ -76,7 +78,7 @@ GitHub Pages 官方强烈建议我们使用二级域名来做解析，而不要�
 ![阿里云添加CNAME记录](/assets/img/add-CNAME-record_Aliyun.png)
 
 
-* ### GitHub Pages 上添加 `CNAME解析记录`
+* ## GitHub Pages 上添加 `CNAME解析记录`
 
 **CNAME记录需要双向添加才能生效。**
 
@@ -95,7 +97,7 @@ www.shanyshanb.com
 >我最初是希望尽量减少仓库文件，所以选择通过图形界面配置，但发现依然会产生文件。而且那时界面上的 `Save` 按钮是灰色无法点击，采取了hacking的方式才解决，设置过后修改内容按钮是可以点按的。不确定是当时网络问题还是GitHub禁用了这种方式，因此这种方式就不介绍了。)
 
 
-## 五、选择主题
+# 五、选择主题
 
 为了让博客更美观，可以选择一个自己喜欢的主题。
 
@@ -107,7 +109,7 @@ www.shanyshanb.com
 theme: jekyll-theme-merlot
 ```
 
-## 六、设置主题
+# 六、设置主题
 
 主题选择后，页面的标题和描述文字都是主题自带的，需要修改成自己的。
 
@@ -118,7 +120,7 @@ title: 左手编程，右手文化
 description: 天道有缺，人力补之。  -- 唐明
 ```
 
-## 七、按需自定义样式
+# 七、按需自定义样式
 
 我对一些主题默认样式和布局不满意的地方，做了修改。
 
