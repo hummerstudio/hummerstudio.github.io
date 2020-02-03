@@ -21,7 +21,7 @@ function categoryDisplay() {
 
 function selectCategory(){
     var exclude = ["",undefined];
-    var thisId = window.location.hash.substring(1);
+    var thisId = decodeURIComponent(window.location.hash.substring(1));
     var allow = true;
     for(var i in exclude){
         if(thisId == exclude[i]){
