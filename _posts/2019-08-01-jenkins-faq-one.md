@@ -4,6 +4,9 @@ author: 唐明
 categories: [Jenkins]
 tags: [Jenkins, Pipeline, Docker]
 ---
+* TOC
+{:toc}
+
 # 问题1：Jenkins和Docker怎么结合？
 
 参考：Jenkins和Docker结合可以将容器作为Jenkins的slave节点，有很多优点。比如实现执行环境的统一，slave的自动创建和销毁，免去了人工维护环境的成本等。
@@ -11,9 +14,6 @@ tags: [Jenkins, Pipeline, Docker]
 # 问题2：写pipeline时，两个stage，第一个随机指定一台机器运行，第二个需要跟第一个在同一台机器上，有什么办法来做吗？
 
 <!--以上为摘要内容-->
-* TOC
-{:toc}
-
 
 参考：设置全局`agent`，每个stage不单独指定agent即可。
 

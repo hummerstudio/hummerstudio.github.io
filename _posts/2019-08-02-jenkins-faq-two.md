@@ -4,6 +4,9 @@ author: 唐明
 categories: [Jenkins]
 tags: [Jenkins, Pipeline, Blue Ocean, Python, Groovy]
 ---
+* TOC
+{:toc}
+
 # 问题6：Blue Ocean和Jenkins是什么关系？
 
 参考：通俗理解，Blue Ocean可以看作是Jenkins推出的新的UI界面，有更现代的外观和更好的交互。
@@ -11,8 +14,6 @@ tags: [Jenkins, Pipeline, Blue Ocean, Python, Groovy]
 当然最重要的还是对Jenkins 2.x推出的新的流水线任务类型的支持，可以清晰展示整个流水线（Pipeline）各个阶段（stage）的串并行关系和状态。
 
 <!--以上为摘要内容-->
-* TOC
-{:toc}
 
 Blue Ocean是以插件的形式实现的，只要在Jenkins插件中心安装“Blue Ocean”插件即可。安装之后在经典UI界面，点击左侧的“打开 Blue Ocean”来访问新界面。
 

@@ -4,6 +4,9 @@ author: 唐明
 categories: JavaScript
 tags: [JavaScript, 中文, 转义]
 ---
+* TOC
+{:toc}
+
 # 问题起源
 
 我在使用新主题时，发现在分类下拉框中，当分类名为中文时，选中该分类，文章列表为空白。
@@ -11,8 +14,6 @@ tags: [JavaScript, 中文, 转义]
 经过跟踪 javascript 源码，发现是中文字符的转义问题。
 
 <!--以上为摘要内容-->
-* TOC
-{:toc}
 
 # 深入分析
 

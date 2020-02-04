@@ -4,6 +4,9 @@ author: 唐明
 categories: GitHub Pages
 tags: [Jekyll, 主题, 时间线, 标签云]
 ---
+* TOC
+{:toc}
+
 # 之前的主题
 
 本站之前使用的是官方的 Merlot 主题。代码库地址：[https://github.com/pages-themes/merlot](https://github.com/pages-themes/merlot)。
@@ -15,8 +18,6 @@ tags: [Jekyll, 主题, 时间线, 标签云]
 1. 标签的展示和聚合能力很弱。
 
 <!--以上为摘要内容-->
-* TOC
-{:toc}
 
 于是经过筛选，选择了目前的主题。代码库地址：[https://github.com/bit-ranger/blog](https://github.com/bit-ranger/blog)。
 

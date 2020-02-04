@@ -4,6 +4,9 @@ author: 唐明
 categories: [GitHub Pages]
 tags: [GitHub Pages, Jekyll]
 ---
+* TOC
+{:toc}
+
 # 安装命令行工具
 
 在终端中执行下面的命令：
@@ -12,8 +15,6 @@ xcode-select --install
 ```
 
 <!--以上为摘要内容-->
-* TOC
-{:toc}
 
 # 安装Jekyll
 

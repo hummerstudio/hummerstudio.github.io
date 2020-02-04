@@ -4,6 +4,9 @@ author: 唐明
 categories: [GitHub Pages]
 tags: [GitHub Pages, Jekyll, FAQ]
 ---
+* TOC
+{:toc}
+
 # 问题现象
 
 原有文章只配置了 `layout` 和 `title`，发布后，可以按照 `year/month/day/title` 的链接格式访问，但增加配置 `categories` 和 `tages` 后，再次访问就提示 `404 Not Found`。
@@ -11,8 +14,6 @@ tags: [GitHub Pages, Jekyll, FAQ]
 # 原因解析
 
 <!--以上为摘要内容-->
-* TOC
-{:toc}
 
 这是因为 `Jekyll` 有一个 `permalink`（永久链接）的生成策略，默认策略为：
 ```

@@ -4,6 +4,9 @@ author: 唐明
 categories: [Jenkins]
 tags: [Jenkins, 体系结构, Stapler, Jelly, React, XStream, Plugins]
 ---
+* TOC
+{:toc}
+
 # 缘起
 
 假期因为疫情没有回家，呆在屋里闲来无事，对 Jenkins 进行一番更深入的了解，看了看 Jenkins 源码。
@@ -17,8 +20,6 @@ tags: [Jenkins, 体系结构, Stapler, Jelly, React, XStream, Plugins]
 其次是内容不全，很难找到官方对 Jenkins 架构及使用细节的完整描述。
 
 <!--以上为摘要内容-->
-* TOC
-{:toc}
 
 最后是学习曲线比较陡峭。官方的部分资料只能算是简介，并且用词很随意，不像其他一些开源项目，会有意使用一些意思相同又简单常见的词汇；另一些则完全由程序生成，像是一本词典或手册，基本没有引导和解释。
 

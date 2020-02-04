@@ -4,6 +4,9 @@ author: 唐明
 categories: [GitHub Pages]
 tags: [GitHub Pages, Jekyll]
 ---
+* TOC
+{:toc}
+
 本文涉及知识点：
 
 1. HTML5。`HTML5` 是 `HTML`（超文本标记语言） 的最新标准。我们的示例网页是使用 `HTML5` 编写的。后续如果你想更好地理解使用的主题和进行主题自定义，也需要这方面的知识。
@@ -11,8 +14,6 @@ tags: [GitHub Pages, Jekyll]
 1. CSS3。`CSS3` 是 `CSS` 的最新标准。它用于控制网页样式和布局。后续如果你想更好地理解使用的主题和进行主题自定义，也需要这方面的知识。
 
 <!--以上为摘要内容-->
-* TOC
-{:toc}
 
 1. Markdown。`Markdown` 也是一种标记语言，它的语法比HTML更简单，书写量也更少，用处很广泛。在GitHub Pages中写博客，通常就是使用Markdown。比如你正在阅读的这篇博客就是用 Markdown 编写的。（原理上是 GitHub Pages 使用 `Jekyll` 将 Markdown 文件转换为HTML文件。`Jekyll` 还支持 Textile 文件，这里不做展开。）
 
