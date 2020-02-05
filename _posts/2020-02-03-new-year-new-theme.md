@@ -1,7 +1,7 @@
 ---
 title: 新年新形象，网站换了新主题！
 author: 唐明
-categories: [GitHub Pages]
+categories: [GitHub Pages, Jekyll]
 tags: [Jekyll, 主题, 时间线, 标签云]
 ---
 * TOC

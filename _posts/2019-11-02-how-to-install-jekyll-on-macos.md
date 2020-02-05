@@ -1,7 +1,7 @@
 ---
 title: 如何在macOS上搭建本地Jekyll环境
 author: 唐明
-categories: [GitHub Pages]
+categories: [GitHub Pages, Jekyll]
 tags: [GitHub Pages, Jekyll]
 ---
 * TOC
