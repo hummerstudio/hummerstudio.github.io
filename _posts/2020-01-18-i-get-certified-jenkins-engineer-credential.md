@@ -51,7 +51,7 @@ Certified Jenkins Engineer (CJE) 是 CloudBees 公司（Jenkins 开源项目的�
 
 因为 CJE 考试在珠海没有考场，最近的在广州，所以我本来计划年后返程经过广州时参加考试。当时看到正好年前放假前（2020年1月18日）还有一场，对自己的 Jenkins 技能又比较自信，决定“早报早轻松”。
 
-如果真的在报名年后考试，现在连考试都没得考了……
+如果真的报名在年后考试，现在连考试都没得考了……
 
 报名是通过全球统一的网站[https://www.webassessor.com/cloudbees](https://www.webassessor.com/cloudbees)进行，费用为 150 美元，只能信用卡支付.
 
