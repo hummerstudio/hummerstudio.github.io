@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 参考资料
+title: 参考书
 permalink: /wiki
 icon: octicon-book
 isNavItem: true
