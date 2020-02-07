@@ -23,7 +23,10 @@ github:
   username: hummerstudio
 swiftype:
   searchId: -LEvKRxu4xUN6LGYiXsc
-
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
 url: "https://www.shanyshanb.com"
 imgrepo: "https://www.shanyshanb.com/static/img"
 
