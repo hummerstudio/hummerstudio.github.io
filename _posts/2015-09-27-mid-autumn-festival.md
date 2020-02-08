@@ -2,7 +2,7 @@
 title: 中秋见月思
 author: 唐明
 categories: 文字
-tags: 中秋， 诗
+tags: [中秋, 诗]
 ---
 * TOC
 {:toc}
