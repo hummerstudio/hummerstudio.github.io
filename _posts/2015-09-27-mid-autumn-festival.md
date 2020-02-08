@@ -1,8 +1,8 @@
 ---
 title: 中秋见月思
 author: 唐明
-categories: 文字
-tags: [中秋, 诗]
+categories: [中华文化, 文趣]
+tags: [中秋, 诗, 道]
 ---
 * TOC
 {:toc}
@@ -41,4 +41,3 @@ tags: [中秋, 诗]
 以心为心，不执我心。
 
 常行大道，替天行道。
-             
