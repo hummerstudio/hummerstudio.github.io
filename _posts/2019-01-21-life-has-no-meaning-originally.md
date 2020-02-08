@@ -1,7 +1,7 @@
 ---
 title: 人生本无意义
 author: 唐明
-categories: [文字]
+categories: [中华文化, 文趣]
 tags: [道, 心, 物]
 ---
 * TOC
