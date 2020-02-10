@@ -7,7 +7,9 @@ layout: default
           <header>
             <h2>{{ page.title }}</h2>
             <p class="post-meta">
-                <span class="octicon octicon-clock"></span> {{ page.date | date: '%Y-%m-%d' }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+                <span class="octicon octicon-calendar"></span> {{ page.date | date: '%Y-%m-%d' }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} 
+                • <span class="octicon octicon-info"></span>字数：{{ content | strip_html | strip_newlines | size }}
+                • <span class="octicon octicon-clock"></span>预计阅读用时：{{ content | strip_html | strip_newlines | size | divided_by:350}} 分钟
             </p>
             <p class="post-tag">
                 <span>{% for cat in page.categories %}<a href="{{ '/category' | prepend: site.baseurl | prepend: site.url }}/#{{ cat }}"><span class="octicon octicon-list-unordered"></span>&nbsp;{{ cat }}</a>{% endfor %}</span>
