@@ -23,6 +23,19 @@ layout: default
           <article>
             {{content}}
           </article>
+          <br/>
+            <div id="wechat-text" style="">
+                <p>&nbsp;关注微信公众号</p>
+            </div>
+            <div class="wechat-qrcode" style="text-align: center">
+                <img src="/assets/img/shanyshanb_qrcode.jpg"/>
+            </div>
+            <div id="copyright">
+                <p>作者：{{page.author}}</p>
+                <p>出处：<a href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.url | prepend: site.baseurl | prepend: site.url }}</a></p>
+                <p>版权：本站使用「CC BY 4.0」创作共享协议，转载请在文章明显位置注明作者及出处。</p>
+            </div>
+          
           <hr class="boundary">
           <div id="post-share" class="bdsharebuttonbox">
               <a href="#" class="bds_more" data-cmd="more"></a>
@@ -98,15 +111,7 @@ layout: default
                 </ul>
             </div>
         </div>
-        <div class="content-navigation-wechat">
-            <div class="content-navigation-header">
-                <span class="octicon octicon-list-unordered"></span>&nbsp;关注微信公众号
-            </div>
-        </div>
-            <div class="wechat-qrcode">
-                <img src="/assets/img/shanyshanb_qrcode.jpg" style="width: 100%;"/>
-            </div>
-      </div>
+        
     </div>
 </div>
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">

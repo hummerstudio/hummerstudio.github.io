@@ -270,3 +270,41 @@ a:active {text-decoration: none}	/* 选定的链接 */
 section article ul#markdown-toc {
     display: none;
 }
+
+#wechat-text {
+    text-align: center; 
+    border-top: .1875em solid #ccc;
+    padding-top: 15px;
+}
+
+#copyright {
+    padding: 12px 24px 12px 30px;
+    margin-top: 15px;
+    margin-left: 5px;
+    border-left-width: 4px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-left-style: solid;
+    background-color: #eee;
+    position: relative;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border-left-color: #2D8CF0;
+    z-index:1
+}
+
+#copyright:before {
+    content: "i";
+    background-color: #2D8CF0;
+    position: absolute;
+    top: 25px;
+    left: -12px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 700;
+    font-size:14px
+}
