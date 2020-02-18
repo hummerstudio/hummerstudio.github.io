@@ -80,4 +80,4 @@ HTTP也是我们常用的协议。上网浏览网页，开发Web网站、Web应�
 
 Octicons是GitHub出品的开源可扩展图标集。
 
-可以查看这篇文章阅读关于Octicons的介绍。
+可以查看[这篇文章](/2020/02/08/octicons)阅读关于Octicons的介绍。
