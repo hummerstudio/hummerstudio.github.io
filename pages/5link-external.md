@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Link
+title: 友情链接
 permalink: /link/
 icon: octicon-link-external
 
 ---
 
-### [github](https://github.com/hummerstudio)
+### [山山仙人博客](https://www.ssgeek.com/)
