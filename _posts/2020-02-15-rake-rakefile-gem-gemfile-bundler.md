@@ -2,7 +2,7 @@
 title: 一文搞清rake、Rakefile、gem、gemspec、bundler、bundle、Gemfile的关系
 author: 唐明
 categories: [Ruby]
-tags: [rake, Rakefile, gem, gemspec、bundler, bundle, Gemfile, Ruby]
+tags: [rake, Rakefile, gem, gemspec, bundler, bundle, Gemfile, Ruby]
 ---
 * TOC
 {:toc}
