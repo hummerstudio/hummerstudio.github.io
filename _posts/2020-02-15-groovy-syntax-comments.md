@@ -1,5 +1,5 @@
 ---
-title: Groovy语法系列之注释（一）
+title: Groovy语法系列教程之注释（一）
 author: 唐明
 categories: [Groovy]
 tags: [Groovy]
