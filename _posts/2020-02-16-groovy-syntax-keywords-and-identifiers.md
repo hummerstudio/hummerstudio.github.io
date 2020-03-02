@@ -9,7 +9,7 @@ tags: [Groovy]
 
 # Groovy语法概述
 
-本系列介绍Groovy编程语言的语法。Groovy的语法源自Java语法，但是通过特定结构对其进行了增强，并允许进行某些简化。
+本系列教程介绍Groovy编程语言的语法。Groovy的语法源自Java语法，但是通过特定类型对其进行了增强，并允许进行某些简化。
 
 <!--以上为摘要内容-->
 
@@ -123,7 +123,6 @@ def blog2
 def my_blog
 def $blog
 def 博客
-
 ```
 
 下面这些则是无效的标识符：
@@ -132,7 +131,6 @@ def 博客
 def 3blog
 def my+blog
 def my#blog
-
 ```
 
 当在点后时，所有的关键字也是有效的标识符。如：
@@ -141,7 +139,6 @@ def my#blog
 blog.break
 blog.case
 blog.assert
-
 ```
 
 ## 3.2 带引号的标识符
