@@ -2,7 +2,7 @@ plugins: [jekyll-paginate]
 title: "唐明的博客"
 email: hummerstudio@163.com
 description: "天道有缺，人道补之。"
-permalink: /:year/:month/:day/:title
+permalink: /post/:title
 excerpt_separator: <!--以上为摘要内容-->
 
 paginate: 10
