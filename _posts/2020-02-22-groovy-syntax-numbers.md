@@ -206,7 +206,7 @@ assert 5e-1 ==      0.5
 
 小数不能用二进制、八进制或十六进制表示。
 
-## 加下划线
+## 5.3 数字加下划线
 
 在写长文字数字时，很难弄清楚如何将某些数字组合在一起，例如以成千上万的单词，单词等为一组。
 
@@ -255,3 +255,37 @@ assert 034G.class == BigInteger // 八进制
 ```
 
 ## 5.5 数学运算
+
+这里重点说见面二进制运算及其结果类型。
+
+强大的二进制运算
+
+- `byte`、`char`、`short`和`int`之间的二进制运算结果是`int`
+
+- `long`和`byte`、`char`、`short`、`int`的二进制运算结果是`long`
+
+- `BigInteger`和任何其他整数类型的二进制运算结果是`BigInteger`
+
+- `BigDecimal`和`byte`、`char`、`short`、`int`、`BigInteger`的二进制运算结果是`BigDecimal`
+
+- `float`，`double`和`BigDecimal`之间的二进制运算结果是`double`
+
+- 两个`BigDecimal`之间的二进制运算结果是`BigDecimal`
+
+下表总结了这些规则：
+
+|  | byte | char | short | int | long | BigInteger | float | double | BigDecimal |
+| --- | --- | --- | ---  | --- | ---- | ---------- | ----- | ------ | ---------- |
+| byte | int | int | int | int | long | BigInteger | double | double | BigDecimal |
+| char |     | int | int | int | long | BigInteger | double | double | BigDecimal |
+| short |    |     | int | int | long | BigInteger | double | double | BigDecimal |
+| int  |     |     |     | int | long | BigInteger | double | double | BigDecimal |
+| long |     |     |     |     | long | BigInteger | double | double | BigDecimal |
+| BigInteger | |   |     |     |      | BigInteger | double | double | BigDecimal |
+| float |    |     |     |     |      |            | double | double | BigDecimal |
+| double |   |     |     |     |      |            |        | double | BigDecimal |
+| BigDecimal | |   |     |     |      |            |        |        | BigDecimal |
+
+通过Groovy的运算符重载功能，常用的算术运算符也可以直接与`BigInteger`和`BigDecimal`一起使用。
+
+与Java中不同，在Java中，您必须使用显式方法对这些数字进行运算。
