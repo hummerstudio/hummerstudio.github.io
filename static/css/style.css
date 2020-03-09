@@ -308,3 +308,15 @@ section article ul#markdown-toc {
     font-weight: 700;
     font-size:14px
 }
+
+h1 {
+    font-size: 1.4em
+}
+
+h2 {
+    font-size: 1.3em
+}
+
+h3 {
+    font-size: 1.2em
+}
