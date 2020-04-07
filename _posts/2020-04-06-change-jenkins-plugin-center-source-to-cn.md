@@ -45,8 +45,8 @@ Jenkins拥有的1500+插件是其最宝贵的资源和特色，这些插件为Je
 
 本工具为开源项目，欢迎大家提issue，提PR！
 
-Gitee地址：https://gitee.com/hummerstudio/jenkins-update-center-changer
+Gitee地址：[https://gitee.com/hummerstudio/jenkins-update-center-changer](https://gitee.com/hummerstudio/jenkins-update-center-changer)
 
-Github地址：https://github.com/hummerstudio/jenkins-update-center-changer
+Github地址：[https://github.com/hummerstudio/jenkins-update-center-changer](https://github.com/hummerstudio/jenkins-update-center-changer)
 
 （Gitee库为主库，主要考虑到是国内服务，速度更快）
