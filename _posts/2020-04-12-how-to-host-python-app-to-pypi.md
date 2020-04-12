@@ -1,8 +1,8 @@
 ---
 title: 如何将Python包托管到PyPI
 author: 唐明
-categories: [PyPI, Python]
-tags: [PyPI, Python]
+categories: [Python]
+tags: [PyPI, setuptools, twine, setup.py, Python]
 ---
 * TOC
 {:toc}
