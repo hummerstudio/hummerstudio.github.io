@@ -63,7 +63,17 @@ setuptools.setup(
 
 如果没有输出问题，正式进行打包：
 
+- tar.gz包：
+
 `python setup.py sdist`
+
+- whl包（需要先使用`pip install wheel`安装wheel）：
+
+`python setup.py bdist_wheel`
+
+- 两个包一起打
+
+`python setup.py sdist bdist_wheel`
 
 生成的包在`./dist`目录下。
 
