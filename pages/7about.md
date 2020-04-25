@@ -18,7 +18,7 @@ isNavItem: true
 
 公众号DevOps持续交付（ID：devopscd）号主。
 
-[Certified Jenkins Enginner](/2020/01/18/i-get-certified-jenkins-engineer-credential)
+[Certified Jenkins Enginner](/i-get-certified-jenkins-engineer-credential)
 
 [中国DevOps社区优秀志愿者](https://mp.weixin.qq.com/s/P9kqOk5024aGTHAvNAG_5Q)
 
