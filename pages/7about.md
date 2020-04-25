@@ -10,11 +10,13 @@ isNavItem: true
 
 姓名：唐明
 
-一名九零后，目前人在珠海。
+92年生，目前人在珠海。
 
-正式工作先后做过J2EE开发、大数据开发工程师、CIE（持续集成工程师），有团队管理经验。
+先后做过J2EE开发、大数据开发工程师、持续集成工程师，有10+规模团队管理经验。某上市集团公司高级软件工程师。
 
-目前为一名DevOps开发工程师，在某银行做基于Jenkins的DevOps平台开发、运维工作，专注于DevOps&持续集成&持续交付领域相关技术栈。
+目前为一名DevOps开发工程师，开发某行基于Jenkins的DevOps平台，专注于DevOps&持续集成&持续交付领域相关技术栈。
+
+公众号DevOps持续交付（ID：devopscd）号主。
 
 [Certified Jenkins Enginner](/2020/01/18/i-get-certified-jenkins-engineer-credential)
 
