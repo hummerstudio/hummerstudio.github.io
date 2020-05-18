@@ -37,7 +37,7 @@ Windows、Linux、Mac、Unix都有Python运行环境，保证了Jenkinsclient可
 
 Jenkinsclient支持Jenkins多实例。
 
-你可以通过`jenkins config generate`命令生成配置文件，在其中配置多个Jenkins服务器信息，并通过use字段指定默认操作的服务器。
+你可以通过`jenkins config generate`命令生成配置文件，在其中配置多个Jenkins服务器信息，并通过`use`字段指定默认操作的服务器。
 
 ## 特点4：简单易用
 
@@ -69,7 +69,7 @@ jenkins job -b JOB_NAME
 jenkins-job build JOB_NAME
 ```
 
-Python有多个库可以进行命令行工具开发，经过认真筛选和编写Demo，选择了Fire。Fire完全满足上述要求。
+Python有多个库可以进行命令行工具开发，但大多只能开发出传统风格的命令行工具，经过认真筛选和编写Demo，选择了Fire。Fire完全满足上述要求。
 
 现在，通过Jenkinsclient，你可以通过如下这种自然的命令行语法来执行Jenkins操作：
 
