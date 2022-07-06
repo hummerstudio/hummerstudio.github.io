@@ -27,8 +27,8 @@ collections:
     wiki:
         output: true
         permalink: /wiki/:path/
-url: "https://www.shanyshanb.com"
-imgrepo: "https://www.shanyshanb.com/static/img"
+url: "https://www.tangming.org"
+imgrepo: "https://www.tangming.org/static/img"
 
 #url: "http://127.0.0.1:4000"
 #imgrepo: "http://127.0.0.1:4000/static/img"
