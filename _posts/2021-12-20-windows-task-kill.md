@@ -1,8 +1,8 @@
 ---
 title: Windows使用批处理命令关闭进程
 author: 唐明
-categories: [git]
-tags: [git]
+categories: [Batch]
+tags: [taskkill]
 ---
 * TOC
 {:toc}
