@@ -1,7 +1,7 @@
 ---
 title: FTP的passive参数的作用
 author: 唐明
-date: 2021-12-25
+date: 2021-12-28
 categories: [nginx]
 tags: [nginx, https]
 ---
