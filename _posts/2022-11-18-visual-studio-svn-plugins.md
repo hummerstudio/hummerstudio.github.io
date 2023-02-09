@@ -1,6 +1,7 @@
 ---
 title: Visual Studio SVN插件
 date: 2022-11-18
+author: 唐明
 categories: [Visual Studio]
 tags: [Visual Studio]
 ---
