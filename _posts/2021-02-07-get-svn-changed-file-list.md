@@ -2,8 +2,8 @@
 title: 使用Windows批处理Batch脚本获取SVN变更文件列表
 author: 唐明
 date: 2021-02-07
-categories: [svn]
-tags: [svn]
+categories: [SVN]
+tags: [SVN]
 ---
 * TOC
 {:toc}
