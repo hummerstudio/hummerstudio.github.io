@@ -1,3 +1,3 @@
 ## The Blog of hummerstuido
 
-## URL: <https://www.shanyshanb.com>
+## URL: <https://www.tangming.org>
