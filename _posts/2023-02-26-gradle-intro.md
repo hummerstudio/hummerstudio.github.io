@@ -22,6 +22,9 @@ gradle/gradle-wrapper.properties
 ```
 在调用顺序上，`gradlew`（Windows下为`gradlew.bat`）读取`gradle.properties`配置文件内容，然后执行`build.gradle`构建脚本，而`build.gradle`脚本可以从`gradle.properties`中读取属性值。此设计的好处是用户无需预先安装gradle到本地，gradlew脚本会自动下载。下文会详述。
 
+
+<!--以上为摘要内容-->
+
 gradle-wrapper.properties文件内容
 
 ```
