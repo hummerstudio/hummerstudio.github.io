@@ -1,5 +1,5 @@
 ---
-title: java.lang.NoClassDefFoundError: sun/misc/BASE64Encoder报错原因及修复方法
+title: java.lang.NoClassDefFoundError: sun.misc.BASE64Encoder报错原因及修复方法
 date: 2023-03-09
 author: 唐明
 categories: [apktool]
