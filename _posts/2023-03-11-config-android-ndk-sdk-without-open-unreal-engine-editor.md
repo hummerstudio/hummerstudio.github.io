@@ -2,7 +2,7 @@
 title: 不打开编辑器配置UE4 Android NDK SDK和JDK
 date: 2023-03-11
 author: 唐明
-categories: [apktool]
+categories: [UE]
 tags: [winget]
 ---
 * TOC

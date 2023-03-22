@@ -2,7 +2,7 @@
 title: 国内免费的前端CSS、JS CDN加速网站
 author: 唐明
 date: 2021-05-09
-categories: [CDN]
+categories: [Web]
 tags: [CDN]
 ---
 * TOC

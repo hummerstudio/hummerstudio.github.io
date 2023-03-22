@@ -2,7 +2,7 @@
 title: 找不到sun.misc.BASE64Encoder类报错原因及修复方法
 date: 2023-03-09
 author: 唐明
-categories: [apktool]
+categories: [Android]
 tags: [winget]
 ---
 * TOC

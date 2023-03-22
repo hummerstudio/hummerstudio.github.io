@@ -2,7 +2,7 @@
 title: Node.js是编程语言吗？
 author: 唐明
 date: 2022-02-20
-categories: [Node.js]
+categories: [Web]
 tags: [Node.js]
 ---
 * TOC
