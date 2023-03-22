@@ -12,12 +12,16 @@ tags: [winget]
 
 因为构建机GPU配置太差了，打不开……
 
+这里介绍个直接修改UE4配置文件的方法。
 
-
-这里介绍个Windows 10下一键安装JDK8的方法，直接cmd窗口执行以下命令即可：
+在`BaseEngine.ini`中，设置如下变量即可：
+```ini
+[/Script/AndroidPlatformEditor.AndroidSDKSettings]
+SDKAPILevel=latest
+NDKAPILevel=android-21
+SDKPath=(Path="D:/Android/SDK")
+NDKPath=(Path="D:/Android/NDK")
+JavaPath=(Path="D:/Android/OpenJDK")
 ```
-winget install AdoptOpenJDK.OpenJDK.8
-```
 
-安装后，JDK位于`C:\Program Files\AdoptOpenJDK\jdk-8.0.292.10-hotspot`
-
+特别注意JDK路径的`Key`是`JavaPath`，而非官方文档上写的`JDKPath`，我这里使用的为UE4.27，测试可用。
