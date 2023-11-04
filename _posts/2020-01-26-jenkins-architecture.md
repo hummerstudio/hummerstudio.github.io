@@ -2,7 +2,7 @@
 title: Jenkins 体系结构
 author: 唐明
 categories: [Jenkins]
-tags: [Jenkins, 体系结构, Stapler, Jelly, React, XStream, Plugins]
+tags: [Jenkins, 体系结构, Stapler, Jelly, React, XStream, Jenkins Plugins]
 ---
 * TOC
 {:toc}

@@ -1,8 +1,8 @@
 ---
 title: 心与物
 author: 唐明
-categories: [明哥讲道]
-tags: [道, 心, 物]
+categories: [道统]
+tags: [诗]
 ---
 * TOC
 {:toc}

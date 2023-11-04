@@ -1,8 +1,8 @@
 ---
 title: 编程，是一件很文学的事儿！
 author: 唐明
-categories: [代码如诗]
-tags: [编程, 代码, 文学]
+categories: [文趣]
+tags: []
 ---
 * TOC
 {:toc}
