@@ -1,3 +1,3 @@
 ## The Blog of hummerstuido
 
-## URL: <https://www.tangming.org>
+## URL: <https://www.tangming.me>
