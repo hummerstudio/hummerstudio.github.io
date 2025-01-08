@@ -2,8 +2,8 @@
 title: nginx配置http自动跳转https
 author: 唐明
 date: 2021-12-25
-categories: [nginx]
-tags: [nginx, https]
+categories: [Nginx]
+tags: [Nginx, https]
 ---
 * TOC
 {:toc}
