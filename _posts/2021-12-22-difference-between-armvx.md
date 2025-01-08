@@ -2,7 +2,7 @@
 title: armv6、armv7、armv7s、armv8、arm64的区别
 author: 唐明
 date: 2021-12-22
-categories: [arm]
+categories: [Android]
 tags: [arm]
 ---
 * TOC
