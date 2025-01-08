@@ -2,7 +2,7 @@
 title: 区分gradle三个不同层次的依赖
 date: 2023-03-18
 author: 唐明
-categories: [Gralde]
+categories: [Gradle]
 tags: [dependencies]
 ---
 * TOC
