@@ -1,7 +1,7 @@
 ---
 title: 怎样使用GitHub Pages创建个人博客
 author: 唐明
-categories: [GitHub Pages, Jekyll, Ruby]
+categories: [GitHub Pages]
 tags: [GitHub Pages, Jekyll, HTML5, CSS3, Markdown, 阿里云]
 ---
 * TOC

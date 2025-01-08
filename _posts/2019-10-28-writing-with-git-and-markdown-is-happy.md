@@ -1,7 +1,7 @@
 ---
 title: 使用Git和Markdown写博客，体验很好！
 author: 唐明
-categories: [代码如诗]
+categories: [Jekyll]
 tags: [Markdown, Git, 博客, Jekyll]
 ---
 * TOC
