@@ -28,4 +28,4 @@ tags: [Jenkins, Pipeline, Docker]
 # 问题5：启动Pipeline的时候，希望能够只检出Jenkinsfile文件。
 参考：如果说有这种特殊需求，建议把`Jenkinsfile`单独放到一个git库里管理，不和应用源码放一起。
 
->本文首发在我的微信公众号“左手编程右手文化”上，公众号ID：shanyshanb，欢迎关注。
+>本文首发在我的微信公众号“左手编程右手文化”上，公众号ID：devopscd，欢迎关注。

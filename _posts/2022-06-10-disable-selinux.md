@@ -2,7 +2,7 @@
 title: 临时和永久关闭selinux
 author: 唐明
 date: 2022-06-10
-categories: [selinux]
+categories: [Linux]
 tags: [selinux]
 ---
 * TOC

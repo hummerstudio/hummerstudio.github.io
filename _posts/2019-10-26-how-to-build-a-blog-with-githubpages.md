@@ -65,7 +65,7 @@ GitHub Pages 只支持静态网页，是不支持 JSP 和 PHP 的。
 >如果你有一个自己的域名，希望使用这个域名来访问博客，可继续往下看。如果你不需要，本节可以跳过。
 
 
-我有一个和微信公众号ID同名的com域名[shanyshanb.com](http://shanyshanb.com)，希望能够使用它来访问博客，而不是使用 GitHub 提供的二级域名。
+我有一个和微信公众号ID同名的com域名[devopscd.com](http://devopscd.com)，希望能够使用它来访问博客，而不是使用 GitHub 提供的二级域名。
 
 
 实现这个需求需要分别在域名注册商和 GitHub Pages 上进行操作。

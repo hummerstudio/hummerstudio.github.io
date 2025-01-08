@@ -37,4 +37,4 @@ Blue Ocean是以插件的形式实现的，只要在Jenkins插件中心安装“
 
 <https://pypi.org/project/jenkinsapi/>
 
->本文首发在我的微信公众号“左手编程右手文化”上，公众号ID：shanyshanb，欢迎关注。
+>本文首发在我的微信公众号“左手编程右手文化”上，公众号ID：devopscd，欢迎关注。
