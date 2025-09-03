@@ -1,5 +1,5 @@
 plugins: [jekyll-paginate]
-title: "唐明的个人网站"
+title: "唐莫盈的个人网站|墨影闲谈"
 email: hummerstudio@163.com
 description: "一个开发出身的DevOps工程师"
 permalink: /post/:title
@@ -27,8 +27,9 @@ collections:
     wiki:
         output: true
         permalink: /wiki/:path/
-url: "https://www.tangming.me"
-imgrepo: "https://www.tangming.me/static/img"
+url: "https://tangmoying.com"
+imgrepo: "https://tangmoying.com/static/img"
 
 #url: "http://127.0.0.1:4000"
 #imgrepo: "http://127.0.0.1:4000/static/img"
+
