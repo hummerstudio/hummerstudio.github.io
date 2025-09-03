@@ -1,3 +1,3 @@
-## The Blog of hummerstuido
+## 墨影闲谈 - The Blog of hummerstuido
 
-## URL: <https://www.tangming.me>
+## URL: <https://tangmoying.com>
