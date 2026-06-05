@@ -32,6 +32,19 @@ layout: default
                 </div>
                 <nav class="toc" id="toc"></nav>
             </div>
+            {% if page.categories %}
+            <div class="sidebar-section">
+                <div class="sidebar-title">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+                    分类
+                </div>
+                <div class="sidebar-tags">
+                    {% for cat in page.categories %}
+                    <a href="{{ '/category' | prepend: site.baseurl | prepend: site.url }}/#{{ cat }}" class="tag-link">{{ cat }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
             {% if page.tags %}
             <div class="sidebar-section">
                 <div class="sidebar-title">
