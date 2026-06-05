@@ -7,33 +7,33 @@ tags: [MariaDB, CentOS 7]
 * TOC
 {:toc}
 
-# 安装MariaDB
+## 安装MariaDB
 
 `yum install mariadb-server`
 
-# 设置安全
+## 设置安全
 
 `mysql_secure_installation`
 
-# 连接数据库
+## 连接数据库
 
 `mysql -u root -p`
 
 输入上一步设置的密码。
 
-# 启动MariaDB
+## 启动MariaDB
 
 `sudo systemctl start mariadb`
 
-# 查看MariaDB服务状态
+## 查看MariaDB服务状态
 
 `systemctl status mariadb`
 
-# 停止MariaDB服务
+## 停止MariaDB服务
 
 `systemctl stop mariadb`
 
-# 重启MariaDB服务
+## 重启MariaDB服务
 
 `systemctl restart mariadb`
 

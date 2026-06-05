@@ -21,14 +21,14 @@ pip install PyExecJS
 ```
 import execjs
 execjs.eval("new Date")
-# 返回值为： 2018-04-04T12:53:17.759Z
+## 返回值为： 2018-04-04T12:53:17.759Z
 execjs.eval("Date.now()")
 #返回值为：1522847001080  # 需要注意的是返回值是13位， 区别于python的time.time()
 ```
 
 2、编译大的js文件，并调用其中的函数
 ```
-# 实际生产中处理的js有几百几千行， 不方便贴上来。来看一下源码中给的例子：
+## 实际生产中处理的js有几百几千行， 不方便贴上来。来看一下源码中给的例子：
   ctx = execjs.compile("""
         function add(x, y) {
                 return x + y;
@@ -40,7 +40,7 @@ execjs.eval("Date.now()")
 3、执行js的环境
 ```
 execjs.get().name
-# Windows默认为JScript，Node.js为Node.js (V8)
+## Windows默认为JScript，Node.js为Node.js (V8)
 ```
 
 

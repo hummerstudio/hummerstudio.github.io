@@ -7,7 +7,7 @@ tags: [Jekyll, GitHub Pages, 主题, 时间线, 标签云]
 * TOC
 {:toc}
 
-# 之前的主题
+## 之前的主题
 
 本站之前使用的是官方的 Merlot 主题。代码库地址：[https://github.com/pages-themes/merlot](https://github.com/pages-themes/merlot)。
 
@@ -21,7 +21,7 @@ tags: [Jekyll, GitHub Pages, 主题, 时间线, 标签云]
 
 于是经过筛选，选择了目前的主题。代码库地址：[https://github.com/bit-ranger/blog](https://github.com/bit-ranger/blog)。
 
-# 目前的主题
+## 目前的主题
 
 这个主题有以下特点：
 

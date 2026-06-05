@@ -7,7 +7,7 @@ tags: [SonarQube]
 * TOC
 {:toc}
 
-# 问题背景
+## 问题背景
 
 通过Jenkins来启动进程是一个实际工作中比较常见的场景。
 
@@ -24,7 +24,7 @@ tags: [SonarQube]
 1. 可读性差实际上是编码过程中应该尽可能避免的问题。
 
 
-# 解决方案
+## 解决方案
 
 [pipeline-keep-running-step-plugin](https://github.com/hummerstudio/pipeline-keep-running-step-plugin) 插件提供了一个更直观的`keepRunning`步骤，为这一问题提供了一个优雅的解决方案。
 
@@ -38,7 +38,7 @@ keepRunning {
 }
 ```
 
-# 项目信息
+## 项目信息
 
 开源项目主页：[https://github.com/hummerstudio/pipeline-keep-running-step-plugin](https://github.com/hummerstudio/pipeline-keep-running-step-plugin)
 

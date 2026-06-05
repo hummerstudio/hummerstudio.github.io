@@ -7,7 +7,7 @@ tags: [Nginx, CentOS 7]
 * TOC
 {:toc}
 
-# 配置Nginx仓库
+## 配置Nginx仓库
 
 执行命令：
 
@@ -25,45 +25,45 @@ gpgcheck=0
 enabled=1
 ```
 
-# 更新仓库索引并安装Nginx
+## 更新仓库索引并安装Nginx
 
 ```
 yum update
 yum install nginx
 ```
 
-# 开机启动Nginx
+## 开机启动Nginx
 
 `systemctl enable nginx`
 
-# 启动Nginx
+## 启动Nginx
 
 `sudo systemctl start nginx`
 
-# 查看Nginx服务状态
+## 查看Nginx服务状态
 
 `systemctl status nginx`
 
-# 停止Nginx服务
+## 停止Nginx服务
 
 `systemctl stop nginx`
 
-# 重启Nginx服务
+## 重启Nginx服务
 
 `systemctl restart nginx`
 
-# 配置文件路径
+## 配置文件路径
 
 `/etc/nginx/conf.d/default.conf`
 
-# 测试配置和重新加载配置
+## 测试配置和重新加载配置
 
 ```
 nginx -t
 nginx -s reload
 ```
 
-# 其他常用命令
+## 其他常用命令
 
 查看端口占用：
 `netstat -tlp`

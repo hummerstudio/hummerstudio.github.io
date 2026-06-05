@@ -7,7 +7,7 @@ tags: [Jekyll, macOS, 环境搭建]
 * TOC
 {:toc}
 
-# 安装命令行工具
+## 安装命令行工具
 
 在终端中执行下面的命令：
 ```
@@ -16,7 +16,7 @@ xcode-select --install
 
 <!--以上为摘要内容-->
 
-# 安装Jekyll
+## 安装Jekyll
 
 本地安装(推荐)
 
@@ -25,7 +25,7 @@ xcode-select --install
 gem install --user-install bundler jekyll
 ```
 
-# 创建网站
+## 创建网站
 
 可以先创建一个测试文件。在任意目录下创建`index.html`，内容如下：
 
@@ -42,7 +42,7 @@ gem install --user-install bundler jekyll
 </html>
 ```
 
-# 生成网站并运行服务器
+## 生成网站并运行服务器
 
 使用命令：
 ```

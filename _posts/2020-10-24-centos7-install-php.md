@@ -7,32 +7,32 @@ tags: [PHP, CentOS 7]
 * TOC
 {:toc}
 
-# 安装EPEL仓库
+## 安装EPEL仓库
 
 `yum install -y epel-release`
 
-# 安装Remi仓库
+## 安装Remi仓库
 
 `rpm install http://rpms.famillecollet.com/enterprise/remi-release-7.rpm`
 
 <!--以上为摘要内容-->
 
-# 安装yum-utils包
+## 安装yum-utils包
 
 `yum install yum-utils`
 
-# 启用Remi仓库
+## 启用Remi仓库
 
 ```
 yum-config-manager --enable remi-php72
 yum update
 ```
 
-# 安装php7.2
+## 安装php7.2
 
 `yum install php72`
 
-# 安装php模块
+## 安装php模块
 ```
 yum install php72-php-fpm
 yum install php72-php-gd.x86_64
@@ -47,30 +47,30 @@ yum install php72-php-opcache
 yum install php-mysqlnd
 ```
 
-# 安装后检查
+## 安装后检查
 
 ```
 php --version
 php72 --modules
 ```
 
-# 开机启动php fpm服务
+## 开机启动php fpm服务
 
 `systemctl enable php72-php-fpm.service`
 
-# 启动php fpm服务
+## 启动php fpm服务
 
 `systemctl start php72-php-fpm.service`
 
-# 查看php fpm服务状态
+## 查看php fpm服务状态
 
 `systemctl status php72-php-fpm.service`
 
-# 停止php fpm服务
+## 停止php fpm服务
 
 `systemctl stop php72-php-fpm.service`
 
-# 重启php fpm服务
+## 重启php fpm服务
 
 `systemctl restart php72-php-fpm.service`
 

@@ -7,7 +7,7 @@ tags: [插件中心, Jenkins]
 * TOC
 {:toc}
 
-# Jenkins插件中心国内镜像
+## Jenkins插件中心国内镜像
 
 Jenkins拥有的1500+插件是其最宝贵的资源和特色，这些插件为Jenkins提供了强大的功能、灵活性以及与其他平台连接交互的能力。
 
@@ -21,7 +21,7 @@ Jenkins拥有的1500+插件是其最宝贵的资源和特色，这些插件为Je
 
 <!--以上为摘要内容-->
 
-# 切换门槛高
+## 切换门槛高
 
 但要将Jenkins插件中心切换为国内镜像地址并不容易。
 
@@ -31,7 +31,7 @@ Jenkins拥有的1500+插件是其最宝贵的资源和特色，这些插件为Je
 
 为此，我制作了Jenkins插件更新中心地址修改工具(jenkins-update-center-changer)，可一键修改为国内镜像地址。
 
-# 一键切换脚本
+## 一键切换脚本
 
 使用方法非常简单，只需在Jenkins master服务器上的任意目录执行下面的命令即可（脚本会自动读取`JENKINS_HOME`环境变量）：
 
@@ -41,7 +41,7 @@ Jenkins拥有的1500+插件是其最宝贵的资源和特色，这些插件为Je
 
 ![jenkins-update-center-changer](/static/img/2020/04/jenkins-update-center-changer.png)
 
-# 开源项目，欢迎共参与
+## 开源项目，欢迎共参与
 
 本工具为开源项目，欢迎大家提issue，提PR！
 

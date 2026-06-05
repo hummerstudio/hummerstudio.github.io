@@ -7,7 +7,7 @@ tags: [PyPI, setuptools, twine, setup.py, Python]
 * TOC
 {:toc}
 
-# PyPI介绍
+## PyPI介绍
 
 PyPI是”Python Package Index“的缩写，翻译为中文是“Python软件包索引”。
 
@@ -17,12 +17,12 @@ PyPI是Python语言的软件存储仓库。
 
 官网链接：[https://pypi.org](https://pypi.org)
 
-# 注册
+## 注册
 
 访问官网，点击页面右上角的"Register"，按流程操作即可。
 
 
-# 打包
+## 打包
 
 `setuptools`是Python的构建、打包工具。
 
@@ -77,7 +77,7 @@ setuptools.setup(
 
 生成的包在`./dist`目录下。
 
-# 上传
+## 上传
 
 使用`twine`来发布Python包到PyPI，执行命令后程序会要求您输入用户名和密码：
 
