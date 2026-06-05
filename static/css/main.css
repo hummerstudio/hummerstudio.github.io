@@ -79,11 +79,14 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* 宣纸纹理背景 */
+    /* 宣纸纹理背景 + 装饰渐变 */
     background-image:
-        radial-gradient(ellipse at 20% 50%, rgba(200, 180, 160, 0.12) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 20%, rgba(180, 200, 220, 0.10) 0%, transparent 60%),
-        radial-gradient(ellipse at 50% 80%, rgba(200, 170, 150, 0.08) 0%, transparent 60%);
+        radial-gradient(ellipse at 50% 20%, rgba(108, 142, 245, 0.06) 0%, transparent 60%),
+        radial-gradient(ellipse at 30% 60%, rgba(192, 57, 43, 0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 40%, rgba(108, 142, 245, 0.03) 0%, transparent 50%),
+        radial-gradient(ellipse at 20% 50%, rgba(200, 180, 160, 0.10) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(180, 200, 220, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 50% 80%, rgba(200, 170, 150, 0.06) 0%, transparent 60%);
 }
 
 a {
@@ -105,11 +108,13 @@ img {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: var(--glass-bg-solid);
-    backdrop-filter: blur(var(--glass-blur));
-    -webkit-backdrop-filter: blur(var(--glass-blur));
-    border-bottom: 1px solid var(--glass-border);
+    /* 全局透明玻璃效果 */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-bottom: 1px solid transparent;
     height: var(--header-height);
+    transition: background var(--transition-slow), border-color var(--transition-slow), box-shadow var(--transition-slow);
 }
 
 .site-header::after {
@@ -271,7 +276,7 @@ img {
     max-width: var(--content-max-pct);
     width: 100%;
     margin: 0 auto;
-    padding: var(--spacing-2xl) var(--spacing-lg);
+    padding: 0 var(--spacing-lg) var(--spacing-2xl);
 }
 
 /* ===== Hero 区域 ===== */
@@ -279,6 +284,8 @@ img {
     text-align: center;
     padding: var(--spacing-2xl) 0;
     position: relative;
+    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+    margin-bottom: var(--spacing-md);
 }
 .hero-section::after {
     content: '';
