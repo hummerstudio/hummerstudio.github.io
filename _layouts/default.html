@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="zh-CN">
 {% include head.html %}
-
 <body>
-
-{% include header.html %}
-
-<div class="main">
-    <div class="container">
+    {% include header.html %}
+    <main class="main-content">
         {{ content }}
-    </div>
-    <div class="page-scrollTop" data-toggle="tooltip" data-placement="top" title="Top">
-        <a href="javascript:void(0);">
-            <div class="arrow"></div>
-            <div class="stick"></div>
-        </a>
-    </div>
-</div>
-
-{% include footer.html %}
-
+    </main>
+    {% include footer.html %}
+    <button class="scroll-top" aria-label="回到顶部" title="回到顶部">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+    <script src="{{ '/static/js/main.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    {% if page.layout == 'post' %}
+    <script src="{{ '/static/js/post.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    {% endif %}
 </body>
 </html>

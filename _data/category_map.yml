@@ -1,0 +1,47 @@
+# 文章分类映射：将旧的 categories 映射到新的导航结构
+# key: 旧的 category 名（小写）
+# value: [一级导航 slug, 二级导航 slug]
+
+Jenkins: [devops, jenkins]
+Jenkinsclient: [devops, cicd]
+DevOps: [devops, automation]
+SonarQube: [devops, cicd]
+
+Unity: [game-dev, unity]
+UE: [game-dev, unreal]
+Unreal: [game-dev, unreal]
+Game: [game-dev, unity]
+
+Python: [programming, python]
+Groovy: [programming, groovy]
+Java: [programming, groovy]
+Kotlin: [programming, kotlin]
+Ruby: [programming, groovy]
+
+JavaScript: [frontend, javascript]
+Vue: [frontend, vue]
+Web: [frontend, web]
+Playwright: [frontend, web]
+PHP: [frontend, web]
+
+Git: [toolchain, git-svn]
+SVN: [toolchain, git-svn]
+Gradle: [toolchain, gradle-build]
+Docker: [toolchain, docker-deploy]
+Kubernetes: [toolchain, docker-deploy]
+Linux: [toolchain, linux-ops]
+MariaDB: [toolchain, linux-ops]
+Nginx: [toolchain, linux-ops]
+Windows: [toolchain, linux-ops]
+Android: [toolchain, gradle-build]
+.Net: [toolchain, gradle-build]
+Visual Studio: [toolchain, gradle-build]
+Android: [toolchain, gradle-build]
+
+GitHub Pages: [toolchain, git-svn]
+Jekyll: [toolchain, git-svn]
+域名备案: [toolchain, git-svn]
+
+明哥讲道: [essays, mingge-jiangdao]
+道统: [essays, daotong]
+文趣: [essays, wenqu]

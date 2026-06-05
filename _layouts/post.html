@@ -1,133 +1,95 @@
 ---
 layout: default
 ---
-<div class="row">
-    <div class="content col-lg-9">
-        <div class="sheet post">
-          <header>
-            <h2>{{ page.title }}</h2>
-            <p class="post-meta">
-                <span class="octicon octicon-calendar"></span> {{ page.date | date: '%Y-%m-%d' }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} 
-                • <span class="octicon octicon-info"></span>字数：{{ content | strip_html | strip_newlines | size }}
-                • <span class="octicon octicon-clock"></span>预计阅读用时：{{ content | strip_html | strip_newlines | size | divided_by:350}} 分钟
-            </p>
-            <p class="post-tag">
-                <span>{% for cat in page.categories %}<a href="{{ '/category' | prepend: site.baseurl | prepend: site.url }}/#{{ cat }}"><span class="octicon octicon-list-unordered"></span>&nbsp;{{ cat }}</a>{% endfor %}</span>
-                <span>{% for tag in page.tags %}
-                    <a class="word-keep" href="{{ '/tags' | prepend: site.baseurl | prepend: site.url }}/#{{ tag }}"><span class="octicon octicon-tag"></span>&nbsp;{{ tag }}</a>
-                    {% endfor %}
-                </span>
-            </p>
-          </header>
-          <hr class="boundary">
-          <article>
-            {{content}}
-          </article>
-          <br/>
-            <div id="wechat-text" style="">
-                <p>&nbsp;关注微信公众号</p>
-            </div>
-            <div class="wechat-qrcode" style="text-align: center">
-                <img alt="DevOps持续交付公众号ID:devopscd" src="/assets/img/qrcode.png"/>
-            </div>
-            <div id="copyright">
-                <p>作者：{{page.author}}</p>
-                <p>出处：<a href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.url | prepend: site.baseurl | prepend: site.url }}</a></p>
-                <p>版权：本站使用「CC BY 4.0」创作共享协议，转载请在文章明显位置注明作者及出处。</p>
-            </div>
-          
-          <hr class="boundary">
-          <div id="post-share" class="bdsharebuttonbox">
-              <a href="#" class="bds_more" data-cmd="more"></a>
-              <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-              <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-              <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
-              <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-              <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-          </div>
+<article class="post-container">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+            <span class="meta-item">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                {{ page.date | date: '%Y-%m-%d' }}
+            </span>
+            <span class="meta-item">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                {{ content | strip_html | strip_newlines | size | divided_by: 350 | plus: 1 }} 分钟阅读
+            </span>
+            <span class="meta-item">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                {{ content | strip_html | strip_newlines | size }} 字
+            </span>
         </div>
-        <div class="pad-min"></div>
-        <div id="gitalk-container"></div>
-    </div>
-    <div class="content-navigation col-lg-3">
-      <div class="shadow-bottom-center" >
-        <div class="content-navigation-toc">
-            <div class="content-navigation-header">
-                <span class="octicon octicon-list-unordered"></span>&nbsp;目录
-            </div>
-            <div class="content-navigation-list toc"></div>
+        {% if page.categories %}
+        <div class="post-categories">
+            {% for cat in page.categories %}
+            <a href="{{ '/category' | prepend: site.baseurl | prepend: site.url }}/#{{ cat }}" class="cat-link">{{ cat }}</a>
+            {% endfor %}
         </div>
-        <div class="content-navigation-tag">
-            <div class="content-navigation-header">
-                <span class="octicon octicon-list-unordered"></span>&nbsp;标签
+        {% endif %}
+        {% if page.tags %}
+        <div class="post-tags">
+            {% for tag in page.tags %}
+            <a href="{{ '/tags' | prepend: site.baseurl | prepend: site.url }}/#{{ tag }}" class="tag-link">{{ tag }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </header>
+
+    <div class="post-body-wrapper">
+        <div class="post-content">
+            {{ content }}
+        </div>
+        <aside class="post-sidebar glass">
+            <div class="sidebar-section toc-section">
+                <div class="sidebar-title">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                    目录
+                </div>
+                <nav class="toc" id="toc"></nav>
             </div>
-            <div class="content-navigation-list">
-                <ul>
+            {% if page.tags %}
+            <div class="sidebar-section">
+                <div class="sidebar-title">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                    标签
+                </div>
+                <div class="sidebar-tags">
                     {% for tag in page.tags %}
-                    <li>
-                        <a href="{{ '/tags' | prepend: site.baseurl | prepend: site.url }}#{{ tag }}"><span class="octicon octicon-tag"></span>&nbsp;{{ tag }}</a>
-                    </li>
+                    <a href="{{ '/tags' | prepend: site.baseurl | prepend: site.url }}/#{{ tag }}" class="tag-link">{{ tag }}</a>
                     {% endfor %}
-                </ul>
+                </div>
             </div>
-        </div>
-        <div class="content-navigation-related">
-            <div class="content-navigation-header">
-                <span class="octicon octicon-list-unordered"></span>&nbsp;相关文章
-            </div>
-            <div class="content-navigation-list">
-                <ul>
-                    {% assign postsAfterFilter = '-' | split: "-" %}
-
-                    {% for p in site.posts %}
-                        {%if p.url != page.url %}
-                            {% assign commonTagCount = 0 %}
-
-                            {% for tag in p.tags %}
-                                {% if page.tags contains tag %}
-                                    {% assign commonTagCount = commonTagCount | plus: 1 %}
-                                {% endif %}
-                            {% endfor %}
-
-                            {% for cat in p.categories %}
-                                {% if page.categories contains cat %}
-                                    {% assign commonTagCount = commonTagCount | plus: 1 %}
-                                {% endif %}
-                            {% endfor %}
-
-                            {% if commonTagCount > 0 %}
-                                {% assign postsAfterFilter = postsAfterFilter | push: p %}
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %}
-
-                    {% if postsAfterFilter.size > 0 %}
-                        {% for p in postsAfterFilter limit: 15 %}
-                            <li>
-                                <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}">{{ p.title }}</a>
-                            </li>
-                        {% endfor %}
-                    {% endif %}
-                </ul>
-            </div>
-        </div>
-        
+            {% endif %}
+        </aside>
     </div>
-</div>
+
+    <footer class="post-footer">
+        <div class="post-copyright">
+            <p>作者：{{ page.author | default: site.title }}</p>
+            <p>出处：<a href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.url | prepend: site.baseurl | prepend: site.url }}</a></p>
+            <p>版权：本站使用「<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>」创作共享协议，转载请在文章明显位置注明作者及出处。</p>
+        </div>
+        <div class="post-wechat">
+            <p>关注微信公众号</p>
+            <img alt="DevOps持续交付公众号ID:devopscd" src="{{ '/assets/img/qrcode.png' | prepend: site.baseurl | prepend: site.url }}" class="wechat-qr" />
+        </div>
+        <div id="gitalk-container"></div>
+    </footer>
+</article>
+
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script src="/assets/js/md5.min.js"></script>
+<script src="{{ '/assets/js/md5.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 <script>
-console.log("md5 of location.pathname: " + md5(location.pathname))
-var gitalk = new Gitalk({
-  clientID: 'd73e98e707bf5f9b582e',
-  clientSecret: '803614808dfcf6f46d82d4c723a51fb18c6e3c2e',
-  repo: 'gitalk-of-shanyshanb',
-  owner: 'hummerstudio',
-  admin: ['hummerstudio'],
-  id: md5(location.pathname),      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
-})
-
-gitalk.render('gitalk-container')
+(function() {
+    var gitalk = new Gitalk({
+        clientID: '{{ site.gitalk.clientID }}',
+        clientSecret: '{{ site.gitalk.clientSecret }}',
+        repo: '{{ site.gitalk.repo }}',
+        owner: '{{ site.gitalk.owner }}',
+        admin: [{% for a in site.gitalk.admin %}'{{ a }}'{% unless forloop.last %}, {% endunless %}{% endfor %}],
+        id: md5(location.pathname),
+        distractionFreeMode: false
+    });
+    gitalk.render('gitalk-container');
+})();
 </script>

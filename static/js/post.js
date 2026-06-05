@@ -1,45 +1,80 @@
----
-    layout: null
----
+/* ========================================
+   墨影闲谈 - 文章页脚本
+   TOC 自动生成 + 滚动高亮
+   ======================================== */
 
-/**
- * 页面ready方法
- */
-$(document).ready(function() {
-    generateContent();
-    // share();
-    // gitment();
-});
+(function() {
+    'use strict';
 
-/**
- * 侧边目录
- */
-function generateContent() {
-    var $mt = $('.toc');
-    var toc = $(".post ul#markdown-toc").clone().get(0);
-    $mt.each(function(i,o){
-        $(o).html(toc);
+    var tocContainer = document.getElementById('toc');
+    var postContent = document.querySelector('.post-content');
+
+    if (!tocContainer || !postContent) return;
+
+    // 收集文章中的标题
+    var headings = postContent.querySelectorAll('h2, h3');
+    if (headings.length === 0) {
+        tocContainer.style.display = 'none';
+        return;
+    }
+
+    var tocItems = [];
+
+    headings.forEach(function(heading) {
+        // 确保每个标题有 id
+        if (!heading.id) {
+            heading.id = heading.textContent.trim()
+                .toLowerCase()
+                .replace(/[^\w\u4e00-\u9fa5]+/g, '-')
+                .replace(/^-+|-+$/g, '');
+        }
+
+        tocItems.push({
+            id: heading.id,
+            text: heading.textContent.trim(),
+            level: heading.tagName.toLowerCase()
+        });
     });
-}
 
-function share(){
-    window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
-    with(document)0[getElementsByTagName("script")[0].parentNode.appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-}
-
-/**
-function gitment() {
-    var gitment = new Gitment({
-        id: window.location.pathname,
-        owner: '{{site.github.username}}',
-        repo: '{{site.gitment.repo}}',
-        oauth: {
-            client_id: '{{site.gitment.client_id}}',
-            client_secret: '{{site.gitment.client_secret}}',
-        },
+    // 生成 TOC HTML
+    var tocHTML = '';
+    tocItems.forEach(function(item) {
+        var cls = item.level === 'h3' ? 'toc-h3' : '';
+        tocHTML += '<a href="#' + item.id + '" class="' + cls + '">' + item.text + '</a>';
     });
-    gitment.render('post-comment')
-    $("#post-comment").removeClass('hidden');
-}
-*/
+    tocContainer.innerHTML = tocHTML;
 
+    // 滚动高亮
+    var tocLinks = tocContainer.querySelectorAll('a');
+    if (tocLinks.length === 0) return;
+
+    var headingElements = [];
+    tocItems.forEach(function(item) {
+        var el = document.getElementById(item.id);
+        if (el) headingElements.push(el);
+    });
+
+    var scrollTimer;
+    window.addEventListener('scroll', function() {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(function() {
+            var scrollPos = window.scrollY + 120;
+
+            var currentIndex = -1;
+            for (var i = headingElements.length - 1; i >= 0; i--) {
+                if (headingElements[i].offsetTop <= scrollPos) {
+                    currentIndex = i;
+                    break;
+                }
+            }
+
+            tocLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            if (currentIndex >= 0 && currentIndex < tocLinks.length) {
+                tocLinks[currentIndex].classList.add('active');
+            }
+        }, 50);
+    });
+})();

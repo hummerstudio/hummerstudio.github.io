@@ -1,16 +1,17 @@
 ---
 layout: default
 ---
-<div class="row">
-    <div class="content">
-        <div class="sheet">
-            <header>
-                <h1>{{ page.title }}</h1>
-            </header>
-            <hr>
-            <article>
-                {{ content }}
-            </article>
-        </div>
+<article class="page-container">
+    <header class="page-header">
+        <h1 class="page-title">{{ page.title }}</h1>
+    </header>
+    <div class="page-content glass-card">
+        {{ content }}
     </div>
-</div>
+</article>
+
+{% if page.scripts %}
+  {% for script in page.scripts %}
+  <script src="{{ '/static/js/' | append: script | prepend: site.baseurl | prepend: site.url }}"></script>
+  {% endfor %}
+{% endif %}

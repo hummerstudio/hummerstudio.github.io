@@ -1,35 +1,67 @@
-plugins: [jekyll-paginate]
+# ===== 站点基本信息 =====
 title: "唐莫盈的个人网站|墨影闲谈"
 email: hummerstudio@163.com
 description: "一个开发出身的DevOps工程师"
-permalink: /post/:title
-excerpt_separator: <!--以上为摘要内容-->
+url: "https://tangmoying.com"
+imgrepo: "https://tangmoying.com/static/img"
 
+# ===== 插件 =====
+plugins:
+  - jekyll-paginate
+
+# ===== 分页 =====
 paginate: 10
 paginate_path: "page/:num"
 baseurl: ""
 
+# ===== 文章链接格式 =====
+permalink: /post/:title
+excerpt_separator: "<!--以上为摘要内容-->"
+
+# ===== GitHub =====
+github:
+  username: hummerstudio
+
+# ===== Gitalk =====
+gitalk:
+  clientID: d73e98e707bf5f9b582e
+  clientSecret: 803614808dfcf6f46d82d4c723a51fb18c6e3c2e
+  repo: gitalk-of-shanyshanb
+  owner: hummerstudio
+  admin:
+    - hummerstudio
+
+# ===== 社交链接 =====
+social:
+  weibo: "https://weibo.com/aixinke"
+  zhihu: "https://www.zhihu.com/people/shanyshanb"
+  github: "https://github.com/hummerstudio"
+
+# ===== 百度统计 =====
+baidu_analytics: "2845c1f9dd82d5aa34ec3166663badab"
+
+# ===== 默认布局 =====
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: posts
     values:
       layout: post
-      styles : [highlight.css,gitment.css,post.css]
-      scripts : [post.js]
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
 
-github:
-  username: hummerstudio
-swiftype:
-  searchId: -LEvKRxu4xUN6LGYiXsc
+# ===== Collections =====
 collections:
-    wiki:
-        output: true
-        permalink: /wiki/:path/
-url: "https://tangmoying.com"
-imgrepo: "https://tangmoying.com/static/img"
+  wiki:
+    output: true
+    permalink: /wiki/:path/
 
-#url: "http://127.0.0.1:4000"
-#imgrepo: "http://127.0.0.1:4000/static/img"
-
+# ===== Markdown =====
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  toc_levels: "2..3"
