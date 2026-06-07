@@ -5,10 +5,18 @@
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="keywords" content="{{ page.title }}{% for cat in page.categories %}, {{ cat }}{% endfor %}{% for tag in page.tags %}, {{ tag }}{% endfor %}" />
-    <meta name="theme-color" content="#6C8EF5" />
+    <meta name="theme-color" content="#1A1A1F" />
     <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+
+    <!-- 阻止闪烁：在 CSS 加载前设置 data-theme -->
+    <script>
+        (function() {
+            var t = localStorage.getItem('hummerstudio-theme');
+            if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+        })();
+    </script>
 
     <!-- Google Fonts: 中文字体 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -5,27 +5,27 @@
 
 /* ===== CSS 变量 ===== */
 :root {
-    /* 配色 */
-    --color-primary: #6C8EF5;
-    --color-primary-dark: #4A6FD8;
-    --color-accent: #C0392B;
-    --color-accent-light: #E74C3C;
-    --color-bg: #F5F0EB;
-    --color-bg-alt: #EDE7DF;
-    --color-text: #2C2C2C;
-    --color-text-secondary: #666666;
-    --color-text-muted: #999999;
+    /* 默认深色主题 */
+    --color-primary: #8AAAFF;
+    --color-primary-dark: #6C8EF5;
+    --color-accent: #E74C3C;
+    --color-accent-light: #F07070;
+    --color-bg: #1A1A1F;
+    --color-bg-alt: #222228;
+    --color-text: #E0E0E0;
+    --color-text-secondary: #AAAAAA;
+    --color-text-muted: #777777;
     --color-white: #FFFFFF;
-    --color-border: rgba(192, 57, 43, 0.15);
+    --color-border: rgba(231, 76, 60, 0.2);
 
-    /* 玻璃效果 */
-    --glass-bg: rgba(255, 255, 255, 0.55);
-    --glass-bg-hover: rgba(255, 255, 255, 0.72);
-    --glass-bg-solid: rgba(255, 255, 255, 0.88);
-    --glass-border: rgba(255, 255, 255, 0.4);
-    --glass-blur: 14px;
-    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
-    --glass-shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.10);
+    /* 深色玻璃效果 */
+    --glass-bg: rgba(30, 30, 40, 0.55);
+    --glass-bg-hover: rgba(40, 40, 55, 0.65);
+    --glass-bg-solid: rgba(30, 30, 40, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-blur: 12px;
+    --glass-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+    --glass-shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.40);
 
     /* 字体 */
     --font-brand: 'ZCOOL XiaoWei', 'STKaiti', 'KaiTi', serif;
@@ -57,6 +57,28 @@
     --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ===== 浅色主题变量覆盖 ===== */
+[data-theme="light"] {
+    --color-primary: #6C8EF5;
+    --color-primary-dark: #4A6FD8;
+    --color-accent: #C0392B;
+    --color-accent-light: #E74C3C;
+    --color-bg: #F5F0EB;
+    --color-bg-alt: #EDE7DF;
+    --color-text: #2C2C2C;
+    --color-text-secondary: #666666;
+    --color-text-muted: #999999;
+    --color-border: rgba(192, 57, 43, 0.15);
+
+    --glass-bg: rgba(255, 255, 255, 0.35);
+    --glass-bg-hover: rgba(255, 255, 255, 0.50);
+    --glass-bg-solid: rgba(255, 255, 255, 0.78);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-blur: 12px;
+    --glass-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    --glass-shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.10);
+}
+
 /* ===== 全局重置 ===== */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -79,14 +101,39 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* 宣纸纹理背景 + 装饰渐变 */
+    /* 默认深色背景 */
     background-image:
-        radial-gradient(ellipse at 50% 20%, rgba(108, 142, 245, 0.06) 0%, transparent 60%),
-        radial-gradient(ellipse at 30% 60%, rgba(192, 57, 43, 0.04) 0%, transparent 50%),
-        radial-gradient(ellipse at 70% 40%, rgba(108, 142, 245, 0.03) 0%, transparent 50%),
-        radial-gradient(ellipse at 20% 50%, rgba(200, 180, 160, 0.10) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 20%, rgba(180, 200, 220, 0.08) 0%, transparent 60%),
-        radial-gradient(ellipse at 50% 80%, rgba(200, 170, 150, 0.06) 0%, transparent 60%);
+        radial-gradient(ellipse at 20% 15%, rgba(108, 142, 245, 0.08) 0%, transparent 55%),
+        radial-gradient(ellipse at 75% 10%, rgba(231, 76, 60, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 60% 70%, rgba(108, 142, 245, 0.05) 0%, transparent 50%),
+        radial-gradient(ellipse at 25% 80%, rgba(180, 140, 200, 0.06) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 55%, rgba(140, 180, 220, 0.05) 0%, transparent 55%),
+        radial-gradient(ellipse at 45% 40%, rgba(200, 170, 150, 0.04) 0%, transparent 60%),
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 3px,
+            rgba(255, 255, 255, 0.008) 3px,
+            rgba(255, 255, 255, 0.008) 4px
+        );
+}
+
+/* 浅色主题背景 */
+[data-theme="light"] body {
+    background-image:
+        radial-gradient(ellipse at 20% 15%, rgba(108, 142, 245, 0.12) 0%, transparent 55%),
+        radial-gradient(ellipse at 75% 10%, rgba(192, 57, 43, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 60% 70%, rgba(108, 142, 245, 0.07) 0%, transparent 50%),
+        radial-gradient(ellipse at 25% 80%, rgba(180, 140, 200, 0.10) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 55%, rgba(140, 180, 220, 0.09) 0%, transparent 55%),
+        radial-gradient(ellipse at 45% 40%, rgba(200, 170, 150, 0.07) 0%, transparent 60%),
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 3px,
+            rgba(0, 0, 0, 0.008) 3px,
+            rgba(0, 0, 0, 0.008) 4px
+        );
 }
 
 a {
@@ -118,7 +165,7 @@ img {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--glass-bg-solid);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     z-index: -1;
@@ -137,7 +184,7 @@ img {
         var(--color-accent) 85%,
         transparent 100%
     );
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .header-inner {
@@ -202,7 +249,7 @@ img {
 }
 .nav-item > a:hover {
     color: var(--color-text);
-    background: rgba(0, 0, 0, 0.04);
+    background: var(--glass-bg);
 }
 .nav-item.active > a {
     color: var(--color-accent);
@@ -219,7 +266,7 @@ img {
     top: 100%;
     left: 0;
     min-width: 160px;
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--glass-bg-solid);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     isolation: isolate;
@@ -255,7 +302,7 @@ img {
 }
 .sub-nav li a:hover {
     color: var(--color-accent);
-    background: rgba(192, 57, 43, 0.06);
+    background: var(--color-border);
 }
 
 /* 移动端导航切换 */
@@ -277,6 +324,37 @@ img {
     border-radius: 2px;
     transition: all var(--transition);
 }
+
+/* 主题切换按钮 */
+.theme-toggle-item {
+    margin-left: 8px;
+}
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    transition: all var(--transition);
+}
+.theme-toggle:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    background: var(--glass-bg);
+}
+
+/* 默认显示深色图标（当前为深色主题时显示太阳=切浅色） */
+.theme-icon-light { display: none; }
+.theme-icon-dark { display: block; }
+
+/* 浅色主题下显示月亮图标（切深色） */
+[data-theme="light"] .theme-icon-light { display: block; }
+[data-theme="light"] .theme-icon-dark { display: none; }
 
 /* ===== 主内容区域 ===== */
 .main-content {
@@ -398,10 +476,10 @@ img {
 .cat-tag {
     display: inline-block;
     padding: 1px 8px;
-    background: rgba(108, 142, 245, 0.1);
+    background: rgba(108, 142, 245, 0.15);
     border-radius: 10px;
     font-size: 0.75rem;
-    color: var(--color-primary-dark);
+    color: var(--color-primary);
 }
 
 /* ===== 分页 ===== */
@@ -419,7 +497,7 @@ img {
     padding: 8px 20px;
     border-radius: var(--radius-sm);
     font-size: 0.9rem;
-    color: var(--color-primary-dark);
+    color: var(--color-text-secondary);
     background: var(--glass-bg);
     backdrop-filter: blur(var(--glass-blur));
     -webkit-backdrop-filter: blur(var(--glass-blur));
@@ -427,9 +505,9 @@ img {
     transition: all var(--transition);
 }
 .page-btn:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
-    border-color: var(--color-primary);
+    color: var(--color-accent);
+    background: var(--color-border);
+    border-color: var(--color-accent);
 }
 .page-info {
     font-size: 0.9rem;
@@ -486,10 +564,10 @@ img {
 .cat-link {
     display: inline-block;
     padding: 3px 12px;
-    background: rgba(108, 142, 245, 0.1);
+    background: rgba(108, 142, 245, 0.15);
     border-radius: 12px;
     font-size: 0.8rem;
-    color: var(--color-primary-dark);
+    color: var(--color-primary);
     transition: all var(--transition);
 }
 .cat-link:hover {
@@ -499,7 +577,7 @@ img {
 .tag-link {
     display: inline-block;
     padding: 3px 10px;
-    background: rgba(0, 0, 0, 0.04);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 12px;
     font-size: 0.78rem;
     color: var(--color-text-secondary);
@@ -617,7 +695,7 @@ img {
     margin: var(--spacing-md) 0;
     padding: var(--spacing-md) var(--spacing-lg);
     border-left: 3px solid var(--color-accent);
-    background: rgba(192, 57, 43, 0.04);
+    background: var(--color-border);
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     color: var(--color-text-secondary);
 }
@@ -636,14 +714,14 @@ img {
     font-family: var(--font-mono);
     font-size: 0.88em;
     padding: 2px 6px;
-    background: rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 3px;
     color: var(--color-accent-light);
 }
 .post-content pre {
     margin: var(--spacing-md) 0;
     padding: var(--spacing-md);
-    background: rgba(0, 0, 0, 0.04);
+    background: rgba(255, 255, 255, 0.04);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     overflow-x: auto;
@@ -671,7 +749,7 @@ img {
     text-align: left;
 }
 .post-content th {
-    background: rgba(108, 142, 245, 0.08);
+    background: rgba(108, 142, 245, 0.12);
     font-weight: 600;
 }
 
@@ -694,7 +772,7 @@ img {
     line-height: 1.8;
     margin-bottom: var(--spacing-lg);
     padding: var(--spacing-md);
-    background: rgba(0, 0, 0, 0.02);
+    background: rgba(255, 255, 255, 0.03);
     border-radius: var(--radius-sm);
 }
 .post-copyright p {
@@ -748,6 +826,10 @@ img {
     font-size: 1rem;
     line-height: 1.9;
 }
+/* 无玻璃卡片包裹的页面内容，减少左右 padding */
+.page-content:not(.glass-card) {
+    padding: var(--spacing-md) 0;
+}
 .page-content h2 {
     font-family: var(--font-heading);
     font-size: 1.3rem;
@@ -772,13 +854,13 @@ img {
     font-family: var(--font-mono);
     font-size: 0.9em;
     padding: 2px 6px;
-    background: rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 3px;
 }
 .page-content pre {
     margin: var(--spacing-md) 0;
     padding: var(--spacing-md);
-    background: rgba(0, 0, 0, 0.04);
+    background: rgba(255, 255, 255, 0.04);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     overflow-x: auto;
@@ -999,9 +1081,9 @@ img {
     transform: translateY(0);
 }
 .scroll-top:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
-    border-color: var(--color-primary);
+    color: var(--color-accent);
+    background: var(--color-border);
+    border-color: var(--color-accent);
 }
 
 /* ===== Gitalk ===== */
@@ -1038,6 +1120,11 @@ img {
 @media (max-width: 768px) {
     :root {
         --header-height: 56px;
+        --content-max-pct: 96%;
+    }
+
+    .main-content {
+        padding: 0 var(--spacing-sm) var(--spacing-xl);
     }
 
     .hero-title {
@@ -1046,6 +1133,14 @@ img {
     }
     .hero-desc {
         font-size: 0.9rem;
+    }
+
+    .post-card-link {
+        padding: var(--spacing-md);
+    }
+
+    .page-content {
+        padding: var(--spacing-md);
     }
 
     /* 移动端导航 */
@@ -1059,13 +1154,13 @@ img {
         right: -100%;
         width: 280px;
         height: 100vh;
-        background: rgba(255, 255, 255, 0.15);
+        background: var(--glass-bg-solid);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         isolation: isolate;
         padding: calc(var(--header-height) + var(--spacing-lg)) var(--spacing-lg) var(--spacing-lg);
         transition: right var(--transition-slow);
-        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+        box-shadow: var(--glass-shadow-hover);
         z-index: 1001;
     }
     .site-nav.open {
@@ -1084,7 +1179,11 @@ img {
         padding: 10px 0;
         width: 100%;
         font-size: 1rem;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid var(--glass-border);
+    }
+    .theme-toggle-item {
+        margin-left: 0;
+        margin-top: var(--spacing-sm);
     }
 
     .sub-nav {
@@ -1130,9 +1229,14 @@ img {
 }
 
 @media (max-width: 480px) {
-    .main-content {
-        padding: var(--spacing-lg) var(--spacing-md);
+    :root {
+        --content-max-pct: 98%;
     }
+
+    .main-content {
+        padding: var(--spacing-md) var(--spacing-xs) var(--spacing-lg);
+    }
+
     .hero-section {
         padding: var(--spacing-xl) 0;
     }
@@ -1143,5 +1247,13 @@ img {
     .pagination {
         flex-direction: column;
         gap: var(--spacing-sm);
+    }
+
+    .post-card-link {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .page-content {
+        padding: var(--spacing-md) var(--spacing-sm);
     }
 }

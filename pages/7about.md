@@ -4,6 +4,7 @@ title: 关于
 permalink: /about/
 icon: octicon-heart
 isNavItem: true
+noGlassCard: true
 ---
 
 ## 关于站长

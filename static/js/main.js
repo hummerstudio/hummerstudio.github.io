@@ -5,6 +5,34 @@
 (function() {
     'use strict';
 
+    // ===== 主题切换 =====
+    var THEME_KEY = 'hummerstudio-theme';
+    var htmlEl = document.documentElement;
+
+    // 初始化主题：优先 localStorage，否则默认深色
+    (function initTheme() {
+        var saved = localStorage.getItem(THEME_KEY);
+        if (saved === 'light') {
+            htmlEl.setAttribute('data-theme', 'light');
+        }
+    })();
+
+    function toggleTheme() {
+        var current = htmlEl.getAttribute('data-theme');
+        var next = current === 'light' ? 'dark' : 'light';
+        if (next === 'light') {
+            htmlEl.setAttribute('data-theme', 'light');
+        } else {
+            htmlEl.removeAttribute('data-theme');
+        }
+        localStorage.setItem(THEME_KEY, next);
+    }
+
+    var themeToggle = document.querySelector('.theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+
     // 移动端导航切换
     var navToggle = document.querySelector('.nav-toggle');
     var siteNav = document.querySelector('.site-nav');
