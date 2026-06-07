@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: 标签云
 permalink: /tags/
 icon: octicon-tag
@@ -8,29 +8,40 @@ styles: [tagCloud.css,tags.css]
 scripts: [tagCloud.js,tags.js]
 ---
 
-<div class="tagCloud">
-    {% for tag in site.tags %}
-    <a href="#{{ tag | first }}">{{ tag | first }}</a>
-    {% endfor %}
-</div>
+<article class="page-container">
+    <header class="page-header">
+        <h1 class="page-title">{{ page.title }}</h1>
+    </header>
 
-<div>
-    <ul class="tag-box inline">
+    <div class="tagCloud">
         {% for tag in site.tags %}
-        <li><a href="#{{ tag | first }}">{{ tag | first }}<span>{{ tag | last | size }}</span></a></li>
+        <a href="#{{ tag | first }}">{{ tag | first }}</a>
         {% endfor %}
-    </ul>
-</div>
+    </div>
 
-<div>
-    {% for tag in site.tags %}
-    <h2 id="{{ tag | first }}">{{ tag | first }}</h2>
-    <ul>
+    <div>
+        <ul class="tag-box inline">
+            {% for tag in site.tags %}
+            <li><a href="#{{ tag | first }}">{{ tag | first }}<span>{{ tag | last | size }}</span></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="post-list">
+        {% for tag in site.tags %}
+        <h2 id="{{ tag | first }}" class="tag-section-title">{{ tag | first }}</h2>
         {% for posts in tag  %}{% for post in posts %}{% if post.title != null %}
-        <li itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%Y-%m-%d' }}</time></span> &raquo; <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></li>
+        <article class="post-card glass-card">
+            <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="post-card-link">
+                <h3 class="post-card-title">{{ post.title }}</h3>
+                <div class="post-card-meta">
+                    <span class="post-card-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%Y-%m-%d' }}</time></span>
+                </div>
+            </a>
+        </article>
         {% endif %}{% endfor %}{% endfor %}
-    </ul>
-    {% endfor %}
-</div>
+        {% endfor %}
+    </div>
+</article>
 
 

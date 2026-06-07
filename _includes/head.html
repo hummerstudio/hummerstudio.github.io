@@ -23,6 +23,13 @@
     <link rel="stylesheet" type="text/css" href="{{ '/static/css/post.css' | prepend: site.baseurl | prepend: site.url }}" />
     {% endif %}
 
+    {% if page.styles %}
+    <!-- 页面额外样式 -->
+    {% for style in page.styles %}
+    <link rel="stylesheet" type="text/css" href="{{ '/static/css/' | append: style | prepend: site.baseurl | prepend: site.url }}" />
+    {% endfor %}
+    {% endif %}
+
     <!-- 百度统计 -->
     <script>
         var _hmt = _hmt || [];

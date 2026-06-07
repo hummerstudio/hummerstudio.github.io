@@ -108,13 +108,20 @@ img {
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* 全局透明玻璃效果 */
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     border-bottom: 1px solid transparent;
     height: var(--header-height);
     transition: background var(--transition-slow), border-color var(--transition-slow), box-shadow var(--transition-slow);
+}
+
+/* 导航栏玻璃效果 - 用 ::before 伪元素避免影响子元素的 backdrop-filter */
+.site-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: -1;
 }
 
 .site-header::after {
@@ -206,15 +213,16 @@ img {
     transition: transform var(--transition);
 }
 
-/* 子导航 */
+/* 子导航 - 玻璃效果（独立堆叠上下文 + backdrop-filter） */
 .sub-nav {
     position: absolute;
     top: 100%;
     left: 0;
     min-width: 160px;
-    background: var(--glass-bg-solid);
-    backdrop-filter: blur(var(--glass-blur));
-    -webkit-backdrop-filter: blur(var(--glass-blur));
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    isolation: isolate;
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-md);
     box-shadow: var(--glass-shadow);
@@ -897,6 +905,17 @@ img {
     margin-top: var(--spacing-xs);
 }
 
+/* 标签页分组标题 */
+.tag-section-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: var(--spacing-xl) 0 var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--color-border);
+}
+
 /* 空状态 */
 .empty-state {
     text-align: center;
@@ -1040,9 +1059,10 @@ img {
         right: -100%;
         width: 280px;
         height: 100vh;
-        background: var(--glass-bg-solid);
-        backdrop-filter: blur(var(--glass-blur));
-        -webkit-backdrop-filter: blur(var(--glass-blur));
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        isolation: isolate;
         padding: calc(var(--header-height) + var(--spacing-lg)) var(--spacing-lg) var(--spacing-lg);
         transition: right var(--transition-slow);
         box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);

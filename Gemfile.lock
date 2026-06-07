@@ -82,7 +82,6 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-watch
   kramdown-parser-gfm
-  rouge
   wdm (~> 0.2)
   webrick
 
