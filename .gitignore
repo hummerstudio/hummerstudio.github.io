@@ -7,3 +7,4 @@ _site/
 .bundle/
 vendor/
 _config_dev.yml
+.playwright-cli/
