@@ -2,7 +2,7 @@
 title: gradle构建涉及的几个文件介绍
 date: 2023-02-26
 author: 唐明
-categories: [Gradle]
+categories: [build]
 tags: [Gradle]
 ---
 * TOC

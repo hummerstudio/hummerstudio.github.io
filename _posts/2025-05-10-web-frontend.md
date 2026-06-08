@@ -2,7 +2,7 @@
 title: 学习Vue，成为web全栈开发者!
 date: 2025-05-10
 author: 唐明
-categories: [Vue]
+categories: [build]
 tags: [Vue]
 ---
 * TOC

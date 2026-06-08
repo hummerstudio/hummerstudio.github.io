@@ -2,7 +2,7 @@
 title: .Net运行时分类
 date: 2023-02-18
 author: 唐明
-categories: [.Net]
+categories: [build]
 tags: [运行时]
 ---
 * TOC

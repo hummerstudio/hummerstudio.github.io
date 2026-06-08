@@ -1,7 +1,7 @@
 ---
 title: 中秋见月思
 author: 唐明
-categories: [文趣]
+categories: [essays]
 tags: [中秋, 诗]
 ---
 * TOC

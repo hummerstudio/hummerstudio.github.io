@@ -1,7 +1,7 @@
 ---
 title: JavaScript 中文字符转义问题
 author: 唐明
-categories: JavaScript
+categories: [build]
 tags: [JavaScript, 中文, 转义]
 ---
 * TOC

@@ -1,7 +1,7 @@
 ---
 title: 心与物
 author: 唐明
-categories: [道统]
+categories: [essays]
 tags: [诗]
 ---
 * TOC

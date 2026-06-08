@@ -2,7 +2,7 @@
 title: 在Visual Studio中调试Unity的代码
 author: 唐明
 date: 2022-01-06
-categories: [Unity]
+categories: [build]
 tags: [Unity]
 ---
 * TOC

@@ -1,66 +1,25 @@
-# 多级导航分类体系
-# slug: 用于 URL 和 CSS class
+# 导航分类 - 按 DevOps 生命周期组织
+# slug: 用于 URL hash 和文章 category
 # name: 导航显示名称
-# children: 二级分类（可选）
+# 顺序：持续集成(总揽) → 拉代码 → 构建 → 容器化 → 部署 → AI → 杂谈
 
-- slug: devops
-  name: DevOps
-  children:
-    - slug: jenkins
-      name: Jenkins
-    - slug: gitlab-ci
-      name: Gitlab CI
-    - slug: github-actions
-      name: GitHub Actions
-    - slug: automation
-      name: 自动化实践
+- slug: ci-cd
+  name: 持续集成
 
-- slug: game-dev
-  name: 游戏开发
-  children:
-    - slug: unity
-      name: Unity
-    - slug: unreal
-      name: Unreal Engine
+- slug: vcs
+  name: 版本控制
 
-- slug: programming
-  name: 编程语言
-  children:
-    - slug: python
-      name: Python
-    - slug: groovy
-      name: Groovy/Java
-    - slug: kotlin
-      name: Kotlin
+- slug: build
+  name: 构建工具
 
-- slug: frontend
-  name: 前端开发
-  children:
-    - slug: vue
-      name: Vue
-    - slug: javascript
-      name: JavaScript
-    - slug: web
-      name: Web 技术
+- slug: container
+  name: 容器与编排
 
-- slug: toolchain
-  name: 工具链
-  children:
-    - slug: git-svn
-      name: Git & SVN
-    - slug: gradle-build
-      name: Gradle & 构建
-    - slug: docker-deploy
-      name: Docker & 部署
-    - slug: linux-ops
-      name: Linux 运维
+- slug: ops
+  name: 部署运维
+
+- slug: ai
+  name: AI 与效率
 
 - slug: essays
   name: 墨影闲谈
-  children:
-    - slug: mingge-jiangdao
-      name: 明哥讲道
-    - slug: wenqu
-      name: 文趣随笔
-    - slug: daotong
-      name: 道统思维

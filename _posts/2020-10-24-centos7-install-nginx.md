@@ -1,7 +1,7 @@
 ---
 title: CentOS 7安装Nginx
 author: 唐明
-categories: [Nginx]
+categories: [ops]
 tags: [Nginx, CentOS 7]
 ---
 * TOC

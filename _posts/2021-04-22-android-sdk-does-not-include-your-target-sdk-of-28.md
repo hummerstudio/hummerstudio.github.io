@@ -2,7 +2,7 @@
 title: Unity Android打包报错：Android SDK does not include your Target SDK of 28原因及解决方法
 author: 唐明
 date: 2021-04-22
-categories: [Unity, Android]
+categories: [build]
 tags: [Unity]
 ---
 * TOC

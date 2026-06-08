@@ -2,7 +2,7 @@
 title: SVN获取当前本地仓库的版本号
 author: 唐明
 date: 2022-01-04
-categories: [SVN]
+categories: [vcs]
 tags: [SVN]
 ---
 * TOC

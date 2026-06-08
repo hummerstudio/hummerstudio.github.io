@@ -1,7 +1,7 @@
 ---
 title: Groovy语法系列教程之关键字和标识符（二）
 author: 唐明
-categories: [Groovy]
+categories: [build]
 tags: [Groovy]
 ---
 * TOC

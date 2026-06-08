@@ -1,7 +1,7 @@
 ---
 title: 博客增加了新页面“参考书”
 author: 唐明
-categories: [GitHub Pages, Jekyll, Ruby]
+categories: [ops]
 tags: [新页面, 参考书, Bash, coreutils, RFC2616, HTTP, 超文本传输协议]
 ---
 * TOC

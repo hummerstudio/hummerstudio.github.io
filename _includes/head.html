@@ -6,7 +6,7 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="keywords" content="{{ page.title }}{% for cat in page.categories %}, {{ cat }}{% endfor %}{% for tag in page.tags %}, {{ tag }}{% endfor %}" />
     <meta name="theme-color" content="#1A1A1F" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 
@@ -24,17 +24,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=ZCOOL+XiaoWei&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- 核心样式 -->
-    <link rel="stylesheet" type="text/css" href="{{ '/static/css/main.css' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ '/static/css/main.css' | prepend: site.baseurl }}" />
 
     {% if page.layout == 'post' %}
     <!-- 文章页额外样式 -->
-    <link rel="stylesheet" type="text/css" href="{{ '/static/css/post.css' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ '/static/css/post.css' | prepend: site.baseurl }}" />
     {% endif %}
 
     {% if page.styles %}
     <!-- 页面额外样式 -->
     {% for style in page.styles %}
-    <link rel="stylesheet" type="text/css" href="{{ '/static/css/' | append: style | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ '/static/css/' | append: style | prepend: site.baseurl }}" />
     {% endfor %}
     {% endif %}
 

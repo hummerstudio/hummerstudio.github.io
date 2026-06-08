@@ -1,7 +1,7 @@
 ---
 title: 域名公安备案信息样式优化
 author: 唐明
-categories: [域名备案]
+categories: [ops]
 tags: [公安备案]
 ---
 * TOC

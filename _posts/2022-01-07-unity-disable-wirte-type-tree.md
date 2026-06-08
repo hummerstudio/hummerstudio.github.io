@@ -2,7 +2,7 @@
 title: BuildAssetBundleOption.DisableWriteTypeTree选项有什么作用，要不要开启？
 author: 唐明
 date: 2022-01-07
-categories: [Unity]
+categories: [build]
 tags: [Unity]
 ---
 * TOC

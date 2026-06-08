@@ -1,7 +1,7 @@
 ---
 title: 为什么人们会说“美丽的谎言”？
 author: 唐明
-categories: [明哥讲道]
+categories: [essays]
 tags: [知乎]
 ---
 * TOC

@@ -1,7 +1,7 @@
 ---
 title: Mac下Docker Desktop的Kubernetes一直处于starting状态的解决办法
 author: 唐明
-categories: [Kubernetes, Docker]
+categories: [container]
 tags: [Kubernetes, Docker]
 ---
 * TOC

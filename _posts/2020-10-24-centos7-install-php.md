@@ -1,7 +1,7 @@
 ---
 title: CentOS 7安装PHP
 author: 唐明
-categories: [PHP]
+categories: [ops]
 tags: [PHP, CentOS 7]
 ---
 * TOC

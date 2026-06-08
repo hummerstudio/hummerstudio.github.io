@@ -1,7 +1,7 @@
 ---
 title: 罗永浩，下德不失德，是以无德的典型
 author: 唐明
-categories: [明哥讲道]
+categories: [essays]
 tags: [道德经, 罗永浩]
 ---
 * TOC

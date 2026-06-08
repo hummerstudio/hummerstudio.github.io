@@ -2,7 +2,7 @@
 title: Windows批处理Batch怎么复制文件？Windows下类似Linux cp的命令是什么
 author: 唐明
 date: 2021-12-24
-categories: [Batch]
+categories: [build]
 tags: [copy]
 ---
 * TOC

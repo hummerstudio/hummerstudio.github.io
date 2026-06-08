@@ -2,7 +2,7 @@
 title: Windows 10启用长路径支持
 author: 唐明
 date: 2022-02-24
-categories: [Windows]
+categories: [ops]
 tags: [Windows]
 ---
 * TOC

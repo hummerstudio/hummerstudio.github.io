@@ -1,7 +1,7 @@
 ---
 title: 中国人价值观的一体多元
 author: 唐明
-categories: [明哥讲道]
+categories: [essays]
 tags: [道, 儒, 法, 墨]
 ---
 * TOC

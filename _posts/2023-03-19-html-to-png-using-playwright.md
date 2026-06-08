@@ -2,7 +2,7 @@
 title: 2行代码就能实现HTML自动化转图片！
 date: 2023-03-18
 author: 唐明
-categories: [Playwright]
+categories: [build]
 tags: [dependencies]
 ---
 * TOC

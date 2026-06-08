@@ -1,7 +1,7 @@
 ---
 title: Gitlab CI 变量与环境——让流水线"活"起来
 author: 唐明
-categories: [Gitlab CI]
+categories: [ci-cd]
 tags: [Gitlab CI, 变量, 环境]
 ---
 * TOC

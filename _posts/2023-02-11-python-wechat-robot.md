@@ -2,7 +2,7 @@
 title: Python微信机器人
 date: 2023-02-11
 author: 唐明
-categories: [Python]
+categories: [build]
 tags: [微信机器人]
 ---
 * TOC

@@ -2,7 +2,7 @@
 title: kotlin、kotlin-plugin、gradle、kotlin-gradle-plugin关系
 date: 2023-02-25
 author: 唐明
-categories: [Kotlin, Gradle]
+categories: [build]
 tags: [kotlin-plugin, kotlin-gradle-plugin]
 ---
 * TOC

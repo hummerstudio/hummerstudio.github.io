@@ -2,6 +2,7 @@
 title: "如何使用Jenkins声明式流水线"
 description: "在本教程中了解如何使用Jenkins的声明性流水线，其中涵盖了开发流水线脚本的所有可用指令。"
 date: 2020-03-31
+categories: [ci-cd]
 author: hummerstudio
 poster: “./2020-03-26-thanks-ucloud/ucloud-logo.png”
 ---

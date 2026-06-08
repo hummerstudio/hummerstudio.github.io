@@ -1,7 +1,7 @@
 ---
 title: 由一个小问题说一说解决问题的思维
 author: 唐明
-categories: 明哥讲道
+categories: [essays]
 tags: [事理, 解决问题, 藏象思维, CSS]
 ---
 * TOC

@@ -2,7 +2,7 @@
 title: Unity安装UI Toolkit
 author: 唐明
 date: 2022-04-07
-categories: [Unity]
+categories: [build]
 tags: [Unity]
 ---
 * TOC

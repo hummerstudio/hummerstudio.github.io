@@ -2,7 +2,7 @@
 title: Invalid cookie header Invalid 'expires' attribute
 date: 2023-03-12
 author: 唐明
-categories: [Web]
+categories: [build]
 tags: [Java, httpclient5]
 ---
 * TOC

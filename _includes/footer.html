@@ -13,14 +13,14 @@
             <a href="{{ site.social.zhihu }}" target="_blank" title="知乎" class="social-link">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><text x="4" y="18" font-size="16" font-weight="bold" fill="currentColor" stroke="none">知</text></svg>
             </a>
-            <a href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="RSS" class="social-link">
+            <a href="{{ '/feed.xml' | prepend: site.baseurl }}" target="_blank" title="RSS" class="social-link">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg>
             </a>
         </div>
         <div class="footer-copy">
             <span>&copy; {{ site.time | date: '%Y' }} <a href="{{ site.social.github }}">hummerstudio</a></span>
             <span class="footer-sep">|</span>
-            <a href="{{ site.baseurl | prepend: site.url }}/about/">关于</a>
+            <a href="{{ site.baseurl }}/about/">关于</a>
         </div>
     </div>
 </footer>

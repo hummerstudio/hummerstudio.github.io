@@ -1,7 +1,7 @@
 ---
 title: 哪吒传——观《哪吒之魔童降世》有感
 author: 唐明
-categories: [文趣]
+categories: [essays]
 tags: [诗]
 ---
 * TOC

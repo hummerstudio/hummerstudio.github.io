@@ -1,7 +1,7 @@
 ---
 title: Jenkins——the thing which auto everything
 author: 唐明
-categories: [Jenkins]
+categories: [ci-cd]
 tags: [Jenkins]
 ---
 * TOC

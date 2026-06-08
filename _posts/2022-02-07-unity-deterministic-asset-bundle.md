@@ -2,7 +2,7 @@
 title: Unity打包AB，保持Hash值不变
 author: 唐明
 date: 2022-02-07
-categories: [Unity]
+categories: [build]
 tags: [Unity]
 ---
 * TOC

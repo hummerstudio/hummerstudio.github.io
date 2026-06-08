@@ -12,6 +12,6 @@ layout: default
 
 {% if page.scripts %}
   {% for script in page.scripts %}
-  <script src="{{ '/static/js/' | append: script | prepend: site.baseurl | prepend: site.url }}"></script>
+  <script src="{{ '/static/js/' | append: script | prepend: site.baseurl }}"></script>
   {% endfor %}
 {% endif %}

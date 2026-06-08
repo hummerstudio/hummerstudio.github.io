@@ -2,7 +2,7 @@
 title: Android App Bundle(AAB)和APK的区别
 author: 唐明
 date: 2021-12-21
-categories: [Android]
+categories: [build]
 tags: [Android, AAB, APK]
 ---
 * TOC

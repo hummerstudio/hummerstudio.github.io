@@ -1,7 +1,7 @@
 ---
 title: 通过Jenkins启动的进程构建后总是退出？可使用keepRunning步骤优雅解决
 author: 唐明
-categories: [SonarQube]
+categories: [build]
 tags: [SonarQube]
 ---
 * TOC

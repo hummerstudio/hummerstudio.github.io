@@ -973,6 +973,7 @@ img {
 }
 .category-page-header {
     text-align: center;
+    margin-top: var(--spacing-2xl);
     margin-bottom: var(--spacing-xl);
 }
 .category-page-title {

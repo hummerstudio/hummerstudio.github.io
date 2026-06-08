@@ -1,7 +1,7 @@
 ---
 title: GitHub Actions 实现自动部署——从 push 到上线
 author: 唐明
-categories: [GitHub Actions]
+categories: [ci-cd]
 tags: [GitHub Actions, 自动部署, CI/CD]
 ---
 * TOC

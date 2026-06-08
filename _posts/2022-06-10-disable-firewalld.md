@@ -2,7 +2,7 @@
 title: 临时和永久关闭firewalld
 author: 唐明
 date: 2022-06-10
-categories: [firewalld]
+categories: [ops]
 tags: [firewalld]
 ---
 * TOC

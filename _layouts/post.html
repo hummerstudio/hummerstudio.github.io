@@ -40,7 +40,7 @@ layout: default
                 </div>
                 <div class="sidebar-tags">
                     {% for cat in page.categories %}
-                    <a href="{{ '/category' | prepend: site.baseurl | prepend: site.url }}/#{{ cat }}" class="tag-link">{{ cat }}</a>
+                    <a href="{{ '/category' | prepend: site.baseurl }}/#{{ cat }}" class="tag-link">{{ cat }}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -53,7 +53,7 @@ layout: default
                 </div>
                 <div class="sidebar-tags">
                     {% for tag in page.tags %}
-                    <a href="{{ '/tags' | prepend: site.baseurl | prepend: site.url }}/#{{ tag }}" class="tag-link">{{ tag }}</a>
+                    <a href="{{ '/tags' | prepend: site.baseurl }}/#{{ tag }}" class="tag-link">{{ tag }}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -64,12 +64,12 @@ layout: default
     <footer class="post-footer">
         <div class="post-copyright">
             <p>作者：{{ page.author | default: site.title }}</p>
-            <p>出处：<a href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.url | prepend: site.baseurl | prepend: site.url }}</a></p>
+            <p>出处：<a href="{{ page.url | prepend: site.baseurl }}">{{ page.url | prepend: site.baseurl }}</a></p>
             <p>版权：本站使用「<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>」创作共享协议，转载请在文章明显位置注明作者及出处。</p>
         </div>
         <div class="post-wechat">
             <p>关注微信公众号</p>
-            <img alt="DevOps持续交付公众号ID:devopscd" src="{{ '/assets/img/qrcode.png' | prepend: site.baseurl | prepend: site.url }}" class="wechat-qr" />
+            <img alt="DevOps持续交付公众号ID:devopscd" src="{{ '/assets/img/qrcode.png' | prepend: site.baseurl }}" class="wechat-qr" />
         </div>
         <div id="gitalk-container"></div>
     </footer>
@@ -77,7 +77,7 @@ layout: default
 
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script src="{{ '/assets/js/md5.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ '/assets/js/md5.min.js' | prepend: site.baseurl }}"></script>
 <script>
 (function() {
     var gitalk = new Gitalk({

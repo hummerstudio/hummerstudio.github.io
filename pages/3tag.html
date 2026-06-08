@@ -32,7 +32,7 @@ scripts: [tagCloud.js,tags.js]
         <h2 id="{{ tag | first }}" class="tag-section-title">{{ tag | first }}</h2>
         {% for posts in tag  %}{% for post in posts %}{% if post.title != null %}
         <article class="post-card glass-card">
-            <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="post-card-link">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-card-link">
                 <h3 class="post-card-title">{{ post.title }}</h3>
                 <div class="post-card-meta">
                     <span class="post-card-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%Y-%m-%d' }}</time></span>

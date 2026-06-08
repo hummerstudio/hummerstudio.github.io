@@ -1,7 +1,7 @@
 ---
 title: 天真的矛与盾
 author: 唐明
-categories: 明哥讲道
+categories: [essays]
 tags: [天真, 矛盾, 平衡, 稳定]
 ---
 * TOC

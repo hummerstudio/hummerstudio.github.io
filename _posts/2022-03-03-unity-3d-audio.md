@@ -2,7 +2,7 @@
 title: Unity设置3D音效
 author: 唐明
 date: 2022-03-03
-categories: [Unity]
+categories: [build]
 tags: [Unity]
 ---
 * TOC

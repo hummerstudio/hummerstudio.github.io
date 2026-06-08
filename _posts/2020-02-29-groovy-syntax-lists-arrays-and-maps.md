@@ -1,7 +1,7 @@
 ---
 title: Groovy语法系列教程之集合（六）【完结】
 author: 唐明
-categories: [Groovy]
+categories: [build]
 tags: [Groovy]
 ---
 * TOC

@@ -1,7 +1,7 @@
 ---
 title: 天降大任于斯人，必先不从其所愿
 author: 唐明
-categories: [道统]
+categories: [essays]
 tags: []
 ---
 * TOC

@@ -2,7 +2,7 @@
 title: Visual Stuido中打开Unity工程脚本，方法无法跳转解决方法
 author: 唐明
 date: 2021-12-27
-categories: [Unity]
+categories: [build]
 tags: [Visual Studio]
 ---
 * TOC

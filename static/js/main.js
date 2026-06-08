@@ -36,7 +36,6 @@
     // 移动端导航切换
     var navToggle = document.querySelector('.nav-toggle');
     var siteNav = document.querySelector('.site-nav');
-    var navItems = document.querySelectorAll('.nav-item.has-sub');
 
     if (navToggle && siteNav) {
         navToggle.addEventListener('click', function() {
@@ -54,20 +53,6 @@
             }
         });
     }
-
-    // 移动端子菜单展开
-    navItems.forEach(function(item) {
-        var link = item.querySelector(':scope > a');
-        if (link && window.innerWidth <= 768) {
-            link.addEventListener('click', function(e) {
-                var subNav = item.querySelector('.sub-nav');
-                if (subNav) {
-                    e.preventDefault();
-                    item.classList.toggle('open');
-                }
-            });
-        }
-    });
 
     // 回到顶部
     var scrollTopBtn = document.querySelector('.scroll-top');
@@ -87,13 +72,4 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
-
-    // 窗口大小变化时重置子菜单
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768) {
-            navItems.forEach(function(item) {
-                item.classList.remove('open');
-            });
-        }
-    });
 })();

@@ -2,7 +2,7 @@
 title: Gradle依赖使用最新版本
 date: 2023-02-19
 author: 唐明
-categories: [Gradle]
+categories: [build]
 tags: [最新版本]
 ---
 * TOC

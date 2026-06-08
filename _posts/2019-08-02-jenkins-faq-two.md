@@ -1,7 +1,7 @@
 ---
 title: Jenkins常见问题集锦（二）
 author: 唐明
-categories: [Jenkins]
+categories: [ci-cd]
 tags: [Jenkins, Pipeline, Blue Ocean, Python, Groovy]
 ---
 * TOC

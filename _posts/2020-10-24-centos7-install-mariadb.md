@@ -1,7 +1,7 @@
 ---
 title: CentOS 7安装MariaDB
 author: 唐明
-categories: [MariaDB]
+categories: [ops]
 tags: [MariaDB, CentOS 7]
 ---
 * TOC

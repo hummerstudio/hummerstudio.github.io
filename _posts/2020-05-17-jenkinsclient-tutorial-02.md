@@ -1,7 +1,7 @@
 ---
 title: Jenkinsclient系列教程之查看基本信息（二）
 author: 唐明
-categories: [Jenkinsclient]
+categories: [ci-cd]
 tags: [Jenkinsclient]
 ---
 * TOC

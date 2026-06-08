@@ -1,7 +1,7 @@
 ---
 title: GitHub Actions——GitHub 原生的自动化工作流
 author: 唐明
-categories: [GitHub Actions]
+categories: [ci-cd]
 tags: [GitHub Actions, CI/CD, DevOps]
 ---
 * TOC

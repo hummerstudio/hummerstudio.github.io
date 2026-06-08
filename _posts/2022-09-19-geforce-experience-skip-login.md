@@ -2,7 +2,7 @@
 title: GeForce Experience要登录才能使用，又总是注册不成功，绕过/禁用登录方法
 author: 唐明
 date: 2022-09-19
-categories: [GeForce Experience]
+categories: [ops]
 tags: [GeForce Experience]
 ---
 * TOC

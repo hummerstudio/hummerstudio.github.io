@@ -2,7 +2,7 @@
 title: Unity中使用资源的典型工作流程
 author: 唐明
 date: 2022-04-07
-categories: [Unity]
+categories: [build]
 tags: [Unity]
 ---
 * TOC

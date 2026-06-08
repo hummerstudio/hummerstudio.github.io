@@ -2,7 +2,7 @@
 title: Gradle禁用daemon
 date: 2022-12-14
 author: 唐明
-categories: [Gradle]
+categories: [build]
 tags: [Gradle]
 ---
 * TOC

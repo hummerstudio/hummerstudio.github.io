@@ -2,7 +2,7 @@
 title: D-pad是什么？
 author: 唐明
 date: 2022-07-03
-categories: [Game]
+categories: [build]
 tags: [d-pad]
 ---
 * TOC

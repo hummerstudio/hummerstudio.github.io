@@ -1,9 +1,8 @@
-
 ---
 title: iOS打包签名报unable to build chain to self-signed root for signer，CodeSign failed with a nonzero exit code解决办法
 author: 唐明
 date: 2021-12-22
-categories: [iOS]
+categories: [build]
 tags: [iOS]
 ---
 * TOC
