@@ -6,6 +6,8 @@ Jenkins: [devops, jenkins]
 Jenkinsclient: [devops, cicd]
 DevOps: [devops, automation]
 SonarQube: [devops, cicd]
+Gitlab CI: [devops, gitlab-ci]
+GitHub Actions: [devops, github-actions]
 
 Unity: [game-dev, unity]
 UE: [game-dev, unreal]
