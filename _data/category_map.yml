@@ -2,48 +2,60 @@
 # key: 旧的 category 名（小写）
 # value: [一级导航 slug, 二级导航 slug]
 
+# ===== DevOps =====
 Jenkins: [devops, jenkins]
-Jenkinsclient: [devops, cicd]
+Jenkinsclient: [devops, jenkins]
 DevOps: [devops, automation]
-SonarQube: [devops, cicd]
+SonarQube: [devops, automation]
 Gitlab CI: [devops, gitlab-ci]
 GitHub Actions: [devops, github-actions]
 
+# ===== 游戏开发 =====
 Unity: [game-dev, unity]
-UE: [game-dev, unreal]
 Unreal: [game-dev, unreal]
+UE: [game-dev, unreal]
 Game: [game-dev, unity]
 
+# ===== 编程语言 =====
 Python: [programming, python]
 Groovy: [programming, groovy]
 Java: [programming, groovy]
 Kotlin: [programming, kotlin]
 Ruby: [programming, groovy]
+PHP: [programming, groovy]
+Batch: [programming, groovy]
+Ant: [programming, groovy]
 
+# ===== 前端开发 =====
 JavaScript: [frontend, javascript]
 Vue: [frontend, vue]
 Web: [frontend, web]
 Playwright: [frontend, web]
-PHP: [frontend, web]
 
+# ===== 工具链 =====
 Git: [toolchain, git-svn]
 SVN: [toolchain, git-svn]
+GitHub Pages: [toolchain, git-svn]
+Jekyll: [toolchain, git-svn]
+域名备案: [toolchain, git-svn]
 Gradle: [toolchain, gradle-build]
+Android: [toolchain, gradle-build]
+.Net: [toolchain, gradle-build]
+Visual Studio: [toolchain, gradle-build]
 Docker: [toolchain, docker-deploy]
 Kubernetes: [toolchain, docker-deploy]
 Linux: [toolchain, linux-ops]
 MariaDB: [toolchain, linux-ops]
 Nginx: [toolchain, linux-ops]
 Windows: [toolchain, linux-ops]
-Android: [toolchain, gradle-build]
-.Net: [toolchain, gradle-build]
-Visual Studio: [toolchain, gradle-build]
-Android: [toolchain, gradle-build]
+Mac: [toolchain, linux-ops]
+iOS: [toolchain, gradle-build]
+ftp: [toolchain, linux-ops]
+firewalld: [toolchain, linux-ops]
+wget: [toolchain, linux-ops]
+GeForce Experience: [toolchain, linux-ops]
 
-GitHub Pages: [toolchain, git-svn]
-Jekyll: [toolchain, git-svn]
-域名备案: [toolchain, git-svn]
-
+# ===== 墨影闲谈 =====
 明哥讲道: [essays, mingge-jiangdao]
 道统: [essays, daotong]
 文趣: [essays, wenqu]

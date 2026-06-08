@@ -3,6 +3,7 @@ title: AssetBundle解包
 date: '2025-07-11 17:22:33'
 permalink: /post/:title
 layout: post
+categories: [Unity]
 published: true
 ---
 
