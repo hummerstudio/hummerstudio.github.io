@@ -8,8 +8,10 @@
   children:
     - slug: jenkins
       name: Jenkins
-    - slug: cicd
-      name: CI/CD 流水线
+    - slug: gitlab-ci
+      name: Gitlab CI
+    - slug: github-actions
+      name: GitHub Actions
     - slug: automation
       name: 自动化实践
 
