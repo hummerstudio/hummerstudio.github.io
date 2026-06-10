@@ -1,7 +1,7 @@
 ---
 title: Jira Scrum 敏捷看板实战
 author: 唐明
-categories: [pm]
+categories: [plan]
 tags: [Jira, Scrum, 敏捷, 看板]
 ---
 

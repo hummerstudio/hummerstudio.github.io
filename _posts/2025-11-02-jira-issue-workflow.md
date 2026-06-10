@@ -1,7 +1,7 @@
 ---
 title: Jira Issue 管理与工作流设计
 author: 唐明
-categories: [pm]
+categories: [plan]
 tags: [Jira, 工作流, Issue, 需求管理]
 ---
 

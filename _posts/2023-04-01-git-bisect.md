@@ -1,7 +1,7 @@
 ---
 title: Git Bisect——用二分法快速定位问题提交
 author: 唐明
-categories: [vcs]
+categories: [code]
 tags: [Git, Git Bisect, 调试]
 ---
 

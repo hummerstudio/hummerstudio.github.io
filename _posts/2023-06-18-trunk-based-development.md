@@ -1,7 +1,7 @@
 ---
 title: Git 分支模型（四）：Trunk-Based Development
 author: 唐明
-categories: [vcs]
+categories: [code]
 tags: [Git, TBD, 分支模型, 主干开发]
 ---
 

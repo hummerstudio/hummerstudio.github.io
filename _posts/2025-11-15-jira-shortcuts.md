@@ -1,7 +1,7 @@
 ---
 title: Jira 效率提升：常用快捷键指南
 author: 唐明
-categories: [pm]
+categories: [plan]
 tags: [Jira, 快捷键, 效率, 需求管理]
 ---
 

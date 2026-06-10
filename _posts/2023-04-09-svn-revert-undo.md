@@ -1,7 +1,7 @@
 ---
 title: SVN 回退与撤销——出错了怎么办
 author: 唐明
-categories: [vcs]
+categories: [code]
 tags: [SVN, 回退, 撤销]
 ---
 

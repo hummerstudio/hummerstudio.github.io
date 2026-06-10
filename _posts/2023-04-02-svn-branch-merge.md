@@ -1,7 +1,7 @@
 ---
 title: SVN 分支与合并——主干开发的正确姿势
 author: 唐明
-categories: [vcs]
+categories: [code]
 tags: [SVN, 分支, 合并]
 ---
 

@@ -2,7 +2,7 @@
 title: SVN有些目录下的文件想保持不变，怎么忽略？
 author: 唐明
 date: 2022-01-03
-categories: [vcs]
+categories: [code]
 tags: [SVN]
 ---
 

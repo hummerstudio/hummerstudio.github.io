@@ -2,7 +2,7 @@
 title: Git上传空文件夹的方法
 date: 2023-01-16
 author: 唐明
-categories: [vcs]
+categories: [code]
 tags: [Git]
 ---
 

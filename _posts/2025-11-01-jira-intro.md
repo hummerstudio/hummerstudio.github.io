@@ -1,7 +1,7 @@
 ---
 title: 需求管理利器：Jira 概述与核心概念
 author: 唐明
-categories: [pm]
+categories: [plan]
 tags: [Jira, 需求管理, DevOps]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Git 分支模型（三）：GitLab Flow
 author: 唐明
-categories: [vcs]
+categories: [code]
 tags: [Git, GitLab Flow, 分支模型]
 ---
 

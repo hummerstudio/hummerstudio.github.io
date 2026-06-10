@@ -2,7 +2,7 @@
 title: SVN要忽略多个文件/文件夹，怎么配置svn:ignore
 author: 唐明
 date: 2022-01-04
-categories: [vcs]
+categories: [code]
 tags: [SVN]
 ---
 

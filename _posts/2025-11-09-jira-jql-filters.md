@@ -1,7 +1,7 @@
 ---
 title: Jira 查询利器：JQL 与过滤器
 author: 唐明
-categories: [pm]
+categories: [plan]
 tags: [Jira, JQL, 过滤器, 仪表盘]
 ---
 

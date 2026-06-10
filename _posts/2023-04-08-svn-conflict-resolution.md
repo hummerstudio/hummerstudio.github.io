@@ -1,7 +1,7 @@
 ---
 title: SVN 冲突解决详解——告别合并恐惧症
 author: 唐明
-categories: [vcs]
+categories: [code]
 tags: [SVN, 冲突, 合并]
 ---
 

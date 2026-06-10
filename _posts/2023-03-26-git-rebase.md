@@ -1,7 +1,7 @@
 ---
 title: Git Rebase——让你的提交历史更优雅
 author: 唐明
-categories: [vcs]
+categories: [code]
 tags: [Git, Git Rebase]
 ---
 

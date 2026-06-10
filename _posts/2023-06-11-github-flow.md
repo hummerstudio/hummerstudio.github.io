@@ -1,7 +1,7 @@
 ---
 title: Git 分支模型（二）：GitHub Flow
 author: 唐明
-categories: [vcs]
+categories: [code]
 tags: [Git, GitHub Flow, 分支模型]
 ---
 
