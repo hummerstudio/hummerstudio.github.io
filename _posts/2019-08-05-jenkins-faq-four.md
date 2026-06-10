@@ -1,7 +1,7 @@
 ---
 title: Jenkins常见问题集锦（四）
 author: 唐明
-categories: [ci-cd]
+categories: [devops]
 tags: [Jenkins, Pipeline]
 ---
 * TOC

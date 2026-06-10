@@ -1,7 +1,7 @@
 ---
 title: Jenkinsclient系列教程之介绍与安装（一）
 author: 唐明
-categories: [ci-cd]
+categories: [devops]
 tags: [Jenkinsclient]
 ---
 * TOC

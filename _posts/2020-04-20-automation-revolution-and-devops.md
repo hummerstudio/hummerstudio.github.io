@@ -1,7 +1,7 @@
 ---
 title: 自动化革命与DevOps
 author: 唐明
-categories: [ci-cd]
+categories: [devops]
 tags: [自动化, DevOps]
 ---
 * TOC

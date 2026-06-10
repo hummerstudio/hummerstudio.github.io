@@ -1,7 +1,7 @@
 ---
 title: Gitlab CI——Gitlab 自带的 CI/CD 利器
 author: 唐明
-categories: [ci-cd]
+categories: [devops]
 tags: [Gitlab CI, CI/CD, DevOps]
 ---
 * TOC

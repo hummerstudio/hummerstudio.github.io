@@ -1,7 +1,7 @@
 ---
 title: Gitlab CI 常见问题集锦（一）
 author: 唐明
-categories: [ci-cd]
+categories: [devops]
 tags: [Gitlab CI, 问题集锦]
 ---
 * TOC

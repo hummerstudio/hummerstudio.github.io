@@ -1,7 +1,7 @@
 ---
 title: GitHub Actions 常见问题集锦（一）
 author: 唐明
-categories: [ci-cd]
+categories: [devops]
 tags: [GitHub Actions, 问题集锦]
 ---
 * TOC

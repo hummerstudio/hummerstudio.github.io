@@ -1,7 +1,7 @@
 ---
 title: Jenkins插件更新中心地址修改工具，一键修改为国内镜像地址
 author: 唐明
-categories: [ci-cd]
+categories: [devops]
 tags: [插件中心, Jenkins]
 ---
 * TOC

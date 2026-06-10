@@ -1,7 +1,7 @@
 ---
 title: 我获得了Certified Jenkins Engineer认证及证书
 author: 唐明
-categories: [ci-cd]
+categories: [devops]
 tags: [Jenkins, Certified Jenkins Engineer, CJE, 认证, 证书]
 ---
 * TOC

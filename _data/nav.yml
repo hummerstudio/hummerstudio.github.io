@@ -1,13 +1,10 @@
-# 导航分类 - 按 DevOps 生命周期组织
+# 导航分类 - 按软件开发流程组织（分总结构）
 # slug: 用于 URL hash 和文章 category
 # name: 导航显示名称
-# 顺序：需求管理 → 持续集成 → 版本控制 → 构建 → 容器化 → 部署 → AI → 杂谈
+# 顺序：需求管理 → 版本控制 → 构建工具 → 容器与编排 → 部署运维 → DevOps → AI → 墨影闲谈
 
 - slug: pm
   name: 需求管理
-
-- slug: ci-cd
-  name: 持续集成
 
 - slug: vcs
   name: 版本控制
@@ -20,6 +17,9 @@
 
 - slug: ops
   name: 部署运维
+
+- slug: devops
+  name: DevOps
 
 - slug: ai
   name: AI

@@ -1,7 +1,7 @@
 ---
 title: Jenkinsclient 1.0发布，功能强大的开源跨平台的Jenkins命令行客户端，采用国产木兰开源许可证
 author: 唐明
-categories: [ci-cd]
+categories: [devops]
 tags: [Jenkinsclient, Jenkins, Python]
 ---
 * TOC
