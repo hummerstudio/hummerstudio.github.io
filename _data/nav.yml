@@ -1,13 +1,13 @@
 # 导航分类 - 按软件开发流程组织（分总结构）
 # slug: 用于 URL hash 和文章 category
 # name: 导航显示名称
-# 顺序：需求管理 → 代码管理 → 构建工具 → 测试质量 → 部署运维 → DevOps → AI → 墨影闲谈
+# 顺序：需求 → 编码 → 构建工具 → 测试质量 → 部署运维 → DevOps → AI → 墨影闲谈
 
 - slug: plan
-  name: 需求管理
+  name: 需求
 
 - slug: code
-  name: 代码管理
+  name: 编码
 
 - slug: build
   name: 构建工具
