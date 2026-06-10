@@ -5,8 +5,6 @@ date: 2021-02-07
 categories: [vcs]
 tags: [SVN]
 ---
-* TOC
-{:toc}
 
 `for /f "tokens=2" %%i in ('svn status') do echo %%i`
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [ops]
 tags: [Jekyll, macOS, 环境搭建]
 ---
-* TOC
-{:toc}
 
 ## 安装命令行工具
 

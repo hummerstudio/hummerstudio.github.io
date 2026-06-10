@@ -5,8 +5,6 @@ date: 2021-12-21
 categories: [build]
 tags: [Android, AAB, APK]
 ---
-* TOC
-{:toc}
 
 Android App Bundle是一种发布格式，其中包含应用的所有经过编译的代码和资源，它会将APK生成及签名交由应用商店来完成。
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [vcs]
 tags: [Git, GitLab Flow, 分支模型]
 ---
-* TOC
-{:toc}
 
 ## 1、Git Flow 太重，GitHub Flow 太轻
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkins, Pipeline, Docker]
 ---
-* TOC
-{:toc}
 
 ## 问题1：Jenkins和Docker怎么结合？
 

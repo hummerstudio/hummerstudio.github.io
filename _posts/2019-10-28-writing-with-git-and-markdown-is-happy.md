@@ -4,8 +4,6 @@ author: 唐明
 categories: [ops]
 tags: [Markdown, Git, 博客, Jekyll]
 ---
-* TOC
-{:toc}
 
 这两天搭建、上线了这个博客，并开始把以前微信公众号写的一些文章以及平时写下的一些文字搬到上面来，感觉使用体验很好。
 

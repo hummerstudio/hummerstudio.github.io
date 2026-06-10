@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [GitHub Actions, CI/CD, DevOps]
 ---
-* TOC
-{:toc}
 
 ## GitHub Actions，Actions 即工作流
 

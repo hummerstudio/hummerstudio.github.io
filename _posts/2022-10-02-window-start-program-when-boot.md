@@ -5,8 +5,6 @@ author: 唐明
 categories: [ops]
 tags: [开机启动]
 ---
-* TOC
-{:toc}
 
 1、快捷键`Ctrl+R`打开“运行”，输入`regedit`打开注册表
 

@@ -5,8 +5,6 @@ date: 2021-04-22
 categories: [build]
 tags: [Unity]
 ---
-* TOC
-{:toc}
 
 这是因为缺少android-28的SDK，安装即可。
 

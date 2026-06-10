@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [Gradle]
 ---
-* TOC
-{:toc}
 
 与`Ant`只有`build.xml`，`Maven`只有`pom.xml`不同，使用`gradle`的项目一般有以下几个文件：
 

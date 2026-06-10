@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Maven, 仓库, settings.xml]
 ---
-* TOC
-{:toc}
 
 `settings.xml` 是 Maven 的全局配置文件，控制仓库地址、认证信息、镜像等。理解它对团队协作和 CI/CD 很重要。
 

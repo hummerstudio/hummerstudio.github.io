@@ -5,8 +5,6 @@ categories: [ai]
 tags: [AI, Temperature, Top-P, 大语言模型, LLM, 采样]
 ---
 
-* TOC
-{:toc}
 
 ## 1、同一个问题，不同的回答
 

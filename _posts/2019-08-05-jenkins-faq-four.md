@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkins, Pipeline]
 ---
-* TOC
-{:toc}
 
 ## 问题16：设置超时时间能够用Pipeline代码实现吗？
 

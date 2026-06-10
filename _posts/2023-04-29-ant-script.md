@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Ant, Groovy, JavaScript, 脚本]
 ---
-* TOC
-{:toc}
 
 Ant 的 XML 语法处理复杂逻辑时很吃力。好在 Ant 支持内嵌 `<script>` 标签，用 Groovy 或 JavaScript 编写自定义逻辑。
 

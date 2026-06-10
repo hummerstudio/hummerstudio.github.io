@@ -5,8 +5,6 @@ categories: [build]
 tags: [Linux, C/C++, Makefile, 构建工具]
 ---
 
-* TOC
-{:toc}
 
 ## 1、你最早是怎么编译 C 程序的？
 

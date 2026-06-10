@@ -5,8 +5,6 @@ author: 唐明
 categories: [vcs]
 tags: [Git]
 ---
-* TOC
-{:toc}
 
 在空文件夹下创建一个名为`.gitkeep`的空文件即可。
 

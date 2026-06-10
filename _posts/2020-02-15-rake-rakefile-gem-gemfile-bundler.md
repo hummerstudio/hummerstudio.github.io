@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [rake, Rakefile, gem, gemspec, bundler, bundle, Gemfile, Ruby]
 ---
-* TOC
-{:toc}
 
 ## 概述
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Gradle, Task]
 ---
-* TOC
-{:toc}
 
 Task 是 Gradle 构建的基本单元，理解 Task 的创建、配置和执行是掌握 Gradle 的关键。
 

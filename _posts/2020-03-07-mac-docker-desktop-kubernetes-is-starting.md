@@ -4,8 +4,6 @@ author: 唐明
 categories: [container]
 tags: [Kubernetes, Docker]
 ---
-* TOC
-{:toc}
 
 ## 问题现象
 

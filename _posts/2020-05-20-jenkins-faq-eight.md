@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkins, Pipeline]
 ---
-* TOC
-{:toc}
 
 ## 问题36：Hudson和Jenkins是什么关系？
 

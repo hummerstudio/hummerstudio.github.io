@@ -5,8 +5,6 @@ date: 2021-05-09
 categories: [build]
 tags: [CDN]
 ---
-* TOC
-{:toc}
 
 BOOTCDN：[https://www.bootcdn.cn/](https://www.bootcdn.cn/)
 

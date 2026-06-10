@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [winget]
 ---
-* TOC
-{:toc}
 
 为什么不打开编辑器呢？
 

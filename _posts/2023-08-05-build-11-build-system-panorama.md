@@ -5,8 +5,6 @@ categories: [build]
 tags: [Linux, C/C++, 构建工具, Make, CMake, Ninja, Bazel]
 ---
 
-* TOC
-{:toc}
 
 ## 1、先讲个故事
 

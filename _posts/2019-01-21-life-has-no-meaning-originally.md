@@ -4,8 +4,6 @@ author: 唐明
 categories: [essays]
 tags: [人文]
 ---
-* TOC
-{:toc}
 
 人之起始，本是动物。生下来，活下去，复归尘土，就是一生。
 

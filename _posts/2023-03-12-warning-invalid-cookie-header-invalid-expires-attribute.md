@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [Java, httpclient5]
 ---
-* TOC
-{:toc}
 
 当请求URL返回的cookie中`expires`为如下格式时，
     

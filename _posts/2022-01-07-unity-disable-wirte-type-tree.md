@@ -5,8 +5,6 @@ date: 2022-01-07
 categories: [build]
 tags: [Unity]
 ---
-* TOC
-{:toc}
 
 BuildAssetBundleOption.DisableWriteTypeTree
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkins, Pipeline]
 ---
-* TOC
-{:toc}
 
 ## 问题31：有多个环境相同的节点，希望能够实现自动将任务分配到空闲节点上，能实现么？
 

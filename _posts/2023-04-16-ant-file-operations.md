@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Ant, 文件操作]
 ---
-* TOC
-{:toc}
 
 Ant 提供了丰富的文件操作任务，是构建脚本中最常用的功能之一。
 

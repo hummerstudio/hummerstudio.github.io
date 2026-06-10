@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [dependencies]
 ---
-* TOC
-{:toc}
 
 我们构建组除了负责bk-ci插件开发，还负责监控使用构建平台的所有项目的打包流水线、质量检查流水线的执行情况。
 

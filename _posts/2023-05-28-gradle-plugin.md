@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Gradle, 插件, Plugin]
 ---
-* TOC
-{:toc}
 
 Gradle 插件可以封装构建逻辑，在多个项目间复用。创建插件有三种方式，各有适用场景。
 

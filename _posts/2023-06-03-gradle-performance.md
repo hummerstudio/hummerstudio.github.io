@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Gradle, 性能优化, 缓存]
 ---
-* TOC
-{:toc}
 
 随着项目越来越大，Gradle 构建时间可能越来越长。掌握增量构建和缓存机制可以显著加速日常开发。
 

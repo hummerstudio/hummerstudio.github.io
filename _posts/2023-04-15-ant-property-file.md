@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Ant, Property]
 ---
-* TOC
-{:toc}
 
 Ant 构建脚本中经常需要配置一些可变参数（如服务器地址、版本号等），通过属性文件统一管理是好习惯。
 

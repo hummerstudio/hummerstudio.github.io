@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Maven, 生命周期]
 ---
-* TOC
-{:toc}
 
 Maven 围绕"生命周期"（Lifecycle）组织构建过程，理解生命周期是掌握 Maven 的关键。
 

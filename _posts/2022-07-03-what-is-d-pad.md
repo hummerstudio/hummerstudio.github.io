@@ -5,8 +5,6 @@ date: 2022-07-03
 categories: [build]
 tags: [d-pad]
 ---
-* TOC
-{:toc}
 
 方向键 (D-pad，`directional pad`的简称。) 是放置在箭头或十字设计中的一系列按钮，可提供四个方向的命令 - 上下左右或北南东西。
 

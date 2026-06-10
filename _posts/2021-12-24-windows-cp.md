@@ -5,8 +5,6 @@ date: 2021-12-24
 categories: [build]
 tags: [copy]
 ---
-* TOC
-{:toc}
 
 使用COPY命令。
 

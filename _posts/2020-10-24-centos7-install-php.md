@@ -4,8 +4,6 @@ author: 唐明
 categories: [ops]
 tags: [PHP, CentOS 7]
 ---
-* TOC
-{:toc}
 
 ## 安装EPEL仓库
 

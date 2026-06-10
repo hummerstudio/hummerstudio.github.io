@@ -5,8 +5,6 @@ date: 2021-04-24
 categories: [ops]
 tags: [Windows]
 ---
-* TOC
-{:toc}
 
 简言之，这是Windows的安全策略设置使得administrator的管理员权限需要批准。
 

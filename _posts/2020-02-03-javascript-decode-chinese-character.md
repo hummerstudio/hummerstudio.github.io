@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [JavaScript, 中文, 转义]
 ---
-* TOC
-{:toc}
 
 ## 问题起源
 

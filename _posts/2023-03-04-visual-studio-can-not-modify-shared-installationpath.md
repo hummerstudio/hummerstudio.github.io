@@ -5,8 +5,6 @@ author: 唐明
 categories: [ops]
 tags: [Visual Studio]
 ---
-* TOC
-{:toc}
 
 `共享组件、工具和SDK`的路径不能更改
 

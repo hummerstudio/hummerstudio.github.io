@@ -5,8 +5,6 @@ date: 2022-08-13
 categories: [ops]
 tags: [wget]
 ---
-* TOC
-{:toc}
 
 可忽略证书检查，增加`--no-check-certificate`参数。
 

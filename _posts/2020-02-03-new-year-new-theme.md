@@ -4,8 +4,6 @@ author: 唐明
 categories: [ops]
 tags: [Jekyll, GitHub Pages, 主题, 时间线, 标签云]
 ---
-* TOC
-{:toc}
 
 ## 之前的主题
 

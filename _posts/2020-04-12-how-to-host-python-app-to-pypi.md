@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [PyPI, setuptools, twine, setup.py, Python]
 ---
-* TOC
-{:toc}
 
 ## PyPI介绍
 

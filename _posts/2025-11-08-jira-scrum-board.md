@@ -4,8 +4,6 @@ author: 唐明
 categories: [pm]
 tags: [Jira, Scrum, 敏捷, 看板]
 ---
-* TOC
-{:toc}
 
 ## 1、从工作流到看板
 

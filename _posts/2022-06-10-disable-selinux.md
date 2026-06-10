@@ -5,8 +5,6 @@ date: 2022-06-10
 categories: [ops]
 tags: [selinux]
 ---
-* TOC
-{:toc}
 
 1、临时关闭
 

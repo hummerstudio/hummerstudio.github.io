@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [kotlin-plugin, kotlin-gradle-plugin]
 ---
-* TOC
-{:toc}
 
 1、`kotlin`是基于JVM的编程语言，与Java类似，且可与Java互操作；
 2、`kotlin-plugin`是IDEA和Android Studio的IDE（集成开发环境）支持插件；

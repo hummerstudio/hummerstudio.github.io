@@ -4,8 +4,6 @@ author: 唐明
 categories: [vcs]
 tags: [GitHub Pages, Jekyll, FAQ]
 ---
-* TOC
-{:toc}
 
 ## 问题现象
 

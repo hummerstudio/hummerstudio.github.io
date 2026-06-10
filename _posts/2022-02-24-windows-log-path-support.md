@@ -5,8 +5,6 @@ date: 2022-02-24
 categories: [ops]
 tags: [Windows]
 ---
-* TOC
-{:toc}
 
 1、确保操作系统版本号大于`14352`；
 

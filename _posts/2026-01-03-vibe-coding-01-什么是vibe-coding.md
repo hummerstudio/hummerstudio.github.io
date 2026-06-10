@@ -5,8 +5,6 @@ categories: [ai]
 tags: [AI, Vibe Coding, AI编程, 大语言模型]
 ---
 
-* TOC
-{:toc}
 
 ## 1、两种“做饭”的方式
 

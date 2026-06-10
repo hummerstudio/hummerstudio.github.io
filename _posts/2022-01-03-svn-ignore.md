@@ -5,8 +5,6 @@ date: 2022-01-03
 categories: [vcs]
 tags: [SVN]
 ---
-* TOC
-{:toc}
 
 使用`propset`目录设置`svn:ignore`,可简写为`ps`。
 

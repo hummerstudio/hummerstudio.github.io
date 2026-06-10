@@ -5,8 +5,6 @@ categories: [build]
 tags: [Linux, C/C++, 静态库, 动态库, 链接]
 ---
 
-* TOC
-{:toc}
 
 ## 1、从一段尴尬的经历说起
 

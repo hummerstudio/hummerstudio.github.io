@@ -5,8 +5,6 @@ date: 2021-12-22
 categories: [build]
 tags: [arm]
 ---
-* TOC
-{:toc}
 
 简言之，armv6、armv7、armv7s、armv8、arm64都是ARM处理器的指令集。
 

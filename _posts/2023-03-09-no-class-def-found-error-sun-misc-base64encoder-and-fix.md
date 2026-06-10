@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [winget]
 ---
-* TOC
-{:toc}
 
 调用apktool工具签名apk时遇到`sun/misc/BASE64Encoder`报错。
 

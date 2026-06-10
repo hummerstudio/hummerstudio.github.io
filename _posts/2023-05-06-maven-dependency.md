@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Maven, 依赖管理]
 ---
-* TOC
-{:toc}
 
 Maven 的依赖管理机制很强大，但 scope（作用域）、传递依赖和依赖冲突也经常让人困惑。
 

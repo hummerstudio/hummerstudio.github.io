@@ -4,8 +4,6 @@ author: 唐明
 categories: [pm]
 tags: [Jira, 工作流, Issue, 需求管理]
 ---
-* TOC
-{:toc}
 
 ## 1、Issue 是 Jira 的心脏
 

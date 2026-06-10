@@ -5,8 +5,6 @@ date: 2022-03-03
 categories: [build]
 tags: [Unity]
 ---
-* TOC
-{:toc}
 
 1、在`Audio Source`设置`Spatial Blend`指为1；
 

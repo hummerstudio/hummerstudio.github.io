@@ -5,8 +5,6 @@ date: 2022-06-10
 categories: [ops]
 tags: [firewalld]
 ---
-* TOC
-{:toc}
 
 查看firewalld状态：
 

@@ -5,8 +5,6 @@ author: 唐明
 categories: [ops]
 tags: [Visual Studio]
 ---
-* TOC
-{:toc}
 
 VisualSVN for Visual Studio
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [essays]
 tags: [事理, 解决问题, 藏象思维, CSS]
 ---
-* TOC
-{:toc}
 
 ## 写在前面的话
 
@@ -76,8 +74,6 @@ TOC 是 Table of Contents 的简称。翻译为中文就是目录。
 查看 Demo 仓库的源码，可以很明显注意到在文章开头有以下内容：
 
 ```markdown
-* TOC
-{:toc}
 ```
 
 将这段代码加到我自己的文章开头，本地预览，侧边栏里的目录有内容了！
@@ -154,8 +150,6 @@ function generateContent() {
 理清了前因后果，百分百确定了原因。上面提到的解决方法也能确定的确是对症下药。即在所有文章的开头添加代码：
 
 ```markdown
-* TOC
-{:toc}
 ```
 
 ## 遇到新问题
@@ -208,8 +202,6 @@ function generateContent() {
 
 ```markdown
 <!--以上为摘要内容-->
-* TOC
-{:toc}
 ```
 其中第一行为我在 `_config.yml` 中配置的摘要分割符：
 

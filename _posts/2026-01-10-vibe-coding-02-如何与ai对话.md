@@ -5,8 +5,6 @@ categories: [ai]
 tags: [AI, Vibe Coding, AI编程, Prompt]
 ---
 
-* TOC
-{:toc}
 
 ## 1、一个万能的心智模型
 

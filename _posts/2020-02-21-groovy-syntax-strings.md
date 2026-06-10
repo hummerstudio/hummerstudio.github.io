@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Groovy]
 ---
-* TOC
-{:toc}
 
 ## Groovy语法概述
 

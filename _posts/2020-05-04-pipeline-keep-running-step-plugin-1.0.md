@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [SonarQube]
 ---
-* TOC
-{:toc}
 
 ## 问题背景
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkinsclient]
 ---
-* TOC
-{:toc}
 
 ## jenkinsclient简介
 

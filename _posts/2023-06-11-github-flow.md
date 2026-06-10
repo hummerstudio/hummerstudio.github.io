@@ -4,8 +4,6 @@ author: 唐明
 categories: [vcs]
 tags: [Git, GitHub Flow, 分支模型]
 ---
-* TOC
-{:toc}
 
 ## 1、为什么需要更轻量的模型
 

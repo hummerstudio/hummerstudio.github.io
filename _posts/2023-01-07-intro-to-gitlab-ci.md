@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Gitlab CI, CI/CD, DevOps]
 ---
-* TOC
-{:toc}
 
 ## Gitlab CI，生于Gitlab，用于Gitlab
 

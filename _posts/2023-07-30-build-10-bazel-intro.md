@@ -5,8 +5,6 @@ categories: [build]
 tags: [Linux, C/C++, Bazel, 构建工具]
 ---
 
-* TOC
-{:toc}
 
 ## 1、CMake 还不够好吗？
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [essays]
 tags: [道, 儒, 法, 墨]
 ---
-* TOC
-{:toc}
 
 中国人干什么都喜欢讲理。
 

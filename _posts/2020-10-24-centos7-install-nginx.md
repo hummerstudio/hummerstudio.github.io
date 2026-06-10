@@ -4,8 +4,6 @@ author: 唐明
 categories: [ops]
 tags: [Nginx, CentOS 7]
 ---
-* TOC
-{:toc}
 
 ## 配置Nginx仓库
 

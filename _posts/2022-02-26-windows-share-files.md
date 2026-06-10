@@ -5,8 +5,6 @@ date: 2022-02-26
 categories: [ops]
 tags: [Windows]
 ---
-* TOC
-{:toc}
 
 1. 打开运行(快捷键Win+R)，输入gpedit.msc，确定，打开本地组策略编辑器
 1. 打开：“本地计算机策略->计算机配置->Windows设置->安全设置->本地策略->用户权限分配”

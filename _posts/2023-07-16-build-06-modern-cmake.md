@@ -5,8 +5,6 @@ categories: [build]
 tags: [Linux, C/C++, CMake, 现代CMake]
 ---
 
-* TOC
-{:toc}
 
 ## 1、一则警告
 

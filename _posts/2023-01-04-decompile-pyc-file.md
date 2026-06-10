@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [Python]
 ---
-* TOC
-{:toc}
 
 可以使用`uncompyle6`工具
 

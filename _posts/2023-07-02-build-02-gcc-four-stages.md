@@ -5,8 +5,6 @@ categories: [build]
 tags: [Linux, C/C++, GCC, 编译器]
 ---
 
-* TOC
-{:toc}
 
 ## 1、一个看似简单的问题
 

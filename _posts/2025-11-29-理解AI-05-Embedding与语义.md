@@ -5,8 +5,6 @@ categories: [ai]
 tags: [AI, Embedding, 向量, 语义空间, 大语言模型, LLM]
 ---
 
-* TOC
-{:toc}
 
 ## 1、一个奇怪的问题
 

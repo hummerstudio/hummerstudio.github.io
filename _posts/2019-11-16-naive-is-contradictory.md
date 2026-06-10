@@ -4,8 +4,6 @@ author: 唐明
 categories: [essays]
 tags: [天真, 矛盾, 平衡, 稳定]
 ---
-* TOC
-{:toc}
 
 天真的可爱；
 

@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [Unity]
 ---
-* TOC
-{:toc}
 
 Unity国际版下载页面经常无法打开，而`Unity Hub`目前绑定的都是Unity中国版。可直接复制下面的连接到浏览器，回车访问会自动调用Unity Hub进行下载，一键直达。
 

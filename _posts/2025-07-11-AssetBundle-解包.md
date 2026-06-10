@@ -5,8 +5,6 @@ categories: [build]
 tags: [Unity, AssetBundle, AssetStudio, 资源提取]
 ---
 
-* TOC
-{:toc}
 
 ## 1、什么是AssetBundle解包
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Maven, 插件]
 ---
-* TOC
-{:toc}
 
 Maven 的功能由插件提供，了解常用插件是高效使用 Maven 的必修课。
 

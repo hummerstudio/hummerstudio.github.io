@@ -5,8 +5,6 @@ author: 唐明
 categories: [ops]
 tags: [Batch]
 ---
-* TOC
-{:toc}
 
 使用`cd`变量。
 

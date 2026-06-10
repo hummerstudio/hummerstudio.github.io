@@ -5,8 +5,6 @@ categories: [build]
 tags: [Linux, C/C++, CMake, 构建工具]
 ---
 
-* TOC
-{:toc}
 
 ## 1、从 Makefile 到 CMake：为什么还要再学一个工具？
 

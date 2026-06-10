@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkins, Pipeline]
 ---
-* TOC
-{:toc}
 
 ## 问题11：Pipeline脚本里怎么触发其他Jenkins任务？
 

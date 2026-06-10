@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Maven, Profile, 多环境]
 ---
-* TOC
-{:toc}
 
 开发、测试、生产环境的配置往往不同（数据库地址、日志级别等）。Maven 的 Profile 机制就是为解决这个问题设计的。
 

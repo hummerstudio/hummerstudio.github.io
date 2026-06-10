@@ -5,8 +5,6 @@ categories: [ai]
 tags: [AI, Vibe Coding, AI编程, 代码审查]
 ---
 
-* TOC
-{:toc}
 
 ## 1、一个好用的司机，不等于一个靠谱的司机
 

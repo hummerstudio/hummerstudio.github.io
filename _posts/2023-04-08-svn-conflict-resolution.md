@@ -4,8 +4,6 @@ author: 唐明
 categories: [vcs]
 tags: [SVN, 冲突, 合并]
 ---
-* TOC
-{:toc}
 
 ## 1、什么时候会产生冲突
 

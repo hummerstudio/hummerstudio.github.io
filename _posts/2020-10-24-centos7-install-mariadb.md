@@ -4,8 +4,6 @@ author: 唐明
 categories: [ops]
 tags: [MariaDB, CentOS 7]
 ---
-* TOC
-{:toc}
 
 ## 安装MariaDB
 

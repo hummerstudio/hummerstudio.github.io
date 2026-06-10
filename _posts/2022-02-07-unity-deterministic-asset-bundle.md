@@ -5,8 +5,6 @@ date: 2022-02-07
 categories: [build]
 tags: [Unity]
 ---
-* TOC
-{:toc}
 
 打AB时，增加`BuildAssetBundleOptions.DeterministicAssetBundle`选项。
 

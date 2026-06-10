@@ -5,8 +5,6 @@ categories: [ai]
 tags: [AI, Vibe Coding, AI编程, 上下文管理]
 ---
 
-* TOC
-{:toc}
 
 ## 1、AI 有一个“健忘症”问题
 

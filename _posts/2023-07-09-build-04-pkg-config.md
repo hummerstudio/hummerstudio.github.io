@@ -5,8 +5,6 @@ categories: [build]
 tags: [Linux, C/C++, pkg-config, 依赖管理]
 ---
 
-* TOC
-{:toc}
 
 ## 1、一个令人抓狂的场景
 

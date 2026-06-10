@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [PyExecJS]
 ---
-* TOC
-{:toc}
 
 使用execjs库，安装：
 ```

@@ -5,8 +5,6 @@ categories: [build]
 tags: [Linux, C/C++, 交叉编译, ARM, CMake]
 ---
 
-* TOC
-{:toc}
 
 ## 1、你会遇到这个需求
 

@@ -5,8 +5,6 @@ date: 2021-12-22
 categories: [build]
 tags: [iOS]
 ---
-* TOC
-{:toc}
 
 关键在于这一句：`unable to build chain to self-signed root`
 

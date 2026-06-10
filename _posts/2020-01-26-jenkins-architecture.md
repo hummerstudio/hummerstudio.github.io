@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkins, 体系结构, Stapler, Jelly, React, XStream, Jenkins Plugins]
 ---
-* TOC
-{:toc}
 
 ## 缘起
 

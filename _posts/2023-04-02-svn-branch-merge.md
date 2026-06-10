@@ -4,8 +4,6 @@ author: 唐明
 categories: [vcs]
 tags: [SVN, 分支, 合并]
 ---
-* TOC
-{:toc}
 
 ## 1、SVN 分支的本质
 

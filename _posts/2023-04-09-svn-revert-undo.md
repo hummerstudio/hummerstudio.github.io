@@ -4,8 +4,6 @@ author: 唐明
 categories: [vcs]
 tags: [SVN, 回退, 撤销]
 ---
-* TOC
-{:toc}
 
 ## 1、区分几种"回退"场景
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Ant, 条件判断]
 ---
-* TOC
-{:toc}
 
 Ant 没有编程语言那样的 `if/else`，但提供了 `if`/`unless` 属性和 `<condition>` 任务来实现条件逻辑。
 

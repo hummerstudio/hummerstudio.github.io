@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [GitHub Actions, 自动部署, CI/CD]
 ---
-* TOC
-{:toc}
 
 ## 自动化部署，CI/CD 的最后一步
 

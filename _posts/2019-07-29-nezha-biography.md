@@ -4,8 +4,6 @@ author: 唐明
 categories: [essays]
 tags: [诗]
 ---
-* TOC
-{:toc}
 
 我本为仙
 

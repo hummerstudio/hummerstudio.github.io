@@ -5,8 +5,6 @@ categories: [build]
 tags: [Linux, C/C++, CMake, 项目结构]
 ---
 
-* TOC
-{:toc}
 
 ## 1、项目长大了怎么办？
 

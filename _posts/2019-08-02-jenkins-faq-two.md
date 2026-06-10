@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkins, Pipeline, Blue Ocean, Python, Groovy]
 ---
-* TOC
-{:toc}
 
 ## 问题6：Blue Ocean和Jenkins是什么关系？
 

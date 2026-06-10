@@ -4,8 +4,6 @@ author: 唐明
 categories: [pm]
 tags: [Jira, 需求管理, DevOps]
 ---
-* TOC
-{:toc}
 
 ## 1、DevOps 从需求开始
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [GitHub Actions, 问题集锦]
 ---
-* TOC
-{:toc}
 
 ## 问题1：Workflow 没有触发怎么办？
 

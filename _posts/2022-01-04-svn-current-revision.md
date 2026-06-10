@@ -5,8 +5,6 @@ date: 2022-01-04
 categories: [vcs]
 tags: [SVN]
 ---
-* TOC
-{:toc}
 
 可以在SVN目录使用`svn info`命令查看。
 

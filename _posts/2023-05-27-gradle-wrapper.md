@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Gradle, Wrapper]
 ---
-* TOC
-{:toc}
 
 Gradle Wrapper 是 Gradle 官方推荐的执行方式，它确保团队所有人使用相同版本的 Gradle，避免"我这能跑你那不行"的问题。
 

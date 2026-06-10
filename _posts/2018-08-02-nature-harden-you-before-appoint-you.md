@@ -4,8 +4,6 @@ author: 唐明
 categories: [essays]
 tags: []
 ---
-* TOC
-{:toc}
 
 天降大任于斯人，必先不从其所愿，以使其知世事之曲折不易、之不由心；
 

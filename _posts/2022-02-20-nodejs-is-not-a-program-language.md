@@ -5,8 +5,6 @@ date: 2022-02-20
 categories: [build]
 tags: [Node.js]
 ---
-* TOC
-{:toc}
 
 准确说，`Node.js`不是编程语言，而是一个运行时，和`JVM`类似。
 

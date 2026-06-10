@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkins, Certified Jenkins Engineer, CJE, 认证, 证书]
 ---
-* TOC
-{:toc}
 
 ## CJE简介
 

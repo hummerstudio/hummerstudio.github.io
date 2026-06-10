@@ -5,8 +5,6 @@ date: 2021-12-28
 categories: [ops]
 tags: [ftp]
 ---
-* TOC
-{:toc}
 
 FTP的`passive`参数用于开启FTP被动模式。
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkinsclient]
 ---
-* TOC
-{:toc}
 
 配置好Jenkinsclient后，就可以通过命令来操作Jenkins了！
 

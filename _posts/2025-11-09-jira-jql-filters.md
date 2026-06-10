@@ -4,8 +4,6 @@ author: 唐明
 categories: [pm]
 tags: [Jira, JQL, 过滤器, 仪表盘]
 ---
-* TOC
-{:toc}
 
 ## 1、当 Issue 多到找不到时
 

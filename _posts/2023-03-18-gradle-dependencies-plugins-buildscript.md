@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [dependencies]
 ---
-* TOC
-{:toc}
 
 `Gradle`是一个非常灵活、强大的构建系统，但其概念也相对复杂，但只要抓住核心，做好区分，就不会觉得混乱。
 

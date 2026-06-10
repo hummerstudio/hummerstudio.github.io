@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkins]
 ---
-* TOC
-{:toc}
 
 ## Jenkins， 一无所有，无所不能
 

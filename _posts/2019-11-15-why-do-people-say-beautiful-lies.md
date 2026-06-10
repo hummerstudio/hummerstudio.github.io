@@ -4,8 +4,6 @@ author: 唐明
 categories: [essays]
 tags: [知乎]
 ---
-* TOC
-{:toc}
 
 >本文摘自我在知乎回答的问题
 

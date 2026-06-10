@@ -5,8 +5,6 @@ date: 2022-09-19
 categories: [ops]
 tags: [GeForce Experience]
 ---
-* TOC
-{:toc}
 
 按如下步骤操作：
 

@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [Ant]
 ---
-* TOC
-{:toc}
 
 介绍两种方式。
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [vcs]
 tags: [Git, TBD, 分支模型, 主干开发]
 ---
-* TOC
-{:toc}
 
 ## 1、更极致的理念
 

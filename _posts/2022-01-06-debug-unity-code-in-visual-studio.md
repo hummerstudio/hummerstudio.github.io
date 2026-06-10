@@ -5,8 +5,6 @@ date: 2022-01-06
 categories: [build]
 tags: [Unity]
 ---
-* TOC
-{:toc}
 
 1、 在 Unity > Preferences > External Tools中，将`External Script Editor`设置为Visual Studio（确保勾选了`Editor Attaching`选项
 

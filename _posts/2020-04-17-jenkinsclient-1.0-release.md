@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Jenkinsclient, Jenkins, Python]
 ---
-* TOC
-{:toc}
 
 ## Jenkinsclient介绍
 

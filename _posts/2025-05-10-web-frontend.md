@@ -6,8 +6,6 @@ categories: [build]
 tags: [Vue, 前端, Ant Design Vue, Web开发]
 ---
 
-* TOC
-{:toc}
 
 ## 1、从原生JS到现代前端
 

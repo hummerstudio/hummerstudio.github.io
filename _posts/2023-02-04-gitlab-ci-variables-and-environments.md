@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Gitlab CI, 变量, 环境]
 ---
-* TOC
-{:toc}
 
 ## 变量，流水线的"灵魂参数"
 

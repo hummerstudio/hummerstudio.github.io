@@ -4,8 +4,6 @@ author: 唐明
 categories: [vcs]
 tags: [GitHub Pages, Jekyll, HTML5, CSS3, Markdown, 阿里云]
 ---
-* TOC
-{:toc}
 
 本文涉及知识点：
 

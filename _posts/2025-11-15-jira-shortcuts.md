@@ -5,8 +5,6 @@ categories: [pm]
 tags: [Jira, 快捷键, 效率, 需求管理]
 ---
 
-* TOC
-{:toc}
 
 ## 1、为什么要用快捷键
 

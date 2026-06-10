@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [taskkill]
 ---
-* TOC
-{:toc}
 
 在Windows中可以使用`taskkill`命令来终止进程。
 

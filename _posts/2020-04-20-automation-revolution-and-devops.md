@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [自动化, DevOps]
 ---
-* TOC
-{:toc}
 
 自动化是一个革命性的概念和技术。
 

@@ -4,8 +4,6 @@ author: 唐明
 categories: [vcs]
 tags: [Git, Git Rebase]
 ---
-* TOC
-{:toc}
 
 ## 1、Rebase vs Merge
 

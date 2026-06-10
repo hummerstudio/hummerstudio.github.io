@@ -5,8 +5,6 @@ author: 唐明
 categories: [build]
 tags: [运行时]
 ---
-* TOC
-{:toc}
 
 
 下载地址（LTS版本）：[Download .NET 6.0 (Linux, macOS, and Windows) ](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)

@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [Gitlab CI, 问题集锦]
 ---
-* TOC
-{:toc}
 
 ## 问题1：Pipeline 一直处于 pending 状态怎么办？
 

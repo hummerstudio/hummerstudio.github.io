@@ -4,8 +4,6 @@ author: 唐明
 categories: [vcs]
 tags: [Git, Git Bisect, 调试]
 ---
-* TOC
-{:toc}
 
 ## 1、问题场景
 

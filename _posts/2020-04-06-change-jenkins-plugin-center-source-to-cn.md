@@ -4,8 +4,6 @@ author: 唐明
 categories: [devops]
 tags: [插件中心, Jenkins]
 ---
-* TOC
-{:toc}
 
 ## Jenkins插件中心国内镜像
 

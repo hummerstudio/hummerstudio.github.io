@@ -4,8 +4,6 @@ author: 唐明
 categories: [build]
 tags: [Gradle, 多模块]
 ---
-* TOC
-{:toc}
 
 大型项目通常拆分为多个模块。Gradle 的多模块支持很灵活，本文介绍基本配置和常见实践。
 

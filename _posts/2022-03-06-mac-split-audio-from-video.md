@@ -5,8 +5,6 @@ date: 2022-03-06
 categories: [ops]
 tags: [Mac]
 ---
-* TOC
-{:toc}
 
 1、使用`QuickTime Player`打开目标视频文件
 
