@@ -2,7 +2,7 @@
 title: Windows文件共享开启匿名访问
 author: 唐明
 date: 2022-02-26
-categories: [ops]
+categories: [deploy]
 tags: [Windows]
 ---
 

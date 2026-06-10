@@ -1,7 +1,7 @@
 ---
 title: Java 静态代码检查（二）：用 Checkstyle 规范代码风格
 author: 唐明
-categories: [build]
+categories: [test]
 tags: [Java, 静态检查, Checkstyle, 代码风格]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Java 静态代码检查（四）：FindBugs——字节码级别的 Bug 猎手
 author: 唐明
-categories: [build]
+categories: [test]
 tags: [Java, 静态检查, FindBugs, 代码质量]
 ---
 

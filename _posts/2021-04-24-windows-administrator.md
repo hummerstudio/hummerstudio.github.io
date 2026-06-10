@@ -2,7 +2,7 @@
 title: Windows administrator用户没有管理员权限的解决方法
 author: 唐明
 date: 2021-04-24
-categories: [ops]
+categories: [deploy]
 tags: [Windows]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Java 静态代码检查（三）：用 PMD 发现不良实践
 author: 唐明
-categories: [build]
+categories: [test]
 tags: [Java, 静态检查, PMD, 代码质量]
 ---
 

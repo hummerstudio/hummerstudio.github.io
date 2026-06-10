@@ -2,7 +2,7 @@
 title: Visual Studio安装时，共享路径不能修改
 date: 2023-03-04
 author: 唐明
-categories: [ops]
+categories: [deploy]
 tags: [Visual Studio]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Java 静态代码检查（一）：什么是静态检查
 author: 唐明
-categories: [build]
+categories: [test]
 tags: [Java, 静态检查, 代码质量]
 ---
 

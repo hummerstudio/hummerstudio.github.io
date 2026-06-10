@@ -1,7 +1,7 @@
 ---
 title: Java 静态代码检查（六）：用 SonarQube 搭建持续代码质量平台
 author: 唐明
-categories: [build]
+categories: [test]
 tags: [Java, 静态检查, SonarQube, 代码质量]
 ---
 

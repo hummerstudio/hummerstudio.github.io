@@ -2,7 +2,7 @@
 title: Windows通过注册表添加开机启动项
 date: 2022-10-02
 author: 唐明
-categories: [ops]
+categories: [deploy]
 tags: [开机启动]
 ---
 

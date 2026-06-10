@@ -1,7 +1,7 @@
 ---
 title: Java 静态代码检查（五）：SpotBugs——FindBugs 的继任者
 author: 唐明
-categories: [build]
+categories: [test]
 tags: [Java, 静态检查, SpotBugs, FindBugs, 代码质量]
 ---
 

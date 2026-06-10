@@ -2,7 +2,7 @@
 title: Mac上快速分离出视频中的音频文件
 author: 唐明
 date: 2022-03-06
-categories: [ops]
+categories: [deploy]
 tags: [Mac]
 ---
 
