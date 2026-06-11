@@ -212,16 +212,25 @@ RUN mvn clean package -DskipTests
 # ============ 第二阶段：运行 ============
 FROM openjdk:11-jre-slim
 WORKDIR /app
-COPY --from=builder /app/target/app.jar app.jar
+
+# 先创建用户，确保后续 COPY 时可以指定文件所属
 RUN addgroup --system app && adduser --system --group app
+
+# 复制文件时直接赋予 app 用户所有权，避免权限问题
+COPY --from=builder --chown=app:app /app/target/app.jar app.jar
+
 USER app
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 
 镜像大小直接变成 200MB 左右，减少了 70% 以上。
 
-而且这个 Dockerfile 还有个细节：**先 COPY `pom.xml` 并下载依赖，再 COPY `src`**。这样如果只改了源码而依赖没变，Docker 可以复用缓存层，下载依赖这一步直接跳过，大大加速构建。
+注意这里有两个容易被忽略的细节：
+
+1. **先创建用户再 COPY，并用 `--chown` 赋权**。如果先 COPY 再创建用户，复制的文件默认归属于 `root`，后续 `USER app` 切换后，`app` 用户可能无权限读取文件，导致容器启动时报 `Permission denied`。`--chown=app:app` 在复制的同时直接赋予正确所有权。
+
+2. **先 COPY `pom.xml` 并下载依赖，再 COPY `src`**。这样如果只改了源码而依赖没变，Docker 可以复用缓存层，下载依赖这一步直接跳过，大大加速构建。
 
 ### 以 Go 应用为例
 
