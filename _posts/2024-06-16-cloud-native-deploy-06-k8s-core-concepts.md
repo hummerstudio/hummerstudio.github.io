@@ -1,11 +1,11 @@
 ---
-title: 云原生部署（六）：K8s 核心概念——Pod、Deployment 与 Service
+title: 云原生部署（六）：K8s 核心概念——Pod、Deployment、Service、ConfigMap 与 Secret
 author: 唐明
 categories: [deploy]
-tags: [Kubernetes, Pod, Deployment, Service, K8s 核心概念, YAML]
+tags: [Kubernetes, Pod, Deployment, Service, ConfigMap, Secret, K8s 核心概念, YAML]
 ---
 
-理解了 K8s 的架构，接下来该认识 K8s 中最核心的三个 API 对象了：Pod、Deployment 和 Service。这三个是你日常和 K8s 打交道时使用频率最高的概念，搞明白了它们，K8s 就算入了门。
+理解了 K8s 的架构，接下来该认识 K8s 中最核心的 API 对象了：Pod、Deployment、Service，以及管理配置与密钥的 ConfigMap 和 Secret。这五个是你日常和 K8s 打交道时使用频率最高的概念，搞明白了它们，K8s 就算入了门。
 
 <!--以上为摘要内容-->
 
@@ -218,7 +218,211 @@ curl http://myapp-service:80/health
 
 这解决了服务发现中最核心的问题：**不需要知道对方在哪里，只需要知道对方叫什么。**
 
-## 4、把三者串起来：一个完整示例
+## 4、ConfigMap 与 Secret —— 配置与密钥管理
+
+到了这里，你已经掌握了 K8s 的“计算三件套”：Pod 跑容器、Deployment 管副本、Service 管访问。但还有一个问题没解决：**配置和密钥怎么管理？**
+
+把数据库地址、API 密钥、证书这些敏感信息写死在镜像里？绝对不行。这不仅违反 12-Factor 原则（配置应该与代码分离），还会导致密钥泄露的风险。
+
+K8s 提供了两个专门的 API 对象来解决这个问题：**ConfigMap**（管理普通配置）和 **Secret**（管理敏感信息）。
+
+### 4.1 ConfigMap —— 非敏感配置的集中管理
+
+ConfigMap 用来存储键值对形式的配置数据，比如环境变量、配置文件内容等。
+
+**创建 ConfigMap 的几种方式：**
+
+```bash
+# 方式一：从键值对直接创建
+kubectl create configmap app-config \
+  --from-literal=app.env=production \
+  --from-literal=app.log.level=INFO
+
+# 方式二：从文件创建（文件内容成为 value）
+kubectl create configmap nginx-config \
+  --from-file=nginx.conf=./nginx.conf
+
+# 方式三：从目录批量创建（每个文件名成为 key）
+kubectl create configmap app-config-dir \
+  --from-file=./config-dir/
+```
+
+也可以用 YAML 文件定义：
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  # 简单键值对
+  app.env: "production"
+  app.log.level: "INFO"
+  # 多行配置文件（注意 | 表示保留换行的 YAML 语法）
+  nginx.conf: |
+    server {
+        listen 80;
+        server_name localhost;
+        location / {
+            root /usr/share/nginx/html;
+            index index.html;
+        }
+    }
+```
+
+**在 Pod 中使用 ConfigMap：**
+
+ConfigMap 的数据可以通过两种方式注入到容器中：**环境变量** 和 **文件卷挂载**。
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: configmap-demo
+spec:
+  containers:
+  - name: app
+    image: myapp:v1
+    # 方式一：作为环境变量
+    env:
+    - name: APP_ENV
+      valueFrom:
+        configMapKeyRef:
+          name: app-config
+          key: app.env
+    - name: LOG_LEVEL
+      valueFrom:
+        configMapKeyRef:
+          name: app-config
+          key: app.log.level
+    # 一次性注入所有键值对（键名作为环境变量名）
+    envFrom:
+    - configMapRef:
+        name: app-config
+    # 方式二：作为文件挂载
+    volumeMounts:
+    - name: config-volume
+      mountPath: /etc/config
+  volumes:
+  - name: config-volume
+    configMap:
+      name: app-config
+```
+
+挂载后，`/etc/config/` 目录下会生成以 ConfigMap 的 key 命名的文件，文件内容就是对应的 value。
+
+### 4.2 Secret —— 敏感信息的安全管理
+
+Secret 的设计目的和 ConfigMap 类似，但专门用于存储密码、Token、证书等敏感数据。K8s 对 Secret 做了特殊处理：
+
+- Secret 数据在 etcd 中存储时是 **base64 编码**（注意：不是加密！K8s 1.7+ 支持 etcd 静态加密，但默认不开启）
+- 只有需要访问该 Secret 的 Pod 才会被 kubelet 挂载到节点上
+- 在容器内的内存中，Secret 以 tmpfs（内存文件系统）形式存在，不会写入节点磁盘
+
+**创建 Secret：**
+
+```bash
+# 方式一：从键值对创建（value 会自动 base64 编码）
+kubectl create secret generic db-secret \
+  --from-literal=username=admin \
+  --from-literal=password='S3cur3P@ss!'
+
+# 方式二：从文件创建（比如 TLS 证书）
+kubectl create secret tls tls-secret \
+  --cert=./tls.crt \
+  --key=./tls.key
+
+# 方式三：从文件批量创建
+kubectl create secret generic app-secret \
+  --from-file=./secrets/
+```
+
+用 YAML 定义（注意 value 需要手动 base64 编码）：
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: db-secret
+type: Opaque          # 通用类型，也可以是 kubernetes.io/tls 等
+data:
+  # 注意：这里的值必须是 base64 编码后的
+  username: YWRtaW4=          # admin
+  password: UDNzc3cwcmQ=      # 实际生产中不要用弱密码 :)
+stringData:                   # stringData 字段会自动做 base64 编码，更方便
+  database: myapp-db
+```
+
+> **安全提示**：`stringData` 是 K8s 1.14+ 引入的便利字段，写入明文，K8s 会自动编码为 base64 存入 `data` 字段。但无论哪种方式，etcd 中存储的都是 base64 编码（可逆！），生产环境务必开启 etcd 静态加密，并考虑使用外部密钥管理系统（如 HashiCorp Vault、AWS Secrets Manager）。
+
+**在 Pod 中使用 Secret：**
+
+使用方式和 ConfigMap 几乎一模一样：
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secret-demo
+spec:
+  containers:
+  - name: app
+    image: myapp:v1
+    env:
+    - name: DB_USERNAME
+      valueFrom:
+        secretKeyRef:
+          name: db-secret
+          key: username
+    - name: DB_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: db-secret
+          key: password
+    volumeMounts:
+    - name: secret-volume
+      mountPath: /etc/secrets
+      readOnly: true
+  volumes:
+  - name: secret-volume
+    secret:
+      secretName: db-secret
+```
+
+### 4.3 使用建议与最佳实践
+
+| 场景 | 推荐方式 | 原因 |
+|------|---------|------|
+| 小型配置、环境变量 | ConfigMap → 环境变量 | 简单直接，应用无需改代码 |
+| 配置文件（如 nginx.conf）| ConfigMap → 文件挂载 | 支持热更新（需应用支持） |
+| 数据库密码、API Key | Secret → 环境变量或文件挂载 | 避免敏感信息明文存储 |
+| TLS 证书 | Secret (type: kubernetes.io/tls) → 文件挂载 | Ingress Controller 标准做法 |
+| 大文件配置（>1MB）| 考虑使用外部配置中心（如 Consul、Apollo）| ConfigMap/Secret 有大小限制（1MB） |
+
+### 4.4 与 12-Factor 原则的呼应
+
+回顾第一篇提到的 12-Factor 原则，其中第 III 条就是**配置（Config）**：
+
+> 配置应该存储在环境变量中，与代码严格分离。
+
+ConfigMap 和 Secret 正是这一原则在 K8s 中的落地实现。通过它们，你可以：
+
+- 开发、测试、生产使用同一套镜像，只通过不同的 ConfigMap/Secret 注入不同的配置
+- 敏感信息不进入镜像，也不进入代码仓库
+- 修改配置无需重新构建镜像
+
+```yaml
+# 同一镜像，不同环境，不同配置
+# development
+kubectl apply -f configmap-dev.yaml -f deployment.yaml
+
+# production
+kubectl apply -f configmap-prod.yaml -f deployment.yaml
+```
+
+---
+
+## 5、把核心概念串起来：一个完整示例
 
 下面是一个完整的 Nginx 部署示例，包括 Deployment 和 Service：
 
@@ -284,7 +488,7 @@ kubectl run test --rm -it --image=busybox -- wget -qO- http://nginx-service
 
 ## 小结
 
-Pod、Deployment、Service 是 K8s 日常使用中最核心的三个概念：Pod 是容器运行的封装，Deployment 管理 Pod 的生命周期和副本数量，Service 提供稳定的服务入口。理解了这三者的关系和配合方式，K8s 的大门就算推开了。
+Pod、Deployment、Service、ConfigMap、Secret 是 K8s 日常使用中最核心的概念：Pod 是容器运行的封装，Deployment 管理 Pod 的生命周期和副本数量，Service 提供稳定的服务入口，ConfigMap 和 Secret 管理配置与密钥。理解了这些对象的关系和配合方式，K8s 的大门就算完全推开了。
 
 有了 Pod 和 Service，自然要解决它们之间怎么通信的问题。下一篇，我们深入 K8s 的网络模型——CNI、kube-proxy 的工作原理，以及 Pod 之间的通信是怎么实现的。
 

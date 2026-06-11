@@ -307,7 +307,7 @@ spec:
 | 3 | Dockerfile 最佳实践 | 写出又小又安全的镜像 |
 | 4 | Harbor 镜像仓库 | 搭建企业级私服，管理镜像生命周期 |
 | 5 | K8s 架构核心 | 理解 Master/Node/etcd 各组件职责 |
-| 6 | Pod/Deployment/Service | 掌握日常使用 K8s 的核心 API 对象 |
+| 6 | Pod/Deployment/Service/ConfigMap/Secret | 掌握日常使用 K8s 的核心 API 对象 |
 | 7 | K8s 网络 | 搞懂 CNI、kube-proxy、DNS 服务发现 |
 | 8 | K8s 存储 | 用 PV/PVC/StorageClass 持久化数据 |
 | 9 | Helm 包管理 | 模板化部署，一套 Chart 适配多环境 |
