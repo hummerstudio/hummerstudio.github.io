@@ -175,7 +175,7 @@ VOLUME /app/data
 VOLUME /app/logs
 ```
 
-和 `EXPOSE` 一样，`VOLUME` 也是声明性的。它不会真正挂载任何东西，只是告诉使用者"这里可能有数据需要持久化"。实际挂载还是通过 `docker run -v` 完成。
+和 `EXPOSE` 一样，`VOLUME` 也是声明性的。它不会真正挂载任何东西，只是告诉使用者“这里可能有数据需要持久化”。实际挂载还是通过 `docker run -v` 完成。
 
 ## 2、让镜像变小：多阶段构建
 
@@ -225,7 +225,7 @@ ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 
 ### 以 Go 应用为例
 
-Go 的多阶段构建更"绝"——最终镜像可以直接基于 `scratch`：
+Go 的多阶段构建更“绝”——最终镜像可以直接基于 `scratch`：
 
 ```dockerfile
 # ============ 第一阶段：构建 ============

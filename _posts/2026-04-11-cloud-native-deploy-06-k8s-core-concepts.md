@@ -11,7 +11,7 @@ tags: [Kubernetes, Pod, Deployment, Service, K8s 核心概念, YAML]
 
 ## 1、Pod —— K8s 的最小调度单元
 
-如果你问一个刚学过 Docker 的人："K8s 里容器的基本单位是什么？"，他最可能回答"是容器"。但这个答案是错的。
+如果你问一个刚学过 Docker 的人：“K8s 里容器的基本单位是什么？”，他最可能回答“是容器”。但这个答案是错的。
 
 **Pod 是 K8s 中创建和管理的最小单元，一个 Pod 可以包含一个或多个容器。**
 
@@ -19,7 +19,7 @@ tags: [Kubernetes, Pod, Deployment, Service, K8s 核心概念, YAML]
 
 这是理解 K8s 设计的关键问题。Docker 已经能跑容器了，K8s 为什么要在容器之上再包装一层 Pod？
 
-答案在于：**有些容器天生就是"连体婴儿"，需要共享资源、紧密协作。**
+答案在于：**有些容器天生就是“连体婴儿”，需要共享资源、紧密协作。**
 
 举个例子：一个 Web 应用容器需要一个日志收集 agent 把日志推到 Elasticsearch。这两个容器需要共享文件系统（Web 写日志，agent 读日志）、共享网络命名空间（通过 localhost 通信）。如果它们是独立的容器，这个共享就很难实现。
 
@@ -28,7 +28,7 @@ Pod 解决了这个问题：同一个 Pod 内的所有容器共享：
 - **存储卷（Volume）**：可以在容器之间共享文件。
 - **生命周期**：同生共死，一起被调度到同一个 Node 上。
 
-这种模式叫 **Sidecar 模式**（边车模式），日志收集 agent 就是 Web 容器的 sidecar——它们共享 Pod 的"躯体"，协作完成一项任务。
+这种模式叫 **Sidecar 模式**（边车模式），日志收集 agent 就是 Web 容器的 sidecar——它们共享 Pod 的“躯体”，协作完成一项任务。
 
 ### Pod 的 YAML 定义
 
@@ -83,7 +83,7 @@ spec:
 
 直接创建 Pod 在生产中很少使用——Pod 本身不具备自愈能力，Node 挂了 Pod 就没了。
 
-**Deployment 是 Pod 的管理者**，它确保指定数量的 Pod 副本始终在运行。你告诉它"我想要 3 个副本"，它就帮你维护这 3 个——少了就创建，多了就删掉，Node 挂了就在其他 Node 上重建。
+**Deployment 是 Pod 的管理者**，它确保指定数量的 Pod 副本始终在运行。你告诉它“我想要 3 个副本”，它就帮你维护这 3 个——少了就创建，多了就删掉，Node 挂了就在其他 Node 上重建。
 
 ### Deployment 的 YAML 定义
 
@@ -118,7 +118,7 @@ spec:
             cpu: "500m"
 ```
 
-注意 `selector.matchLabels` 和 `template.metadata.labels` 必须匹配。Deployment 通过标签来找到"谁是我管的 Pod"。如果标签不匹配，Deployment 会不断创建新 Pod（以为旧的不存在），导致资源泄漏。
+注意 `selector.matchLabels` 和 `template.metadata.labels` 必须匹配。Deployment 通过标签来找到“谁是我管的 Pod”。如果标签不匹配，Deployment 会不断创建新 Pod（以为旧的不存在），导致资源泄漏。
 
 ### Deployment 的日常操作
 
@@ -165,7 +165,7 @@ selector:
     - {key: version, operator: In, values: [v1, v2]}
 ```
 
-Labels 让 K8s 的解耦做到了极致——Deployment 不关心 Pod 叫什么名字、在哪里创建，只关心"带 `app=myapp` 标签的 Pod 是不是有 3 个"。
+Labels 让 K8s 的解耦做到了极致——Deployment 不关心 Pod 叫什么名字、在哪里创建，只关心“带 `app=myapp` 标签的 Pod 是不是有 3 个“。
 
 ## 3、Service —— 稳定的访问入口
 

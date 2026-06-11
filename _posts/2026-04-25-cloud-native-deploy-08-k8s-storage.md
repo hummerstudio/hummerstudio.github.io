@@ -5,7 +5,7 @@ categories: [deploy]
 tags: [Kubernetes, K8s 存储, PV, PVC, StorageClass, Volume, 持久化存储]
 ---
 
-容器是"用完即扔"的，但数据不是。如果把 MySQL 直接跑在容器里，容器一删数据就没了，这显然不行。K8s 怎么管理存储？PV、PVC、StorageClass 这些都是什么关系？这篇文章把这些概念一次讲清楚。
+容器是“用完即扔”的，但数据不是。如果把 MySQL 直接跑在容器里，容器一删数据就没了，这显然不行。K8s 怎么管理存储？PV、PVC、StorageClass 这些都是什么关系？这篇文章把这些概念一次讲清楚。
 
 <!--以上为摘要内容-->
 
@@ -25,7 +25,7 @@ tags: [Kubernetes, K8s 存储, PV, PVC, StorageClass, Volume, 持久化存储]
 
 那数据放哪？答案是**让数据脱离容器的生命周期，独立存在。** 这就是 Volume（存储卷）的职责。
 
-## 2、Volume —— 把数据"挂"进容器
+## 2、Volume —— 把数据“挂”进容器
 
 K8s 的 Volume 是把外部存储挂载到 Pod 的容器里，使得容器可以像访问本地目录一样访问外部数据。
 
@@ -70,7 +70,7 @@ Volume 是 Pod 级别的，定义在每个 Pod 的 YAML 里。如果每个开发
 
 K8s 的解决方案是**把存储的供应和存储的消费分离开**。
 
-**PersistentVolume（PV）是管理员预先准备的一块存储**，就像管理员在集群里插了一块"存储 U 盘"：
+**PersistentVolume（PV）是管理员预先准备的一块存储**，就像管理员在集群里插了一块“存储 U 盘”：
 
 ```yaml
 apiVersion: v1
@@ -107,7 +107,7 @@ spec:
 
 ## 4、PersistentVolumeClaim（PVC）—— 消费端
 
-有了 PV（供应端），应用开发者不需要关心存储的底层细节，只需要声明"我要多大、什么访问模式"的存储。这就是 **PersistentVolumeClaim（PVC）**：
+有了 PV（供应端），应用开发者不需要关心存储的底层细节，只需要声明“我要多大、什么访问模式”的存储。这就是 **PersistentVolumeClaim（PVC）**：
 
 ```yaml
 apiVersion: v1

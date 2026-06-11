@@ -5,7 +5,7 @@ categories: [deploy]
 tags: [Kubernetes, Helm, 包管理, Chart, 模板化部署, K8s 部署]
 ---
 
-如果你部署一个稍微复杂一点的应用（比如一个微服务 + MySQL + Redis + Nginx），YAML 文件会多到你怀疑人生。而且不同环境的配置（开发、测试、生产）各有不同，难道要维护三套 YAML？Helm 就是来解决这个痛苦——它被称为 "K8s 的 apt/yum"。
+如果你部署一个稍微复杂一点的应用（比如一个微服务 + MySQL + Redis + Nginx），YAML 文件会多到你怀疑人生。而且不同环境的配置（开发、测试、生产）各有不同，难道要维护三套 YAML？Helm 就是来解决这个痛苦——它被称为 “K8s 的 apt/yum”。
 
 <!--以上为摘要内容-->
 
@@ -79,7 +79,7 @@ myapp/
 └── .helmignore
 ```
 
-**`Chart.yaml`** —— Chart 的"身份证"：
+**`Chart.yaml`** —— Chart 的“身份证”：
 
 ```yaml
 apiVersion: v2                  # Helm 3 用 v2
@@ -288,7 +288,7 @@ helm search repo nginx
 
 ### 模板语法速查
 
-Go 模板语法有点"反直觉"，这里列出最常用的几个：
+Go 模板语法有点“反直觉”，这里列出最常用的几个：
 
 | 语法 | 用途 | 示例 |
 |------|------|------|
@@ -322,7 +322,7 @@ stage('Deploy to K8s') {
 
 ## 小结
 
-Helm 的核心价值就是把 K8s 的 YAML 从"静态文件"变成了"可模板化的包"。它让部署变得像 `apt install` 一样简单，让多环境管理不再需要维护一堆重复的 YAML。
+Helm 的核心价值就是把 K8s 的 YAML 从“静态文件”变成了“可模板化的包”。它让部署变得像 `apt install` 一样简单，让多环境管理不再需要维护一堆重复的 YAML。
 
 Chart 写好、values 配好、Helm 命令一敲——部署完成。下一篇，也是本系列的最后一篇，我们聊聊生产部署中最关键的两个概念：健康检查和滚动更新，让部署做到真正的零停机。
 
