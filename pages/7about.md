@@ -7,7 +7,7 @@ isNavItem: true
 noGlassCard: true
 ---
 
-## 关于站长
+## 一、关于站长
 
 唐莫盈（真名唐明），“莫盈”二字取自“明”的拆字谐音，我琢磨了很久的~
 
@@ -59,7 +59,7 @@ DevOps是一种方法论，贯穿一个项目的各个阶段，最完整的DevOp
 
 - 看代码：DevOps流水线中集成的大量工具，大部分都是开源的，有能力查看源码调试和解决问题，是非常大的优势。
 
----
+### 左手编程，右手文化
 
 另一大爱好是学习中华优秀传统文化，汲取古人智慧。
 
@@ -79,40 +79,32 @@ DevOps是一种方法论，贯穿一个项目的各个阶段，最完整的DevOp
 
 ---
 
-## 关于本站
-
-### 1、域名
+## 二、关于本站
 
 本站域名为 [tangmoying.com](https://tangmoying.com)，[tangming.me](https://tangming.me) 会自动跳转至此。
 
-
-### 2、公众号
-微信公众号名“DevOps持续交付”，ID：`devopscd`，欢迎搜索关注，或扫描下方二维码关注。❤️
-
-![二维码](/assets/img/qrcode_for_devopscd.jpg)
-
-
 ### 内容和栏目介绍
 
-本站文章按 DevOps 全流程组织导航，从需求、编码、构建、测试、发布、部署、监控到反馈，覆盖软件交付全链路。
+本站文章按 DevOps 全流程组织导航，覆盖软件交付全链路，共 11 个栏目：
 
-此外还设有 **DevOps**、**AI** 等专题分类，以及**墨影闲谈**栏目收录文化随笔与日常随想。
+**DevOps 全流程（8 个）：**
 
-<div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script src="/assets/js/md5.min.js"></script>
-<script>
-console.log("md5 of location.pathname: " + md5(location.pathname))
-var gitalk = new Gitalk({
-  clientID: 'd73e98e707bf5f9b582e',
-  clientSecret: '803614808dfcf6f46d82d4c723a51fb18c6e3c2e',
-  repo: 'gitalk-of-shanyshanb',
-  owner: 'hummerstudio',
-  admin: ['hummerstudio'],
-  id: md5(location.pathname),      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
-})
+栏目 | 简介
+------|------
+**需求** | 需求管理与敏捷实践：Scrum 看板、工作流设计、缺陷追踪
+**编码** | 版本控制工具、分支策略、代码协作与开发规范
+**构建** | 编译构建、依赖管理、多语言构建工具链与构建系统
+**测试** | 代码质量保障：静态分析、单元测试、代码覆盖率
+**发布** | 发布工程：版本管理、变更日志与制品库
+**部署** | 云原生部署、容器化与运维自动化
+**监控** | 系统监控、日志采集与告警
+**反馈** | CI/CD 反馈体系：通知渠道与反馈机制设计
 
-gitalk.render('gitalk-container')
-</script>
+**专题分类：**
+
+- **DevOps** — CI/CD 工具链、持续集成实践与 DevOps 方法论
+- **AI** — AI 基础概念、Vibe Coding 编程实践与本地大模型探索
+
+**文化随笔：**
+
+- **墨影闲谈** — 传统文化、人生思考、诗歌创作、读书笔记与日常随想

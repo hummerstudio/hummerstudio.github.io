@@ -384,11 +384,11 @@ img {
     opacity: 0.4;
 }
 .hero-title {
-    font-family: var(--font-brand);
-    font-size: 2.8rem;
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
     font-weight: 700;
     color: var(--color-text);
-    letter-spacing: 6px;
+    letter-spacing: 8px;
     margin-bottom: var(--spacing-sm);
 }
 .hero-desc {
@@ -736,19 +736,23 @@ img {
 }
 
 /* 表格 */
-.post-content table {
+.post-content table,
+.page-content table {
     width: 100%;
     margin: var(--spacing-md) 0;
     border-collapse: collapse;
     font-size: 0.9rem;
 }
 .post-content th,
-.post-content td {
+.post-content td,
+.page-content th,
+.page-content td {
     padding: var(--spacing-sm) var(--spacing-md);
     border: 1px solid var(--color-border);
     text-align: left;
 }
-.post-content th {
+.post-content th,
+.page-content th {
     background: rgba(108, 142, 245, 0.12);
     font-weight: 600;
 }
@@ -874,7 +878,6 @@ img {
     display: block;
     margin: var(--spacing-md) auto;
 }
-
 /* Wiki 内容 */
 .wiki-content {
     font-size: 1rem;
@@ -978,7 +981,7 @@ img {
 }
 .category-page-title {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--color-text);
 }
@@ -1129,8 +1132,8 @@ img {
     }
 
     .hero-title {
-        font-size: 2rem;
-        letter-spacing: 3px;
+        font-size: 2.4rem;
+        letter-spacing: 5px;
     }
     .hero-desc {
         font-size: 0.9rem;
@@ -1242,8 +1245,8 @@ img {
         padding: var(--spacing-xl) 0;
     }
     .hero-title {
-        font-size: 1.6rem;
-        letter-spacing: 2px;
+        font-size: 1.8rem;
+        letter-spacing: 3px;
     }
     .pagination {
         flex-direction: column;
