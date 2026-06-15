@@ -3,33 +3,33 @@
         <a href="{{ site.baseurl }}/" class="site-brand">
             <span class="brand-title">{{ site.title }}</span>
         </a>
-        <button class="nav-toggle" aria-label="导航菜单">
-            <span></span><span></span><span></span>
-        </button>
-        <nav class="site-nav">
-            <ul class="nav-list">
-                <li class="nav-item {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">
-                    <a href="{{ site.baseurl }}/">首页</a>
-                </li>
-                {% for section in site.data.nav %}
-                <li class="nav-item">
-                    <a href="{{ site.baseurl }}/category/#{{ section.slug }}">{{ section.name }}</a>
-                </li>
-                {% endfor %}
-                <li class="nav-item {% if page.url contains '/about/' %}active{% endif %}">
-                    <a href="{{ site.baseurl }}/about/">关于</a>
-                </li>
-                <li class="nav-item theme-toggle-item">
-                    <button class="theme-toggle" aria-label="切换主题" title="切换深色/浅色主题">
-                        <svg class="theme-icon-dark" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-                        </svg>
-                        <svg class="theme-icon-light" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-        </nav>
+        <div class="header-actions">
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li class="nav-item {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">
+                        <a href="{{ site.baseurl }}/">首页</a>
+                    </li>
+                    {% for section in site.data.nav %}
+                    <li class="nav-item">
+                        <a href="{{ site.baseurl }}/category/#{{ section.slug }}">{{ section.name }}</a>
+                    </li>
+                    {% endfor %}
+                    <li class="nav-item {% if page.url contains '/about/' %}active{% endif %}">
+                        <a href="{{ site.baseurl }}/about/">关于</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" aria-label="切换主题" title="切换深色/浅色主题">
+                <svg class="theme-icon-dark" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+                <svg class="theme-icon-light" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            <button class="nav-toggle" aria-label="导航菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </div>
 </header>

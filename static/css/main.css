@@ -325,10 +325,14 @@ img {
     transition: all var(--transition);
 }
 
-/* 主题切换按钮 */
-.theme-toggle-item {
-    margin-left: 8px;
+/* 右侧操作区（主题切换 + 汉堡菜单） */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
 }
+
+/* 主题切换按钮 */
 .theme-toggle {
     display: flex;
     align-items: center;
@@ -342,10 +346,12 @@ img {
     color: var(--color-text-secondary);
     transition: all var(--transition);
 }
-.theme-toggle:hover {
-    color: var(--color-accent);
-    border-color: var(--color-accent);
-    background: var(--glass-bg);
+@media (hover: hover) {
+    .theme-toggle:hover {
+        color: var(--color-accent);
+        border-color: var(--color-accent);
+        background: var(--glass-bg);
+    }
 }
 
 /* 默认显示深色图标（当前为深色主题时显示太阳=切浅色） */
@@ -1185,11 +1191,6 @@ img {
         font-size: 1rem;
         border-bottom: 1px solid var(--glass-border);
     }
-    .theme-toggle-item {
-        margin-left: 0;
-        margin-top: var(--spacing-sm);
-    }
-
     .sub-nav {
         position: static;
         opacity: 1;
