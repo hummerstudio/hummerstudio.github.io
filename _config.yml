@@ -32,10 +32,10 @@ gitalk:
     - hummerstudio
 
 # ===== 社交链接 =====
-social:
-  weibo: "https://weibo.com/aixinke"
-  zhihu: "https://www.zhihu.com/people/shanyshanb"
-  github: "https://github.com/hummerstudio"
+# social:
+#   weibo: "https://weibo.com/aixinke"
+#   zhihu: "https://www.zhihu.com/people/shanyshanb"
+#   github: "https://github.com/hummerstudio"
 
 # ===== 百度统计 =====
 baidu_analytics: "2845c1f9dd82d5aa34ec3166663badab"
