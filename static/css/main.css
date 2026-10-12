@@ -1370,3 +1370,25 @@ img {
         padding: var(--spacing-md) var(--spacing-sm);
     }
 }
+
+/* ========================================
+   英文版的字体栈与字距（只作用于 html[lang="en"]）
+   ========================================
+   中文正文字体（Noto Sans SC / Noto Serif SC）会把英文的弯引号 “ ” 和撇号 ’ 按全角字形渲染，
+   英文正文看起来像"每个标点后面多了一个空格"——页面内容本身没有问题，是字形宽度所致。
+   这里把系统拉丁字体排到字体栈最前面：拉丁字符用拉丁字形，译文里残留的中文照旧回落到
+   Noto / PingFang，一处覆盖对全站生效（自定义属性在 html[lang="en"] 上重定义即可）。
+   字距也一并收：中文标题的 8px / 2px 字距是为 4 个汉字调的，套在 "Tang Moying" 上太散。 */
+html[lang="en"] {
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial,
+                 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    --font-heading: Georgia, 'Iowan Old Style', 'Times New Roman', 'Noto Serif SC', 'STSong', serif;
+    --font-brand: Georgia, 'Iowan Old Style', 'Times New Roman', 'ZCOOL XiaoWei', 'STKaiti', serif;
+}
+
+html[lang="en"] .hero-title {
+    letter-spacing: 1px;
+}
+html[lang="en"] .brand-title {
+    letter-spacing: 0.5px;
+}
