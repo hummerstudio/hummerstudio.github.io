@@ -212,6 +212,7 @@ img {
     color: var(--color-text);
     line-height: 1.3;
     letter-spacing: 2px;
+    white-space: nowrap;
 }
 .brand-desc {
     font-size: 0.72rem;
@@ -348,6 +349,30 @@ img {
 }
 @media (hover: hover) {
     .theme-toggle:hover {
+        color: var(--color-accent);
+        border-color: var(--color-accent);
+        background: var(--glass-bg);
+    }
+}
+
+/* 语言切换按钮（胶囊形，显示「点过去是哪种语言」） */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    font-size: 0.8rem;
+    line-height: 1;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all var(--transition);
+}
+@media (hover: hover) {
+    .lang-switch:hover {
         color: var(--color-accent);
         border-color: var(--color-accent);
         background: var(--glass-bg);
@@ -1186,33 +1211,10 @@ img {
     }
 }
 
-@media (max-width: 768px) {
-    :root {
-        --header-height: 56px;
-        --content-max-pct: 96%;
-    }
-
-    .main-content {
-        padding: 0 var(--spacing-sm) var(--spacing-xl);
-    }
-
-    .hero-title {
-        font-size: 2.4rem;
-        letter-spacing: 5px;
-    }
-    .hero-desc {
-        font-size: 0.9rem;
-    }
-
-    .post-card-link {
-        padding: var(--spacing-md);
-    }
-
-    .page-content {
-        padding: var(--spacing-md);
-    }
-
-    /* 移动端导航 */
+/* 导航抽屉：中英两版的导航都比窄屏宽（中文 770px、英文 839px），
+   再加上语言切换按钮，1200px 以下就会把页头撑出横向滚动条（实测 1024px 溢出 43px）。
+   所以两版统一在 1280px 收进抽屉——顺带修掉旧站在 769~914px 区间本来就有的横向溢出。 */
+@media (max-width: 1280px) {
     .nav-toggle {
         display: flex;
     }
@@ -1269,6 +1271,35 @@ img {
     .sub-nav li a {
         padding: 8px 0;
     }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-height: 56px;
+        --content-max-pct: 96%;
+    }
+
+    .main-content {
+        padding: 0 var(--spacing-sm) var(--spacing-xl);
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+        letter-spacing: 5px;
+    }
+    .hero-desc {
+        font-size: 0.9rem;
+    }
+
+    .post-card-link {
+        padding: var(--spacing-md);
+    }
+
+    .page-content {
+        padding: var(--spacing-md);
+    }
+
+    /* 移动端导航的抽屉样式在 @media (max-width: 1280px) 里，两版共用 */
 
     .post-title {
         font-size: 1.4rem;
@@ -1295,6 +1326,16 @@ img {
     }
 }
 
+/* 1281px 以上两版都用完整导航。英文导航项更长（同一字体下 1102px vs 中文 816px），
+   这里把英文版的字号与行内间距收紧到能并排放下的程度——实测 0.8rem/6px 后约 864px，
+   在 1281px 视口里（可用约 919px）留有余量。 */
+@media (min-width: 1281px) {
+    html[lang="en"] .nav-item > a {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 480px) {
     :root {
         --content-max-pct: 98%;
@@ -1302,6 +1343,11 @@ img {
 
     .main-content {
         padding: var(--spacing-md) var(--spacing-xs) var(--spacing-lg);
+    }
+
+    .lang-switch {
+        padding: 0 8px;
+        font-size: 0.72rem;
     }
 
     .hero-section {
@@ -1323,4 +1369,26 @@ img {
     .page-content {
         padding: var(--spacing-md) var(--spacing-sm);
     }
+}
+
+/* ========================================
+   英文版的字体栈与字距（只作用于 html[lang="en"]）
+   ========================================
+   中文正文字体（Noto Sans SC / Noto Serif SC）会把英文的弯引号 “ ” 和撇号 ’ 按全角字形渲染，
+   英文正文看起来像"每个标点后面多了一个空格"——页面内容本身没有问题，是字形宽度所致。
+   这里把系统拉丁字体排到字体栈最前面：拉丁字符用拉丁字形，译文里残留的中文照旧回落到
+   Noto / PingFang，一处覆盖对全站生效（自定义属性在 html[lang="en"] 上重定义即可）。
+   字距也一并收：中文标题的 8px / 2px 字距是为 4 个汉字调的，套在 "Tang Moying" 上太散。 */
+html[lang="en"] {
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial,
+                 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    --font-heading: Georgia, 'Iowan Old Style', 'Times New Roman', 'Noto Serif SC', 'STSong', serif;
+    --font-brand: Georgia, 'Iowan Old Style', 'Times New Roman', 'ZCOOL XiaoWei', 'STKaiti', serif;
+}
+
+html[lang="en"] .hero-title {
+    letter-spacing: 1px;
+}
+html[lang="en"] .brand-title {
+    letter-spacing: 0.5px;
 }

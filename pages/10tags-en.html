@@ -1,0 +1,53 @@
+---
+layout: default
+title: Tags
+permalink: /en/tags/
+lang: en
+alt_url: /tags/
+icon: octicon-tag
+styles: [tagCloud.css,tags.css]
+scripts: [tagCloud.js,tags.js]
+---
+{%- include i18n.html -%}
+{%- assign en_posts = site.posts_en | sort: 'date' | reverse -%}
+{%- assign tag_blob = '' -%}
+{%- for p in en_posts -%}{%- for tg in p.tags -%}{%- assign tag_blob = tag_blob | append: tg | append: '|' -%}{%- endfor -%}{%- endfor -%}
+{%- assign tags = tag_blob | split: '|' | pop | uniq | sort -%}
+
+<article class="page-container">
+    <header class="page-header">
+        <h1 class="page-title">{{ page.title }}</h1>
+    </header>
+
+    <div class="tagCloud">
+        {% for tag in tags %}
+        <a href="#{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+    </div>
+
+    <div>
+        <ul class="tag-box inline">
+            {% for tag in tags %}
+            {% assign tag_posts = en_posts | where_exp: "p", "p.tags contains tag" %}
+            <li><a href="#{{ tag }}">{{ tag }}<span>{{ tag_posts | size }}</span></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="post-list">
+        {% for tag in tags %}
+        {% assign tag_posts = en_posts | where_exp: "p", "p.tags contains tag" %}
+        <h2 id="{{ tag }}" class="tag-section-title">{{ tag }}</h2>
+        {% for post in tag_posts %}{% if post.title != null %}
+        <article class="post-card glass-card">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-card-link">
+                <h3 class="post-card-title">{{ post.title }}</h3>
+                <div class="post-card-meta">
+                    <span class="post-card-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%Y-%m-%d' }}</time></span>
+                </div>
+            </a>
+        </article>
+        {% endif %}{% endfor %}
+        {% endfor %}
+    </div>
+</article>

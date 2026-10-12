@@ -4,21 +4,83 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    {%- assign en_home = site.data.i18n.en.home_url -%}
+    {%- assign zh_home = site.data.i18n.zh.home_url -%}
+
+    {%- comment -%} 中文文章：对译地址从英文集合里按 alt_url 反查 {%- endcomment -%}
     {% for post in site.posts %}
+    {%- assign counterpart = site.posts_en | where: "alt_url", post.url | first -%}
     <url>
         <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{% if counterpart %}{{ counterpart.url | prepend: site.baseurl | prepend: site.url }}{% else %}{{ en_home | prepend: site.baseurl | prepend: site.url }}{% endif %}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}"/>
     </url>
     {% endfor %}
-    {% for post in site.pages %}{% if post.isNavItem %}
+
+    {%- comment -%} 英文文章：对译地址就是它自己声明的 alt_url {%- endcomment -%}
+    {% for post in site.posts_en %}
+    {%- assign zh_side = post.alt_url | default: zh_home -%}
     <url>
         <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ zh_side | prepend: site.baseurl | prepend: site.url }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ zh_side | prepend: site.baseurl | prepend: site.url }}"/>
     </url>
-    {% endif %}
+    {% endfor %}
+
+    {%- comment -%} 静态页：对译关系显式写死，不靠路径猜 {%- endcomment -%}
+    {%- assign static_pairs = '/|/en/,/about/|/en/about/,/category/|/en/category/,/tags/|/en/tags/,/timeline/|/en/timeline/,/link/|/en/link/,/wiki|/en/wiki' | split: ',' -%}
+    {% for pair in static_pairs %}
+    {%- assign sides = pair | split: '|' -%}
+    {%- assign zh_side = sides[0] -%}
+    {%- assign en_side = sides[1] -%}
+    <url>
+        <loc>{{ zh_side | prepend: site.baseurl | prepend: site.url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ zh_side | prepend: site.baseurl | prepend: site.url }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{{ en_side | prepend: site.baseurl | prepend: site.url }}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ zh_side | prepend: site.baseurl | prepend: site.url }}"/>
+    </url>
+    <url>
+        <loc>{{ en_side | prepend: site.baseurl | prepend: site.url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ zh_side | prepend: site.baseurl | prepend: site.url }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{{ en_side | prepend: site.baseurl | prepend: site.url }}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ zh_side | prepend: site.baseurl | prepend: site.url }}"/>
+    </url>
+    {% endfor %}
+
+    {%- comment -%} 参考书手冊：中英各自一份 {%- endcomment -%}
+    {% for doc in site.wiki %}
+    {%- assign counterpart = site.wiki_en | where: "alt_url", doc.url | first -%}
+    <url>
+        <loc>{{ doc.url | prepend: site.baseurl | prepend: site.url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ doc.url | prepend: site.baseurl | prepend: site.url }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{% if counterpart %}{{ counterpart.url | prepend: site.baseurl | prepend: site.url }}{% else %}{{ en_home | prepend: site.baseurl | prepend: site.url }}{% endif %}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ doc.url | prepend: site.baseurl | prepend: site.url }}"/>
+    </url>
+    {% endfor %}
+    {% for doc in site.wiki_en %}
+    {%- assign zh_side = doc.alt_url | default: zh_home -%}
+    <url>
+        <loc>{{ doc.url | prepend: site.baseurl | prepend: site.url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ zh_side | prepend: site.baseurl | prepend: site.url }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{{ doc.url | prepend: site.baseurl | prepend: site.url }}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ zh_side | prepend: site.baseurl | prepend: site.url }}"/>
+    </url>
     {% endfor %}
 </urlset>

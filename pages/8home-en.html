@@ -1,0 +1,47 @@
+---
+layout: default
+title: DevOps Engineer & Writer
+permalink: /en/
+lang: en
+alt_url: /index.html
+---
+{%- include i18n.html -%}
+{%- assign en_posts = site.posts_en | sort: 'date' | reverse -%}
+<section class="hero-section">
+    <div class="hero-inner">
+        <h1 class="hero-title">Tang Moying</h1>
+        <p class="hero-desc">A developer-turned DevOps engineer</p>
+    </div>
+</section>
+
+<section class="post-list-container">
+    <div class="post-list">
+        {% for post in en_posts %}
+        <article class="post-card glass-card">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-card-link">
+                <h2 class="post-card-title">{{ post.title }}</h2>
+                {% if post.excerpt and post.excerpt != '' %}
+                <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+                {% else %}
+                <p class="post-card-excerpt">{{ post.content | strip_html | truncate: 180 }}</p>
+                {% endif %}
+                <div class="post-card-meta">
+                    <span class="post-card-date">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        {{ post.date | date: '%Y-%m-%d' }}
+                    </span>
+                    {% if post.categories %}
+                    <span class="post-card-cats">
+                        {% for cat in post.categories limit: 2 %}
+                        <span class="cat-tag">{{ cat }}</span>
+                        {% endfor %}
+                    </span>
+                    {% endif %}
+                </div>
+            </a>
+        </article>
+        {% else %}
+        <p class="post-card-excerpt">No English articles yet.</p>
+        {% endfor %}
+    </div>
+</section>
