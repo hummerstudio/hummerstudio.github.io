@@ -1,5 +1,6 @@
+{%- include i18n.html -%}
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="{{ t.html_lang }}">
 {% include head.html %}
 <body>
     {% include header.html %}
@@ -7,7 +8,7 @@
         {{ content }}
     </main>
     {% include footer.html %}
-    <button class="scroll-top" aria-label="回到顶部" title="回到顶部">
+    <button class="scroll-top" aria-label="{{ t.back_to_top }}" title="{{ t.back_to_top }}">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
     </button>
     <script src="{{ '/static/js/main.js' | prepend: site.baseurl }}"></script>

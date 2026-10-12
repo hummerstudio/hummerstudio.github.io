@@ -1,0 +1,105 @@
+# ===== 多语言文案表 =====
+# 每行语言一个节点，键名必须完全一致；模板统一 `{% assign t = site.data.i18n[cur_lang] %}` 后取 t.xxx。
+# nav_switch 存的是「这门语言自己的名字」：中文节点写「中文」、英文节点写「English」。
+# 语言切换按钮取的是**对方**节点的 nav_switch，所以按钮上的字永远表示「点过去是哪种语言」。
+# 各语言的站内地址也放在表里（home_url / about_url / …），模板就不用到处 if 判语言。
+
+zh:
+  html_lang: "zh-CN"
+  hreflang: "zh-CN"
+  site_title: "墨影闲谈"
+  site_desc: "一个开发出身的 DevOps 工程师，记录 DevOps、软件工程与个人思考。"
+
+  home_url: "/"
+  about_url: "/about/"
+  category_url: "/category/"
+  tags_url: "/tags/"
+  timeline_url: "/timeline/"
+  wiki_url: "/wiki"
+  link_url: "/link/"
+  feed_url: "/feed.xml"
+
+  nav_home: "首页"
+  nav_about: "关于"
+  nav_switch: "中文"
+  nav_switch_title: "切换到中文"
+
+  theme_toggle: "切换主题"
+  theme_toggle_title: "切换深色/浅色主题"
+  nav_menu: "导航菜单"
+  back_to_top: "回到顶部"
+
+  pagination_prev: "← 上一页"
+  pagination_next: "下一页 →"
+
+  category_all: "全部文章"
+  category_empty: "该分类下暂无文章。"
+  post_toc: "目录"
+  post_categories: "分类"
+  post_tags: "标签"
+  post_author: "作者："
+  post_source: "出处："
+  post_license: '版权：本站使用"<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>"创作共享协议，转载请在文章明显位置注明作者及出处。'
+  post_prev: "← 上一篇"
+  post_next: "下一篇 →"
+  reading_label: "分钟阅读"
+  word_unit: "字"
+
+  footer_mail: "邮箱"
+  footer_weibo: "微博"
+  footer_zhihu: "知乎"
+  footer_rss: "RSS"
+  footer_about: "关于"
+
+  notfound_text: "页面未找到，"
+  notfound_home: "返回首页"
+
+en:
+  html_lang: "en"
+  hreflang: "en"
+  site_title: "Tang Moying"
+  site_desc: "A developer-turned DevOps engineer writing about DevOps, software craft and clear thinking."
+
+  home_url: "/en/"
+  about_url: "/en/about/"
+  category_url: "/en/category/"
+  tags_url: "/en/tags/"
+  timeline_url: "/en/timeline/"
+  wiki_url: "/en/wiki"
+  link_url: "/en/link/"
+  feed_url: "/en/feed.xml"
+
+  nav_home: "Home"
+  nav_about: "About"
+  nav_switch: "English"
+  nav_switch_title: "Switch to English"
+
+  theme_toggle: "Toggle theme"
+  theme_toggle_title: "Switch between dark and light theme"
+  nav_menu: "Menu"
+  back_to_top: "Back to top"
+
+  pagination_prev: "← Newer"
+  pagination_next: "Older →"
+
+  category_all: "All posts"
+  category_empty: "No articles in this category yet."
+  post_toc: "Contents"
+  post_categories: "Categories"
+  post_tags: "Tags"
+  post_author: "Author: "
+  post_source: "Source: "
+  post_license: 'License: this article is shared under "<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>". Please credit the author and link back to the original when republishing.'
+  post_prev: "← Previous"
+  post_next: "Next →"
+  reading_label: "min read"
+  word_unit: "words"
+
+  footer_mail: "Email"
+  footer_weibo: "Weibo"
+  footer_zhihu: "Zhihu"
+  footer_rss: "RSS"
+  footer_about: "About"
+
+  notfound_text: "Page not found. "
+  notfound_home: "Back to home"

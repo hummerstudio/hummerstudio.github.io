@@ -1,0 +1,45 @@
+{%- comment -%}
+  多语言解析器：只做 assign，不输出任何字符。
+  用法：在**每个用到 t / is_en 的布局或页面**顶部 include 一次。
+  （Jekyll 3.x 里 include 内的 assign 会向上泄漏到调用者作用域，但布局链
+    page → post.html → default.html 之间作用域相互独立，所以每个都要自己 include。）
+  产出变量：
+    cur_lang        当前语言代码
+    t               当前语言的文案表
+    is_en           是否英文版
+    zh_url / en_url 当前页面的中/英文对译地址
+    switch_url      语言切换按钮的目标地址
+    switch_label    语言切换按钮的文字（对方语言的自我称呼）
+    switch_hreflang 切换目标语言的 hreflang 值
+{%- endcomment -%}
+{%- assign cur_lang = page.lang | default: 'zh' -%}
+{%- assign t = site.data.i18n[cur_lang] -%}
+{%- assign is_en = false -%}
+{%- if cur_lang == 'en' -%}{%- assign is_en = true -%}{%- endif -%}
+{%- assign zh_url = page.alt_url | default: '' -%}
+{%- assign en_url = page.en_url | default: '' -%}
+{%- if is_en -%}
+  {%- assign en_url = page.url -%}
+  {%- if zh_url == '' -%}{%- assign zh_url = site.data.i18n.zh.home_url -%}{%- endif -%}
+  {%- if zh_url == '/index.html' -%}{%- assign zh_url = '/' -%}{%- endif -%}
+{%- else -%}
+  {%- assign zh_url = page.url -%}
+  {%- if en_url == '' -%}
+    {%- for d in site.posts_en -%}{%- if d.alt_url == page.url -%}{%- assign en_url = d.url -%}{%- endif -%}{%- endfor -%}
+    {%- for d in site.wiki_en -%}{%- if d.alt_url == page.url -%}{%- assign en_url = d.url -%}{%- endif -%}{%- endfor -%}
+    {%- for d in site.pages -%}{%- if d.alt_url == page.url -%}{%- assign en_url = d.url -%}{%- endif -%}{%- endfor -%}
+  {%- endif -%}
+  {%- if en_url == '' -%}{%- assign en_url = site.data.i18n.en.home_url -%}{%- endif -%}
+{%- endif -%}
+{%- if zh_url == '' -%}{%- assign zh_url = site.data.i18n.zh.home_url -%}{%- endif -%}
+{%- if is_en -%}
+  {%- assign switch_url = zh_url -%}
+  {%- assign switch_label = site.data.i18n.zh.nav_switch -%}
+  {%- assign switch_title = site.data.i18n.zh.nav_switch_title -%}
+  {%- assign switch_hreflang = site.data.i18n.zh.hreflang -%}
+{%- else -%}
+  {%- assign switch_url = en_url -%}
+  {%- assign switch_label = site.data.i18n.en.nav_switch -%}
+  {%- assign switch_title = site.data.i18n.en.nav_switch_title -%}
+  {%- assign switch_hreflang = site.data.i18n.en.hreflang -%}
+{%- endif -%}

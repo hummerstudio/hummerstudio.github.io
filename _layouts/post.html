@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+{%- include i18n.html -%}
+{%- assign plain = content | strip_html | strip_newlines -%}
+{%- if is_en -%}
+  {%- assign read_minutes = plain | number_of_words | divided_by: 200 | plus: 1 -%}
+  {%- assign word_count = plain | number_of_words -%}
+{%- else -%}
+  {%- assign read_minutes = plain | size | divided_by: 350 | plus: 1 -%}
+  {%- assign word_count = plain | size -%}
+{%- endif -%}
 <article class="post-container">
     <header class="post-header">
         <h1 class="post-title">{{ page.title }}</h1>
@@ -11,11 +20,11 @@ layout: default
             </span>
             <span class="meta-item">
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                {{ content | strip_html | strip_newlines | size | divided_by: 350 | plus: 1 }} 分钟阅读
+                {{ read_minutes }} {{ t.reading_label }}
             </span>
             <span class="meta-item">
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                {{ content | strip_html | strip_newlines | size }} 字
+                {{ word_count }} {{ t.word_unit }}
             </span>
         </div>
     </header>
@@ -28,7 +37,7 @@ layout: default
             <div class="sidebar-section toc-section">
                 <div class="sidebar-title">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-                    目录
+                    {{ t.post_toc }}
                 </div>
                 <nav class="toc" id="toc"></nav>
             </div>
@@ -36,11 +45,11 @@ layout: default
             <div class="sidebar-section">
                 <div class="sidebar-title">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
-                    分类
+                    {{ t.post_categories }}
                 </div>
                 <div class="sidebar-tags">
                     {% for cat in page.categories %}
-                    <a href="{{ '/category' | prepend: site.baseurl }}/#{{ cat }}" class="tag-link">{{ cat }}</a>
+                    <a href="{{ t.category_url | prepend: site.baseurl }}#{{ cat }}" class="tag-link">{{ cat }}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -49,11 +58,11 @@ layout: default
             <div class="sidebar-section">
                 <div class="sidebar-title">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-                    标签
+                    {{ t.post_tags }}
                 </div>
                 <div class="sidebar-tags">
                     {% for tag in page.tags %}
-                    <a href="{{ '/tags' | prepend: site.baseurl }}/#{{ tag }}" class="tag-link">{{ tag }}</a>
+                    <a href="{{ t.tags_url | prepend: site.baseurl }}#{{ tag }}" class="tag-link">{{ tag }}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -63,22 +72,22 @@ layout: default
 
     <footer class="post-footer">
         <div class="post-copyright">
-            <p>作者：{{ page.author | default: site.title }}</p>
-            <p>出处：<a href="{{ page.url | prepend: site.baseurl }}">{{ page.url | prepend: site.baseurl }}</a></p>
-            <p>版权：本站使用"<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>"创作共享协议，转载请在文章明显位置注明作者及出处。</p>
+            <p>{{ t.post_author }}{{ page.author | default: t.site_title }}</p>
+            <p>{{ t.post_source }}<a href="{{ page.url | prepend: site.baseurl }}">{{ page.url | prepend: site.baseurl }}</a></p>
+            <p>{{ t.post_license }}</p>
         </div>
     </footer>
 
     <nav class="post-nav">
       {% if page.previous %}
       <a href="{{ page.previous.url | prepend: site.baseurl }}" class="post-nav-link prev">
-        <span class="nav-label">← 上一篇</span>
+        <span class="nav-label">{{ t.post_prev }}</span>
         <span class="nav-title">{{ page.previous.title }}</span>
       </a>
       {% endif %}
       {% if page.next %}
       <a href="{{ page.next.url | prepend: site.baseurl }}" class="post-nav-link next">
-        <span class="nav-label">下一篇 →</span>
+        <span class="nav-label">{{ t.post_next }}</span>
         <span class="nav-title">{{ page.next.title }}</span>
       </a>
       {% endif %}

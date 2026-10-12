@@ -1,37 +1,49 @@
 # 导航分类 - 按软件开发流程组织（分总结构）
-# slug: 用于 URL hash 和文章 category
-# name: 导航显示名称
+# slug: 用于 URL hash 和文章 category（双语共用，文章 front matter 里的 categories 就是 slug）
+# name: 中文导航显示名称
+# name_en: 英文版导航显示名称（双语共用 slug，展示名走这个字段，所以分类页不用维护两套数据）
 # 顺序：需求 → 编码 → 构建 → 测试 → 发布 → 部署 → 监控 → 反馈 → DevOps → AI → 墨影闲谈
 
 - slug: plan
   name: 需求
+  name_en: Requirements
 
 - slug: code
   name: 编码
+  name_en: Coding
 
 - slug: build
   name: 构建
+  name_en: Build
 
 - slug: test
   name: 测试
+  name_en: Test
 
 - slug: release
   name: 发布
+  name_en: Release
 
 - slug: deploy
   name: 部署
+  name_en: Deployment
 
 - slug: monitor
   name: 监控
+  name_en: Monitoring
 
 - slug: feedback
   name: 反馈
+  name_en: Feedback
 
 - slug: devops
   name: DevOps
+  name_en: DevOps
 
 - slug: ai
   name: AI
+  name_en: AI
 
 - slug: essays
   name: 墨影闲谈
+  name_en: Essays

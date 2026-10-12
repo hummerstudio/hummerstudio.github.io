@@ -1,10 +1,12 @@
 ---
 layout: default
-title: 404 - 页面未找到
+title: 404 - 页面未找到 / Page not found
 ---
+{%- include i18n.html -%}
 <section class="hero-section">
     <div class="hero-inner">
         <h1 class="hero-title">404</h1>
-        <p class="hero-desc">页面未找到，<a href="{{ site.baseurl }}/">返回首页</a></p>
+        <p class="hero-desc">{{ t.notfound_text }}<a href="{{ t.home_url | prepend: site.baseurl }}">{{ t.notfound_home }}</a></p>
+        <p class="hero-desc">{{ site.data.i18n.zh.notfound_text }}<a href="{{ site.data.i18n.zh.home_url | prepend: site.baseurl }}">{{ site.data.i18n.zh.notfound_home }}</a> / {{ site.data.i18n.en.notfound_text }}<a href="{{ site.data.i18n.en.home_url | prepend: site.baseurl }}">{{ site.data.i18n.en.notfound_home }}</a></p>
     </div>
 </section>

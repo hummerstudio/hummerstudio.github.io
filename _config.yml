@@ -9,7 +9,7 @@ imgrepo: "https://tangmoying.com/static/img"
 plugins:
   - jekyll-paginate
 
-# ===== 分页 =====
+# ===== 分页（分页只作用于中文首页 site.posts；英文版首页不分页，直接列全量） =====
 paginate: 10
 paginate_path: "page/:num"
 baseurl: ""
@@ -40,8 +40,14 @@ gitalk:
 # ===== 百度统计 =====
 baidu_analytics: "2845c1f9dd82d5aa34ec3166663badab"
 
-# ===== 默认布局 =====
+# ===== 默认值 =====
+# 顺序即优先级：先给出的先应用，后给出的覆盖前面的。所以 path:"" 这条必须放最前面。
 defaults:
+  # 全站默认语言：所有未显式标注的文件都算中文，模板靠 page.lang 取文案表
+  - scope:
+      path: ""
+    values:
+      lang: zh
   - scope:
       path: ""
       type: posts
@@ -52,12 +58,35 @@ defaults:
       type: pages
     values:
       layout: page
+  # 英文版文章集合
+  - scope:
+      path: "_posts_en"
+      type: posts_en
+    values:
+      layout: post
+      lang: en
+  # 英文版参考书集合
+  - scope:
+      path: "_wiki_en"
+      type: wiki_en
+    values:
+      layout: wiki
+      lang: en
 
 # ===== Collections =====
+# 英文文章放独立集合而不是塞进 _posts：jekyll-paginate 只认 site.posts 且无法按语言过滤，
+# 混装会让英文文章串进中文首页；独立集合同时保证 site.categories / site.tags 干净。
 collections:
   wiki:
     output: true
     permalink: /wiki/:path/
+  posts_en:
+    output: true
+    # 不写尾斜杠，与中文 permalink: /post/:title 的 URL 形态一致（英文文件不带日期前缀，:path 就是 slug）
+    permalink: /en/post/:path
+  wiki_en:
+    output: true
+    permalink: /en/wiki/:path/
 
 # ===== Markdown =====
 markdown: kramdown

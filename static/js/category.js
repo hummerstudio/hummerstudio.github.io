@@ -20,6 +20,18 @@
     var headerContainer = document.getElementById('category-header');
     var postListContainer = document.getElementById('category-post-list');
 
+    // 分类页文案：页面按语言注入 JSON，取不到就回退到中文默认值
+    var allLabel = '全部文章';
+    var emptyLabel = '该分类下暂无文章。';
+    try {
+        var allLabelEl = document.getElementById('cat-all-label');
+        if (allLabelEl) allLabel = JSON.parse(allLabelEl.textContent);
+        var emptyLabelEl = document.getElementById('cat-empty-label');
+        if (emptyLabelEl) emptyLabel = JSON.parse(emptyLabelEl.textContent);
+    } catch (e) {
+        console.warn('Failed to parse category labels', e);
+    }
+
     if (!postListContainer) return;
 
     var currentSlug = null;
@@ -46,7 +58,7 @@
                 '<h2 class="category-page-title">' + getCategoryName(currentSlug) + '</h2>';
         } else {
             headerContainer.innerHTML =
-                '<h2 class="category-page-title">全部文章</h2>';
+                '<h2 class="category-page-title">' + allLabel + '</h2>';
         }
     }
 
@@ -69,7 +81,7 @@
         var filtered = postsData.filter(matchesFilter);
 
         if (filtered.length === 0) {
-            postListContainer.innerHTML = '<div class="empty-state"><p>该分类下暂无文章。</p></div>';
+            postListContainer.innerHTML = '<div class="empty-state"><p>' + emptyLabel + '</p></div>';
             return;
         }
 

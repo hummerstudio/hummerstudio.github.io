@@ -1,7 +1,8 @@
+{%- include i18n.html -%}
 <footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-social">
-            <a href="mailto:{{ site.email }}" title="邮箱" class="social-link">
+            <a href="mailto:{{ site.email }}" title="{{ t.footer_mail }}" class="social-link">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 4l10 8 10-8"/></svg>
             </a>
             {% if site.social.github %}
@@ -10,23 +11,23 @@
             </a>
             {% endif %}
             {% if site.social.weibo %}
-            <a href="{{ site.social.weibo }}" target="_blank" title="微博" class="social-link">
+            <a href="{{ site.social.weibo }}" target="_blank" title="{{ t.footer_weibo }}" class="social-link">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
             </a>
             {% endif %}
             {% if site.social.zhihu %}
-            <a href="{{ site.social.zhihu }}" target="_blank" title="知乎" class="social-link">
+            <a href="{{ site.social.zhihu }}" target="_blank" title="{{ t.footer_zhihu }}" class="social-link">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><text x="4" y="18" font-size="16" font-weight="bold" fill="currentColor" stroke="none">知</text></svg>
             </a>
             {% endif %}
-            <a href="{{ '/feed.xml' | prepend: site.baseurl }}" target="_blank" title="RSS" class="social-link">
+            <a href="{{ t.feed_url | prepend: site.baseurl }}" target="_blank" title="{{ t.footer_rss }}" class="social-link">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg>
             </a>
         </div>
         <div class="footer-copy">
-            <span>&copy; {{ site.time | date: '%Y' }} 墨影闲谈</span>
+            <span>&copy; {{ site.time | date: '%Y' }} {{ t.site_title }}</span>
             <span class="footer-sep">|</span>
-            <a href="{{ site.baseurl }}/about/">关于</a>
+            <a href="{{ t.about_url | prepend: site.baseurl }}">{{ t.footer_about }}</a>
         </div>
     </div>
 </footer>
